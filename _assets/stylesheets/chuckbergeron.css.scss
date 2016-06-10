@@ -1,57 +1,178 @@
-body {
-  color: #ccc;
-  font-family: "ff-tisa-web-pro", "Georgia", serif;
-}
-a {
-  text-decoration: none;
-}
-.brand {
-  display: block;
-  margin: 50px 0 30px;
-}
-.main {
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: 768px) {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+* {
+  box-sizing: border-box;
 }
 .img-responsive {
   display: block;
   height: auto;
   max-width: 100%;
 }
+body {
+  color: #b6b6b9;
+  font-family: "ff-tisa-web-pro", "Georgia", serif;
+}
+a {
+  color: #22c9f3;
+  text-decoration: none;
 
+  &:hover {
+    color: #1f9bc1;
+  }
+}
+hr {
+  border-color: #f0f0f0;
+}
+.brand {
+  display: block;
+  margin: 50px 0 24px;
+}
+.mission {
+  margin-bottom: 50px;
+}
+.portfolio--container {
+  background: #f7f7f7;
+  padding: 60px 0;
+}
+.portfolio-category--title {
+  color: #232436;
+  font-family: "soleil";
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.portfolio-category--title:first-child {
+  margin-top: 0;
+}
+.portfolio-piece--description {
+  margin-top: 14px;
+}
+.portfolio-piece--title {
+  font-family: "soleil";
+  text-transform: uppercase;
+}
+.portfolio-piece--img {
+  border: 10px solid #fff;
+}
 .footer {
-  background: #fbfbfb;
-  color: #bbb;
-  font-size: 16px;
-  padding: 50px 0;
+  background: #fff;
+  color: #c2c7cE;
+  font-size: 20px;
+  padding: 60px 0;
 
   a {
-    color: #ddd;
+    color: #72777E;
 
     &:hover,
     &:focus {
-      color: #777;
+      color: #22272E;
     }
   }
-
-  p.copyright  {
-    text-transform: initial;
-    margin: 0;
-  }
+}
+p.copyright  {
+  margin: 20px 0 10px;
 }
 
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
+@font-face {
+    font-family: 'si';
+    src: url(asset_path('socicon.eot'));
+    src: url(asset_path('socicon.eot?#iefix')) format('embedded-opentype'),
+         url(asset_path('socicon.woff')) format('woff'),
+         url(asset_path('socicon.ttf')) format('truetype'),
+         url(asset_path('socicon.svg#icomoonregular')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-ul.share-buttons li {
-  display: inline;
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(asset_path('socicon.svg')) format(svg);
+    }
 }
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 51px;
+    height: 51px;
+    line-height: 51px;
+    font-size: 28px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-right: 35px;
+    color: #ffffff;
+    background-color: none;
+}
+.soc a:hover {
+  color: #fff;
+    z-index: 2;
+}
+.soc-icon-last{
+    margin:0 !important;
+}
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'j';
+}
+.soc-twitter:hover {
+    background-color: #61bbf2;
+}
+.soc-facebook:hover {
+    background-color: #526fac;
+}
+.soc-linkedin:hover {
+    background-color: #4785cb;
+}
+
 
 // // Font Families
 

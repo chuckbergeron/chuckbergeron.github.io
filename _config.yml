@@ -1,7 +1,7 @@
 # Site settings
 title: Portfolio of Chuck Bergeron
 email: chuck@chuckbergeron.io
-description: "Head to head dogfighting through a sea of asteroids."
+description: "The portfolio of Chuck Bergeron, maker of superb digital products."
 
 name: chuckbergeron
 markdown: kramdown
@@ -16,6 +16,8 @@ assets:
     - "*.svg"
     - "*.woff"
     - "*.woff2"
+    - "*.eot"
+    - "*.ttf"
     - "*.js"
     - "*.mp4"
     - "*.png"
