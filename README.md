@@ -1,2 +1,4 @@
-# chuckbergeron
-chuckbergeron.io site
+# chuckbergeron.io
+
+### TODOs
+* slim support

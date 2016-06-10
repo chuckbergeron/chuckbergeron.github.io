@@ -1,0 +1,23 @@
+# Site settings
+title: Portfolio of Chuck Bergeron
+email: chuck@chuckbergeron.io
+description: "Head to head dogfighting through a sea of asteroids."
+
+name: chuckbergeron
+markdown: kramdown
+highlighter: rouge
+
+exclude: ['deploy.sh', 'Gemfile', 'Gemfile.lock']
+gems: [jekyll-assets, uglifier, jekyll-slim, slim]
+
+assets:
+  assets:
+    - "application.css"
+    - "*.svg"
+    - "*.woff"
+    - "*.woff2"
+    - "*.js"
+    - "*.mp4"
+    - "*.png"
+    - "*.jpg"
+    - "*.gif"
