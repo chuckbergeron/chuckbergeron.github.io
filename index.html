@@ -1,78 +1,11 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+---
+layout: application
+---
 
-<html lang="en-us">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
-    <title>Portfolio of Chuck Bergeron</title>
-
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="robots" content="INDEX, FOLLOW">
-
-<link rel="shortcut icon" href="/images/icons/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png">
-
-<link type="text/css" rel="stylesheet" href="/assets/application-705277078ad29e86964b63931a6aeccb9a9c7b9fcfcf88df500ae54804f21a77.css">
-
-
-    <meta name="description" content="The portfolio of Chuck Bergeron, maker of superb digital products.">
-    <meta property="og:description" content="The portfolio of Chuck Bergeron, maker of superb digital products.">
-    <meta name="keywords" content="videogames games indie indiedev gamedev shooter twin-stick">
-    <meta property="og:title" content="Portfolio of Chuck Bergeron">
-
-    <meta name="author" content="chuckbergeron.io">
-    <meta name="copyright" content="Chuck Bergeron">
-
-    <meta property="og:site_name" content="chuckbergeron">
-    <meta property="og:url" content="http://chuckbergeron.io/">
-    <meta property="og:type" content="business.game">
-
-    <meta property="og:image" content="http://chuckbergeron.io/images/chuckbergeron-symbol-large-200x200-gray.png">
-
-    <meta property="business:contact_data:street_address" content="300 Union St">
-    <meta property="business:contact_data:locality" content="Vancouver, BC">
-    <meta property="business:contact_data:postal_code" content="V6B 2J1">
-    <meta property="business:contact_data:country_name" content="Canada">
-
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="@chuckbergeron" />
-    <meta property="twitter:image" content="http://chuckbergeron.io/images/chuckbergeron-symbol-large-200x200.png">
-    <meta property="twitter:url" content="http://chuckbergeron.io">
-
-    <link rel="alternate" type="application/atom+xml" href="http://blog.chuckbergeron.io/index.xml" title="Portfolio of Chuck Bergeron atom feed">
-
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'fme3two',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-  </head>
-  <body>
-    
-
-    <div class="container">
+<div class="container">
   <div class="row">
     <div class="four columns">
-      <a class="brand" href="/" title="Chuck Bergeron's Wordmark"><img src="/assets/chuck_bergeron_io_logo-910725056836bb85e0c366f72271ab10df9ff04f04322b495d3b0ad582172915.png" alt="Chuck Bergeron's Wordmark" class="img-responsive"></a>
+      <a class="brand" href="/" title="Chuck Bergeron's Wordmark"><img src="{% asset_path 'chuck_bergeron_io_logo.png' %}" alt="Chuck Bergeron's Wordmark" class="img-responsive"></a>
     </div>
   </div>
 
@@ -94,7 +27,7 @@
 
       <div class="row">
         <div class="four columns">
-          <img src="/assets/astervoid-2000-ships-for-daze-a1869d0784b33a2567b47f3f7546c791588059d4155d1a84e3499e2811c8b21d.gif" class="img-responsive portfolio-piece--img" alt="Astervoid 2000 animation">
+          <img src="{% asset_path 'astervoid-2000-ships-for-daze.gif' %}" class="img-responsive portfolio-piece--img" alt="Astervoid 2000 animation">
           <!-- change this to astervoid2000.com ! -->
           <p class="portfolio-piece--description">
             <strong class="portfolio-piece--title"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=543136397">Astervoid 2000</a></strong>
@@ -113,7 +46,7 @@
       </h6>
       <div class="row">
         <div class="four columns">
-          <img src="/assets/loft47-bubble-logo-diecut-ed9587fc2ee08f99d4dcc772ed23b424496fe2e337401875540371883a4a55eb.png" class="img-responsive portfolio-piece--img" alt="Loft47 Branding">
+          <img src="{% asset_path 'loft47-bubble-logo-diecut.png' %}" class="img-responsive portfolio-piece--img" alt="Loft47 Branding">
           <p class="portfolio-piece--description">
             <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2631979-Loft47-Logo-Diecut">Loft47 Wordmark</a></strong>
             <br>
@@ -121,7 +54,7 @@
           </p>
         </div>
         <div class="four columns">
-          <img src="/assets/goodbits-sticker-blue-e45553c7567ab1893e1d396ca8ef1a73abff99eed000dd7db28b564eb50fd7e5.png" class="img-responsive portfolio-piece--img" alt="Goodbits bubble stickers">
+          <img src="{% asset_path 'goodbits-sticker-blue.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits bubble stickers">
           <p class="portfolio-piece--description">
             <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2108978-Goodbits-Sticker-Concept-Blue">Goodbits Bubble Sticks</a></strong>
             <br>
@@ -129,9 +62,9 @@
           </p>
         </div>
         <div class="four columns">
-          <img src="/assets/vanruby-sticks-dca01de38ce589b16b69178d418e2a6a3290384a9657c64d6f49dffa088f624b.png" class="img-responsive portfolio-piece--img" alt="Vanruby Branding">
+          <img src="{% asset_path 'brewhouse-logo.png' %}" class="img-responsive portfolio-piece--img" alt="Brewhouse Chemex Branding">
           <p class="portfolio-piece--description">
-            <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2077308-Vanruby-Branding">Vanruby Brand</a></strong>
+            <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2083986-brewhouse-logo">Brewhouse Chemex Branding</a></strong>
             <br>
             <em>Made with Illustrator</em>
           </p>
@@ -140,11 +73,27 @@
 
       <div class="row">
         <div class="four columns">
-          <img src="/assets/goodbits-handtype-logo-white-on-black-f65dc2c1f80e2dd0927c9db16af90ded9b5891ded1f5ec1e7720e20c4fe20b2b.png" class="img-responsive portfolio-piece--img" alt="Goodbits handtype">
+          <img src="{% asset_path 'goodbits-handtype-logo-white-on-black.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits handtype">
           <p class="portfolio-piece--description">
             <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2374684-Goodbits">Goodbits Handtype</a></strong>
             <br>
-            <em>Design, Typography</em>
+            <em>Made with Sketch</em>
+          </p>
+        </div>
+        <div class="four columns">
+          <img src="{% asset_path 'vanruby-sticks.png' %}" class="img-responsive portfolio-piece--img" alt="Vanruby Branding">
+          <p class="portfolio-piece--description">
+            <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2077308-Vanruby-Branding">Vanruby Brand</a></strong>
+            <br>
+            <em>Made with Illustrator</em>
+          </p>
+        </div>
+        <div class="four columns">
+          <img src="{% asset_path 'heart-textiles--label-treatment.jpg' %}" class="img-responsive portfolio-piece--img" alt="Heart Textiles Label Treatment">
+          <p class="portfolio-piece--description">
+            <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2077308-Vanruby-Branding">Heart Textiles Brand</a></strong>
+            <br>
+            <em>Made with Sketch &amp; Illustrator</em>
           </p>
         </div>
       </div>
@@ -152,37 +101,3 @@
     </section>
   </div>
 </div>
-
-
-    <footer class="footer text-center">
-  <div class="container">
-    <div class="columns twelve">
-      <!-- <a href="http://blog.chuckbergeron.io">Blog</a> -->
-
-      <ul class="soc">
-        <li><a class="soc-twitter" href="https://twitter.com/chuckbergeron"></a></li>
-        <li><a class="soc-facebook" href="https://www.facebook.com/CharlesElleryAB"></a></li>
-        <li><a class="soc-linkedin soc-icon-last" href="https://www.linkedin.com/in/chuckbergeron"></a></li>
-      </ul>
-
-      <p class="copyright">
-        &copy; <span class="copyright-year"></span> <a href="http://chuckbergeron.io">Chuck Bergeron</a> &mdash; <a href="mailto:chuck@chuckbergeron.io">chuck@chuckbergeron.io</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-
-    <script type="text/javascript" src="/assets/application-27ecdf6a59e16423adfda97ee71666b2bc41ca7040ee0d9b606c175d514750b2.js"></script>
-    <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MSD4R9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MSD4R9');</script>
-<!-- End Google Tag Manager -->
-
-  </body>
-</html>
