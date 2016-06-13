@@ -6,6 +6,11 @@
   height: auto;
   max-width: 100%;
 }
+.hide-on-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 body {
   color: #b6b6b9;
   font-family: "ff-tisa-web-pro", "Georgia", serif;
