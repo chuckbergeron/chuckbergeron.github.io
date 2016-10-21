@@ -124,6 +124,7 @@ p.copyright  {
 }
 .soc li a {
     transition: background-color 0.5s ease;
+    transition: opacity 0.5s ease;
 
     font-family:si!important;
     font-style:normal;
@@ -164,28 +165,65 @@ p.copyright  {
     background-color: #4da7de;
 }
 .soc-twitter:before {
-    content:'a';
+    background: transparent url(asset_path('twitter-logo.png')) no-repeat left top;
+    content: " ";
+    height: 51px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51px;
 }
 .soc-facebook {
     background-color: #3e5b98;
 }
 .soc-facebook:before {
-    content:'b';
+    background: transparent url(asset_path('facebook-logo.png')) no-repeat left top;
+    content: " ";
+    height: 51px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51px;
 }
 .soc-linkedin {
     background-color: #3371b7;
 }
 .soc-linkedin:before {
-    content:'j';
+    background: transparent url(asset_path('linkedin-logo.png')) no-repeat left top;
+    content: " ";
+    height: 51px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51px;
 }
 .soc-twitter:hover {
     background-color: #61bbf2;
+    opacity: 0.8;
 }
 .soc-facebook:hover {
     background-color: #526fac;
+    opacity: 0.8;
 }
 .soc-linkedin:hover {
     background-color: #4785cb;
+    opacity: 0.8;
+}
+.soc-dribbble {
+    background-color: #EA4C89;
+}
+.soc-dribbble:before {
+    background: transparent url(asset_path('dribbble-logo.svg')) no-repeat left top;
+    content: " ";
+    height: 51px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51px;
+}
+.soc-dribbble:hover {
+    background-color: #FA5CA9;
+    opacity: 0.8;
 }
 .text-block-1 {
   margin: 140px 0 0;
