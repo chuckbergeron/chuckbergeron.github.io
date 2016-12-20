@@ -29,19 +29,26 @@ hr {
   border-color: #f0f0f0;
 }
 .brand {
+  color: #505254;
   display: block;
+  font-family: "soleil", Verdana, sans-serif;
+  font-size: 50px;
   margin: 50px 0 24px;
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
 }
 .large--text {
   font-size: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .nav-link-projects {
-  color: #e7e7e7;
+  color: #cecece;
   display: block;
-  font-family: "soleil", sans-serif;
+  font-family: "soleil", Verdana, sans-serif;
   font-size: 20px;
-  margin: 68px 0 0 0;
+  margin: 85px 0 0 0;
   text-transform: uppercase;
 
   &:hover {
@@ -49,7 +56,7 @@ hr {
   }
 }
 .portfolio--container {
-  background: #f7f7f7;
+  background: #f3f3f3;
   padding: 60px 0;
 }
 .portfolio-category--title {
@@ -246,6 +253,10 @@ p.copyright  {
     padding-top: 5px;
     padding-bottom: 15px;
   }
+}
+.button {
+  font-family: "soleil", Verdana, sans-serif;
+  font-size: 14px;
 }
 .text-left {
   text-align: left;
