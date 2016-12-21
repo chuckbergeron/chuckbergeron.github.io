@@ -40,6 +40,11 @@ hr {
     font-size: 30px;
   }
 }
+.six.columns.six-columns--tablet-override {
+  @media (min-width: 550px) and (max-width: 1000px) {
+    width: 75%;
+  }
+}
 .chuck-bergeron--bg-photo {
   @media (min-width: 1000px) {
     background: transparent url(asset_path('chuck-bergeron--new.jpg')) no-repeat 86% bottom;
@@ -53,6 +58,16 @@ hr {
 .nav {
   margin-top: 83px;
   list-style: none;
+}
+.nav.nav-fixed {
+  background: white;
+  margin-top: 0;
+  padding: 4px 15px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background 0.15s ease-in;
+  z-index: 100;
 }
 .nav--list-item {
   display: inline-block;
