@@ -47,13 +47,17 @@ hr {
 }
 .chuck-bergeron--bg-photo {
   @media (min-width: 1000px) {
-    background: transparent url(asset_path('chuck-bergeron--new.jpg')) no-repeat 86% bottom;
+    background: transparent url(asset_path('chuck-bergeron--profile.jpg')) no-repeat 86% bottom;
     height: 800px;
   }
 }
 .large--text {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
+  @media (max-width: 1000px) {
+    font-size: 17px;
+  }
 }
 .nav {
   margin-top: 83px;
@@ -62,12 +66,16 @@ hr {
 .nav.nav-fixed {
   background: white;
   margin-top: 0;
-  padding: 4px 15px;
+  padding: 6px 15px 2px;
   position: fixed;
   right: 0;
   top: 0;
   transition: background 0.15s ease-in;
   z-index: 100;
+
+  .nav--list-item--hidden-when-fixed {
+    display: none;
+  }
 }
 .nav--list-item {
   display: inline-block;
@@ -99,8 +107,12 @@ hr {
 .portfolio-category--title:first-child {
   margin-top: 0;
 }
+.portfolio--img-link:hover img {
+  opacity: 0.85;
+}
 .portfolio-piece--description {
-  margin-top: 14px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .portfolio-piece--title {
   font-family: "soleil", sans-serif;
@@ -125,7 +137,11 @@ hr {
   }
 }
 p.copyright  {
-  margin: 20px 0 10px;
+  margin: 30px 0 20px;
+
+  @media (max-width: 1000px) {
+    font-size: 13px;
+  }
 }
 
 @font-face {
