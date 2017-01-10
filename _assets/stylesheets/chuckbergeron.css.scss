@@ -29,6 +29,23 @@ a {
 hr {
   border-color: #f0f0f0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #232436;
+  font-family: "soleil", sans-serif;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+h3 {
+  @media (max-width: 550px) {
+    font-size: 22px;
+  }
+}
+
 .brand {
   color: #505254;
   display: block;
@@ -100,7 +117,6 @@ hr {
 }
 .portfolio-category--title {
   color: #232436;
-  font-family: "soleil", sans-serif;
   margin-top: 50px;
   text-transform: uppercase;
 }
@@ -298,7 +314,17 @@ p.copyright  {
     padding-bottom: 15px;
   }
 }
-.button {
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: "soleil", Verdana, sans-serif;
+  font-size: 14px;
+}
+label,
+.label {
+  cursor: pointer;
   font-family: "soleil", Verdana, sans-serif;
   font-size: 14px;
 }
