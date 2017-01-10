@@ -20,10 +20,11 @@ $(function($) {
 
   $('a.internal').on('click', function(){
     var href = this.href.match(/\#.*/)[0];
+    var speed = 500;
 
     $.scrollTo({
       endY: $(href).offset().top,
-      duration: 500,
+      duration: speed,
       callback: function() {
         setTimeout(function(){
           window.location.hash = href;
