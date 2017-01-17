@@ -40,6 +40,7 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.4.0)
@@ -83,6 +84,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.1)
   jekyll-assets!
+  jekyll-paginate
   jekyll-slim!
   kramdown
   rake
@@ -93,4 +95,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
