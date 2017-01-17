@@ -1,14 +1,17 @@
 ---
 layout:       work
 collection:   work
+type:         "App"
 title:        "Goodbits"
 headline:     "I helped build Goodbits, an app to save you time when creating email publications"
 hero:         goodbits-desktop.jpg
 project_link: http://goodbits.io
 tags:
 - Design
+- UX
 - Development
 - Product Management
+- Customer Service
 ---
 
 Every great newsletter begins with great content.

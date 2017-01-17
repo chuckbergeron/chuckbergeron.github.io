@@ -27,11 +27,11 @@ body {
 a {
   transition: color 0.5s ease;
 
-  color: #22c9f3;
+  color: #22dfff;
   text-decoration: none;
 
   &:hover {
-    color: #1f9bc1;
+    color: #22c9f3;
   }
 }
 hr {
@@ -158,23 +158,28 @@ h5 {
   border: 10px solid #fff;
 }
 
+.work-layout--categories {
+  height: 400px;
+}
 .work-layout--nav {
   // display: block;
   display: inline-block;
 
   @media (max-width: 800px) {
     float: right;
-    margin-top: 46px;
+    margin-top: 44px;
   }
 }
 .work-layout--nav .nav--list-item {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 30px;
 
   @media (max-width: 800px) {
     margin: 0 0 0 10px;
   }
 }
 .work-layout--nav .nav--link {
+  color: #22c9f3;
+
   @media (max-width: 800px) {
     font-size: 13px;
   }
@@ -422,7 +427,7 @@ p.footnote {
   position: absolute;
   top: 0;
   left: 0;
-  height: 50%;
+  height: 43%;
   width: 100%;
   z-index: 1;
 }
@@ -431,7 +436,7 @@ p.footnote {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 50%;
+  height: 43%;
   width: 100%;
   z-index: 1;
 }
@@ -508,7 +513,7 @@ input[type="reset"],
 input[type="button"] {
   font-family: "soleil", Verdana, sans-serif;
   font-size: 14px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 label,
 .label {

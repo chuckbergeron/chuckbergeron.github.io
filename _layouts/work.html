@@ -69,7 +69,7 @@ layout: application
               {% endif %}
               <br>
               {% if page.project_link %}
-                <a href="{{ page.project_link }}" class="button button-sm">View Project <span class="fi-arrow-right"></span></a>
+                <a href="{{ page.project_link }}" class="button button-sm">View {{page.type}} <span class="fi-arrow-right"></span></a>
               {% endif %}
             </div>
 
@@ -99,8 +99,10 @@ layout: application
 
 <section class="work-layout--cta">
   <div class="container">
-    <div class="row text-center">
-      <div class="twelve columns">
+    <div class="row">
+      <div class="four columns">&nbsp;
+      </div>
+      <div class="eight columns">
         <h5>
           Want to hear more about what I make?
         </h5>
