@@ -24,10 +24,10 @@ layout: application
           Hey, how goes? I'm Chuck, a generalist making exciting &amp; memorable digital experiences.
         </p>
         <p>
-          I'm currently a freelance designer, developer, and musician helping dedicated groups build amazing products, VR experiences and videogames.
+          I'm a freelance designer &amp; developer helping dedicated groups build amazing products, services, VR experiences and videogames.
         </p>
         <p>
-          Previously, I founded <a href="http://brewhouse.io" rel="external">Brewhouse</a> &mdash; a product design and development agency</a>. I'm also working on an unannounced VR project targeting the HTC Vive &amp; Oculus Rift.
+          Previously, I helped found Brewhouse &mdash; a product design and development agency</a>. I'm currently working on an unannounced VR project targeting the HTC Vive &amp; Oculus Rift.
         </p>
         <p>
           <a class="button button-primary internal" href="#contact" title="Reach out and let's start a discussion">Let's Work Together</a> <a class="button internal" href="#projects" title="View some of my work">View Projects</a>
@@ -37,7 +37,8 @@ layout: application
   </div>
 </div>
 
-<div id="projects" class="portfolio--container">
+
+<div id="projects" class="portfolio-container">
   <div class="container">
 
     <h6 class="portfolio-category--title">
@@ -49,7 +50,7 @@ layout: application
         <p class="portfolio-piece--description">
           <strong class="portfolio-piece--title"><a href="/work/goodbits">Goodbits</a></strong>
           <br>
-          <em>Programming, Design</em>
+          <em class="portfolio--method">Programming, Design</em>
           <br>
           <br>
           Full stack dev &amp; design on Goodbits, an app to easily send email marketing campaigns
@@ -60,7 +61,7 @@ layout: application
         <p class="portfolio-piece--description">
           <strong class="portfolio-piece--title"><a href="https://medeohealth.com/">Medeo</a></strong>
           <br>
-          <em>Full Stack Programming</em>
+          <em class="portfolio--method">Full Stack Programming</em>
           <br>
           <br>
           A secure, quality telemedecine platform &mdash; connecting patients w/ doctors by video
@@ -71,13 +72,20 @@ layout: application
         <p class="portfolio-piece--description">
           <strong class="portfolio-piece--title"><a href="http://www.loft47.com/">Loft47</a></strong>
           <br>
-          <em>Programming, Design</em>
+          <em class="portfolio--method">Programming, Design</em>
           <br>
           <br>
           Loft47 exists to make accounting easier for real estate agents &amp; brokerages
         </p>
       </div>
     </div><!-- /row -->
+  </div>
+</div>
+
+
+
+<div id="projects" class="portfolio-container portfolio-container--light">
+  <div class="container">
 
     <h6 class="portfolio-category--title">
       Gaming &amp; VR:
@@ -88,7 +96,7 @@ layout: application
         <p class="portfolio-piece--description">
           <strong class="portfolio-piece--title"><a href="http://store.steampowered.com/app/423870">Astervoid 2000</a></strong>
           <br>
-          <em>Programming, Music, SFX</em>
+          <em class="portfolio--method">Programming, Music, SFX</em>
           <br>
           <br>
           Available now on Steam for Windows, Mac &amp; Linux. Built w/ Unity
@@ -101,7 +109,7 @@ layout: application
         <p class="portfolio-piece--description">
           <strong class="portfolio-piece--title">Incoming VR Title</strong>
           <br>
-          <em>Programming, 3D Artwork, SFX</em>
+          <em class="portfolio--method">Programming, 3D Artwork, SFX</em>
           <br>
           <br>
           I'm currently working on an unannounced project, stay tuned ...
@@ -114,104 +122,99 @@ layout: application
 
 
 <div id="testimonials" class="testimonials--container">
+  <div class="testimonial-top hide-on-mobile">&nbsp;</div>
+  <div class="testimonial-bottom hide-on-mobile">&nbsp;</div>
+
   <div class="container">
     <div class="row">
-      <div class="two columns">&nbsp;
-      </div>
-      <div class="eight columns">
+      <div class="twelve columns">
+
         <div class="testimonial">
-          <div class="active item">
-            <blockquote>
-              <p>
-                Working with Chuck is a dream. He brings the perfect balance of design and function to the development of Loft47 and a great energy to the team.
-              </p>
-            </blockquote>
-            <div class="carousel-info clear-both">
-              <div class="row">
-                <div class="two columns">
-                  <img alt="Sasha Hryciuk photo" src="{% asset_path 'sasha.jpeg' %}" class="pull-left">
-                </div>
-                <div class="ten columns">
-                  <span class="testimonial-name">Sasha Hryciuk</span>
-                  <span class="testimonial-post">Loft47 Director</span>
-                </div>
-              </div>
+          <blockquote>
+            <p>
+              "Working with Chuck is a dream. He brings the perfect balance of design and function to the development of Loft47 and a great energy to the team."
+            </p>
+          </blockquote>
+
+          <div class="testimonial-author clear-both">
+            <img alt="Sasha Hryciuk photo" src="{% asset_path 'sasha.jpeg' %}" class="pull-left testimonial-author--avatar">
+
+            <div class="pull-left testimonial-author--name">
+              <span class="testimonial-name">Sasha Hryciuk</span>
+              <span class="testimonial-post">Loft47 Director</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
+
 </div>
 
 
 
-<div class="portfolio--container">
+<div class="portfolio-container">
   <div class="container">
     <h6 class="portfolio-category--title">
       Design:
     </h6>
     <div class="row">
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2374684-Goodbits" class="portfolio--img-link"><img src="{% asset_path 'goodbits-handtype-logo-white-on-black.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits handtype"></a>
+        <img src="{% asset_path 'goodbits-handtype-logo-white-on-black.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits handtype">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2374684-Goodbits">Goodbits Handtype</a></strong>
+          <strong class="portfolio-piece--title">Goodbits Handtype</strong>
           <br>
-          <em>Sketch</em>
+          <em class="portfolio--method">Pen &amp; Paper, Sketchapp</em>
         </p>
       </div>
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2077308-Vanruby-Branding" class="portfolio--img-link"><img src="{% asset_path 'vanruby-sticks.png' %}" class="img-responsive portfolio-piece--img" alt="Vanruby Branding"></a>
+        <img src="{% asset_path 'vanruby-sticks.png' %}" class="img-responsive portfolio-piece--img" alt="Vanruby Branding">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2077308-Vanruby-Branding">Vanruby Brand</a></strong>
+          <strong class="portfolio-piece--title">Vanruby Brand</strong>
           <br>
-          <em>Illustrator</em>
+          <em class="portfolio--method">Adobe Illustrator</em>
         </p>
       </div>
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2463581-Heart-Textiles-Label-Treatment" class="portfolio--img-link"><img src="{% asset_path 'heart-textiles--label-treatment.jpg' %}" class="img-responsive portfolio-piece--img" alt="Heart Textiles Label Treatment"></a>
+        <img src="{% asset_path 'heart-textiles--label-treatment.jpg' %}" class="img-responsive portfolio-piece--img" alt="Heart Textiles Label Treatment">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2463581-Heart-Textiles-Label-Treatment">Heart Textiles Brand</a></strong>
+          <strong class="portfolio-piece--title">Heart Textiles Brand</strong>
           <br>
-          <em>Sketch &amp; Illustrator</em>
+          <em class="portfolio--method">Sketchapp &amp; Adobe Illustrator</em>
         </p>
       </div>
     </div>
 
     <div class="row">
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2631979-Loft47-Logo-Diecut" class="portfolio--img-link"><img src="{% asset_path 'loft47-bubble-logo-diecut.png' %}" class="img-responsive portfolio-piece--img" alt="Loft47 Branding"></a>
+        <img src="{% asset_path 'loft47-bubble-logo-diecut.png' %}" class="img-responsive portfolio-piece--img" alt="Loft47 Branding">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2631979-Loft47-Logo-Diecut">Loft47 Wordmark</a></strong>
+          <strong class="portfolio-piece--title">Loft47 Wordmark</strong>
           <br>
-          <em>Sketch</em>
+          <em class="portfolio--method">Sketchapp</em>
         </p>
       </div>
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2108978-Goodbits-Sticker-Concept-Blue" class="portfolio--img-link"><img src="{% asset_path 'goodbits-sticker-blue.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits bubble stickers"></a>
+        <img src="{% asset_path 'goodbits-sticker-blue.png' %}" class="img-responsive portfolio-piece--img" alt="Goodbits bubble stickers">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2108978-Goodbits-Sticker-Concept-Blue">Goodbits Bubble Sticks</a></strong>
+          <strong class="portfolio-piece--title">Goodbits Bubble Sticks</strong>
           <br>
-          <em>Sketch &amp; Illustrator</em>
+          <em class="portfolio--method">Sketchapp &amp; Adobe Illustrator</em>
         </p>
       </div>
       <div class="four columns">
-        <a href="https://dribbble.com/shots/2083986-brewhouse-logo" class="portfolio--img-link"><img src="{% asset_path 'brewhouse-logo.png' %}" class="img-responsive portfolio-piece--img" alt="Brewhouse Chemex Branding"></a>
+        <img src="{% asset_path 'brewhouse-logo.png' %}" class="img-responsive portfolio-piece--img" alt="Brewhouse Chemex Branding">
         <p class="portfolio-piece--description">
-          <strong class="portfolio-piece--title"><a href="https://dribbble.com/shots/2083986-brewhouse-logo">Brewhouse Chemex Branding</a></strong>
+          <strong class="portfolio-piece--title">Brewhouse Chemex Branding</strong>
           <br>
-          <em>Illustrator</em>
+          <em class="portfolio--method">Adobe Illustrator</em>
         </p>
       </div>
     </div>
 
   </div>
 </div>
-
-
-
-
-
 
 
 <div id="contact">
