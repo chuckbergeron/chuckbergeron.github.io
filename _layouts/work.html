@@ -47,33 +47,47 @@ layout: application
     </div>
   </section>
 
-  <section class="hide-on-desktop">
-    <img src="{{ page.hero | asset_path }}" class="img-responsive" alt="Project hero image">
-  </section>
+<section class="hide-on-desktop">
+  <img src="{{ page.hero | asset_path }}" class="img-responsive" alt="Project hero image">
+</section>
 {% endif %}
 
+{% if page.hero %}
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="row">
+            <div class="four columns">
+              {% if page.tags %}
+                <h5>Responsibilities</h5>
+                <ul class="list--basic">
+                  {% for tag in page.tags %}
+                    <li>{{ tag }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              <br>
+              {% if page.project_link %}
+                <a href="{{ page.project_link }}" class="button button-sm">View Project <span class="fi-arrow-right"></span></a>
+              {% endif %}
+            </div>
 
+            <div class="eight columns work-layout--copy">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+{% else %}
 <article>
   <div class="container">
     <div class="row">
       <div class="twelve columns">
         <div class="row">
-          <div class="four columns">
-            {% if page.tags %}
-              <h5>Responsibilities</h5>
-              <ul class="list--basic">
-                {% for tag in page.tags %}
-                  <li>{{ tag }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-            <br>
-            {% if page.project_link %}
-              <a href="{{ page.project_link }}" class="button button-sm">View Project <span class="fi-arrow-right"></span></a>
-            {% endif %}
-          </div>
-
-          <div class="eight columns work-layout--copy">
+          <div class="twelve columns">
             {{ content }}
           </div>
         </div>
@@ -81,6 +95,7 @@ layout: application
     </div>
   </div>
 </article>
+{% endif %}
 
 <section class="work-layout--cta">
   <div class="container">

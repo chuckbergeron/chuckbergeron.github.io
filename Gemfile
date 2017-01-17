@@ -1,11 +1,12 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.1"
+# gem "jekyll", "~> 3.1"
+gem "jekyll"
 gem "jekyll-paginate"
-gem "jekyll-assets", github: "jekyll/jekyll-assets", ref: "master"
-gem "jekyll-slim", github: "kesha-antonov/jekyll-slim"
+gem "jekyll-assets"
+gem 'jekyll-slim'
+gem 'slim', github: 'slim-template/slim'
 
-gem "rouge"
 gem "sass"
 gem "uglifier"
 gem "stringex"
