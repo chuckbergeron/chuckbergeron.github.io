@@ -1201,9 +1201,12 @@ p.footnote {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  margin-right: 35px;
+  margin-right: 20px;
   color: #ffffff;
   background-color: none; }
+
+.soc li:last-child a {
+  margin-right: 0; }
 
 .soc a:hover {
   color: #fff;
