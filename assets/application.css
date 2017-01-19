@@ -987,8 +987,8 @@ h5 {
 
 @media (min-width: 1000px) {
   .chuck-bergeron--bg-photo {
-    background: transparent url("/assets/chuck-bergeron--profile.jpg") no-repeat 86% bottom;
-    height: 800px; } }
+    background: transparent url("/assets/chuck-bergeron--profile.jpg") no-repeat 86% -77px;
+    height: 600px; } }
 
 .large--text {
   font-size: 22px;
@@ -998,21 +998,7 @@ h5 {
       font-size: 17px; } }
 
 .nav {
-  display: none;
   list-style: none; }
-
-.nav.nav-fixed {
-  background: none;
-  display: block;
-  margin-top: 0;
-  padding: 6px 15px 2px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: background 0.15s ease-in;
-  z-index: 100; }
-  .nav.nav-fixed .nav--list-item--hidden-when-fixed {
-    display: none; }
 
 .nav--list-item {
   display: inline-block;
@@ -1101,7 +1087,7 @@ h5 {
       left: 0;
       height: 100%;
       width: 100%;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.7) 65%, white 100%); } }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.9) 100%); } }
   .work-layout--bg-photo .noise {
     background: transparent url("/assets/noise.png") repeat left top;
     position: absolute;
@@ -1120,10 +1106,13 @@ ul.list--basic {
 
 .work-layout--copy {
   padding-top: 47px; }
+  @media (max-width: 800px) {
+    .work-layout--copy {
+      padding-top: 0; } }
 
 .page-title {
   font-size: 36px;
-  padding-top: 300px;
+  padding-top: 310px;
   position: relative;
   z-index: 1000; }
   @media (max-width: 800px) {
