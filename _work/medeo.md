@@ -3,6 +3,7 @@ layout:       work
 collection:   work
 type:         "App"
 title:        "Medeo"
+summary:      "The Medeo platform allows healthcare providers the ability to offer secure messaging, file transfers, online booking and video visits for patients ..."
 headline:     "I helped build Medeo, an app that saves you in-person trips to the Doctor's"
 hero:         medeo-desktop.jpg
 project_link: https://medeohealth.com

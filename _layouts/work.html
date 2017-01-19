@@ -2,31 +2,6 @@
 layout: application
 ---
 
-<div>
-  <div class="container">
-    <div class="row">
-
-      <div class="twelve columns">
-        <a class="brand" href="/" title="Chuck Bergeron Wordmark">CHUCK BERGERON</a>
-
-          <ul class="nav work-layout--nav">
-            <li class="nav--list-item">
-              <a class="nav--link" href="/" title="Learn more about me">About</a>
-            </li>
-            <li class="nav--list-item">
-              <a class="nav--link" href="/work/index.html" title="See my work">Work</a>
-            </li>
-            <li class="nav--list-item">
-              <a class="nav--link" href="/#contact" title="Contact me">Contact</a>
-            </li>
-          </ul>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
 {% if page.hero %}
   <section class="work-layout--bg-photo" style="background-image: url('{{ page.hero | asset_path }}')">
     <div class="noise hide-on-mobile"></div>
@@ -67,10 +42,13 @@ layout: application
                   {% endfor %}
                 </ul>
               {% endif %}
-              <br>
               {% if page.project_link %}
-                <a href="{{ page.project_link }}" class="button button-sm">View {{page.type}} <span class="fi-arrow-right"></span></a>
+                <span class="hide-on-mobile">
+                  <br>
+                  <a href="{{ page.project_link }}" class="button button-sm">View {{page.type}} <span class="fi-arrow-right"></span></a>
+                </span>
               {% endif %}
+              <hr class="hide-on-desktop">
             </div>
 
             <div class="eight columns work-layout--copy">

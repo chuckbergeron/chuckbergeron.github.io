@@ -3,7 +3,8 @@ layout:       work
 collection:   work
 type:         "App"
 title:        "Goodbits"
-headline:     "I helped build Goodbits, an app to save you time when creating email publications"
+summary:      "Newsletters should take minutes, not hours. Goodbits helps you quickly build email campaigns ..."
+headline:     "I helped build Goodbits, which saves time when creating email publications"
 hero:         goodbits-desktop.jpg
 project_link: http://goodbits.io
 tags:
