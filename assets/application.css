@@ -1270,13 +1270,17 @@ p.footnote {
 
 /* Testimonials */
 .testimonials--container {
-  margin: 10px 40px 50px;
+  margin: 0 0 50px;
   position: relative; }
   @media (min-width: 800px) {
     .testimonials--container {
       margin-bottom: 0;
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0;
+      padding-bottom: 40px; } }
+
+.testimonials--container--dark {
+  background: #f3f3f3; }
 
 .testimonial-top {
   background: #fff;
@@ -1287,6 +1291,9 @@ p.footnote {
   width: 100%;
   z-index: 1; }
 
+.testimonial-top--dark {
+  background: #f3f3f3; }
+
 .testimonial-bottom {
   background: #f3f3f3;
   position: absolute;
@@ -1295,6 +1302,9 @@ p.footnote {
   height: 43%;
   width: 100%;
   z-index: 1; }
+
+.testimonial-bottom--light {
+  background: #fff; }
 
 .testimonial {
   background: #fff;
