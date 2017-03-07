@@ -62,11 +62,27 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 </h5>
 
 <p>
-  In graphic design, I pushed myself to <a href="https://dribbble.com/ChuckBergeron">design multiple logos to better my design skills</a>. However, this project got cut short when I accepted a full-time contract. I realized how easy the marriage of 3D with logo design is, and am lackadaisically creating some animated 3D logos to level-up and have fun.
+  In graphic design, I pushed myself to <a href="https://dribbble.com/ChuckBergeron">design multiple logos to better my design skills</a>. However, this project got cut short when I accepted a full-time contract. I realized how beautiful the symbiosis of logo design with 3D rendering is, and am lackadaisically creating some animated 3D logos to level-up and have fun.
 </p>
 
-<img src="{% asset_path 'posts/dona-cider-sm.jpg' %}" class="img-responsive">
+<div class="row">
+  <div class="four columns">
+    <img src="{% asset_path 'posts/dona-cider-sm.jpg' %}" class="img-responsive pull-left">
+  </div>
+  <div class="four columns">
+    <img src="{% asset_path 'posts/indiepod-sm.jpg' %}" class="img-responsive pull-left">
+  </div>
+  <div class="four columns">
+    <img src="{% asset_path 'posts/chuck-bergeron--3d-type-sm.jpg' %}" class="img-responsive pull-left">
+  </div>
+</div>
 
+<br>
+<br>
+
+<p>
+  I created identity and a site for our local Vancouver indie game dev scene, <a href="http://www.indiepod.org/"></a>Indiepod.
+</p>
 <p>
   Also, I wrote and recorded a metal tune for a client in Calgary creating a space-themed real-time strategy game. I'll share that track when it's possible.
 </p>
