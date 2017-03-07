@@ -8,7 +8,12 @@
     <meta name="description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
     <meta property="og:description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
     <meta name="keywords" content="videogames games indie indiedev gamedev apps websites design">
-    <meta property="og:title" content="The Writings of Chuck Bergeron">
+
+    {% if page.title %}
+      <meta property="og:title" content="{{page.title}}">
+    {% else %}
+      <meta property="og:title" content="The Writings of Chuck Bergeron">
+    {% endif %}
 
     <meta name="author" content="chuckbergeron.io">
     <meta name="copyright" content="Chuck Bergeron">
@@ -16,6 +21,7 @@
     <meta property="og:site_name" content="chuckbergeron">
     <meta property="og:url" content="http://chuckbergeron.io{{ page.url | replace: 'index.html', ''}}">
     <meta property="og:type" content="business.business">
+
 
     {% if page.shared_square_image %}
       <meta property="og:image" content="http://chuckbergeron.io{{ page.shared_square_image | asset_path }}">
