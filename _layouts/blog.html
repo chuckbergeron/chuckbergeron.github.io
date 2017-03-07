@@ -18,7 +18,7 @@
     <meta property="og:type" content="business.business">
 
     {% if page.shared_square_image %}
-      <meta property="og:image" content="{{ page.shared_square_image }}">
+      <meta property="og:image" content="http://chuckbergeron.io{{ page.shared_square_image | asset_path }}">
     {% else %}
       <meta property="og:image" content="http://chuckbergeron.io{% asset_path 'chuck-bergeron--profile.jpg' %}">
     {% endif %}
