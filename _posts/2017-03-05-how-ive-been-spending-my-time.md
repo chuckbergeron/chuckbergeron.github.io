@@ -9,7 +9,7 @@ tags:
 - gamedev
 - 3d
 - blender
-shared_square_image: http://chuckbergeron.io/images/posts/LoFiFox-running-animated-still-lightboxed_114.jpg
+shared_square_image: posts/LoFiFox-running-animated-still-lightboxed_114.jpg
 shared_description: Respecializing from web apps to game developer in 2016/2017
 ---
 
