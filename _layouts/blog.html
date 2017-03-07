@@ -1,0 +1,55 @@
+{% include _doctypes.html %}
+<html lang="en-us">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    <title>The Writings of Chuck Bergeron</title>
+
+    {% include _shared_head.html %}
+
+    <meta name="description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
+    <meta property="og:description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
+    <meta name="keywords" content="videogames games indie indiedev gamedev apps websites design">
+    <meta property="og:title" content="The Writings of Chuck Bergeron">
+
+    <meta name="author" content="chuckbergeron.io">
+    <meta name="copyright" content="Chuck Bergeron">
+
+    <meta property="og:site_name" content="chuckbergeron">
+    <meta property="og:url" content="http://chuckbergeron.io{{ page.url | replace: 'index.html', ''}}">
+    <meta property="og:type" content="business.business">
+
+    <meta property="og:image" content="http://chuckbergeron.io{% asset_path 'chuck-bergeron--profile.jpg' %}">
+
+    <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
+    <meta property="business:contact_data:locality" content="Vancouver, BC">
+    <meta property="business:contact_data:postal_code" content="V6B 2E2">
+    <meta property="business:contact_data:country_name" content="Canada">
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@chuckbergeron" />
+    <meta property="twitter:image" content="http://chuckbergeron.io{% asset_path 'chuck-bergeron--profile.jpg' %}">
+    <meta property="twitter:url" content="http://chuckbergeron.io">
+
+    <link rel="alternate" type="application/atom+xml" href="http://blog.chuckbergeron.io/index.xml" title="The Writings of Chuck Bergeron atom feed">
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'fme3two',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    {% include _header_and_logo.html %}
+
+    {{ content }}
+
+    {% include _site_footer.html %}
+
+    {% javascript application %}
+    {% include _google_tag_manager.html %}
+  </body>
+</html>

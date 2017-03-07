@@ -1,0 +1,49 @@
+---
+layout: blog
+---
+
+<div class="container content">
+  <div class="ten columns">
+    {% for post in paginator.posts %}
+      {% unless post.draft %}
+        <div class="post">
+
+          <h1 class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h1>
+
+          {{ post.content | split:'<!-- break -->' | first }}
+
+          {% if post.content contains '<!-- break -->' %}
+            <div class="continue-reading">
+              <a href="{{ post.url }}" class="btn btn-link">Continue reading &rarr;</a>
+            </div>
+          {% endif %}
+        </div><!-- /post -->
+      {% endunless %}
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <nav class="pagination" role="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a class="newer-posts" href="/blog/" class="btn btn-link">&larr; Newer Posts</a>
+        {% else %}
+          <a class="newer-posts" href="/blog/page/{{ paginator.previous_page }}" class="btn btn-link">&larr; Newer Posts</a>
+        {% endif %}
+
+      {% endif %}
+
+      <span class="page-number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+      {% if paginator.next_page %}
+        <a class="older-posts" href="/blog/page/{{ paginator.next_page }}" class="btn btn-link">Older Posts &rarr;</a>
+      {% endif %}
+    </nav>
+
+  </div>
+</div>
+
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>

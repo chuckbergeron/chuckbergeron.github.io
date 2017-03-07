@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>The Writings of Chuck Bergeron</title>
+    <link href="http://chuckbergeron.io/index.xml" rel="self"/>
+    <link href="http://chuckbergeron.io"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://chuckbergeron.io</id>
+    <author>
+        <name>Chuck Bergeron</name>
+        <email>chuck@chuckbergeron.io</email>
+    </author>
+
+    {% for post in site.posts %}
+      {% unless post.draft or post.podcast %}
+        <entry>
+            <title>{{ post.title }}</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io{{ post.url }}"/>
+            <updated>{{ post.date | date_to_xmlschema }}</updated>
+            <id>http://chuckbergeron.io{{ post.id }}</id>
+            <content type="html">{{ post.content | xml_escape }}</content>
+
+            {% if post.shared_square_image %}
+              <content type="image" src="{{ post.shared_square_image }}" />
+            {% else %}
+              <content type="image" src="http://chuckbergeron.io/{% asset_path 'chuck-bergeron--profile.jpg' %}" />
+            {% endif %}
+        </entry>
+      {% endunless %}
+    {% endfor %}
+</feed>
