@@ -925,6 +925,9 @@ there.
   height: auto;
   max-width: 100%; }
 
+.video-responsive {
+  max-width: 100%; }
+
 @media (min-width: 800px) {
   .hide-on-desktop {
     display: none; } }
@@ -1131,6 +1134,10 @@ ul.list--basic {
       padding-bottom: 0;
       padding-top: 0;
       font-size: 20px; } }
+
+.caption {
+  font-size: 13px;
+  font-style: italic; }
 
 .no-padding {
   padding: 0 !important; }
