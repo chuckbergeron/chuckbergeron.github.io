@@ -21,6 +21,9 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
   I've been working on a culmination of various projects since Justin and I released Astervoid 2000 a few months ago, and I wanted to put it all in one place to share what I've been up to as well as create some sort of organized record of just what the heck has been eating my time.
 </p>
 
+<iframe class="video-responsive" width="640" height="360" src="https://www.youtube.com/embed/kHNDFtOijo4" frameborder="0" allowfullscreen></iframe>
+<span class="caption">Strap the Virtual Reality controls to your legs! ShatterStomp, one of my favourite recent projects</span>
+
 <h5>
   Previously
 </h5>
@@ -50,12 +53,14 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 </p>
 
 <img src="{% asset_path 'posts/render-46--daytime-alt--diff-cam-angle--composited.jpg' %}" class="img-responsive">
+<span class="caption">70's den scene, modernized. Modeled, rendered &amp; composited in Blender</span>
 
 <p>
   Around the same time, I felt compelled to learn low poly character creation. I set out to create a fox I could add a skeletal rig to and easily create animations for. This creature has found itself playing an interesting role in a VR music video I am nearing the end of crafting for the HTC Vive (and time permitting, Oculus Rift).
 </p>
 
 <img src="{% asset_path 'posts/LoFiFox-running-animated-still-lightboxed_114.jpg' %}" class="img-responsive">
+<span class="caption">LoFiFox -- Glass. Modeled, rigged and rendered in Blender</span>
 
 <h5>
   Complimentary stuff
@@ -76,6 +81,7 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
     <img src="{% asset_path 'posts/chuck-bergeron--3d-type-sm.jpg' %}" class="img-responsive pull-left">
   </div>
 </div>
+<span class="caption">A collection of logos I've worked on lately</span>
 
 <br>
 <br>
@@ -83,6 +89,11 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 <p>
   I created identity and a site for our local Vancouver indie game dev scene, <a href="http://www.indiepod.org/"></a>Indiepod.
 </p>
+
+<p>
+  10 of us from IndiePod created Shatter Stomp in 48 hours for the 2017 Global Game Jam. One player straps the HTC Vive VR controllers to their feet while the other player attacks them with a laser-equipped satellite from the comfort of their remote satellite laptop computer.
+</p>
+
 <p>
   Also, I wrote and recorded a metal tune for a client in Calgary creating a space-themed real-time strategy game. I'll share that track when it's possible.
 </p>

@@ -6,6 +6,9 @@
   height: auto;
   max-width: 100%;
 }
+.video-responsive {
+  max-width: 100%;
+}
 .hide-on-desktop {
   @media (min-width: 800px) {
     display: none;
@@ -245,6 +248,10 @@ ul.list--basic {
     padding-top: 0;
     font-size: 20px;
   }
+}
+.caption {
+  font-size: 13px;
+  font-style: italic;
 }
 .no-padding {
   padding: 0 !important;
