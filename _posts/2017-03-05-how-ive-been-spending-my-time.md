@@ -41,7 +41,7 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 </h5>
 
 <p>
-  Switching to the vast world of videogames has been challenging. Respecializing has proven more difficult than anything I've done over the past five years. It's pushed me to to learn a boatload of new skills. I realized quickly that having only one succefully launched 2D title in my repertoire makes it tricky to land work in this more competitive landscape.
+  Switching to the vast world of videogames has been challenging. Respecializing has proven more difficult than anything I've done over the past five years. It's pushed me to to learn a boatload of new skills. I realized quickly that having only one successfully launched 2D title under my belt makes it tricky to land work in this more competitive landscape.
 </p>
 
 <p>
