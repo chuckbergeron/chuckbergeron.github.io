@@ -63,7 +63,7 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 <span class="caption">LoFiFox -- Glass. Modeled, rigged and rendered in Blender</span>
 
 <h5>
-  Complimentary stuff
+  Complementary stuff
 </h5>
 
 <p>
