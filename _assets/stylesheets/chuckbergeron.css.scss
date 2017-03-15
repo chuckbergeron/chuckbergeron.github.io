@@ -1,3 +1,6 @@
+$link-color: #22c9f3;
+$hover-color: #9fe5f7;
+
 * {
   box-sizing: border-box;
 }
@@ -30,11 +33,11 @@ body {
 a {
   transition: color 0.5s ease;
 
-  color: #32ceea;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
-    color: #22c9f3;
+    color: $hover-color;
   }
 }
 hr {
@@ -108,7 +111,7 @@ h5 {
   text-transform: uppercase;
 
   &:hover {
-    color: #22c9f3;
+    color: $hover-color;
   }
 }
 .portfolio-container {
@@ -153,19 +156,23 @@ h5 {
   display: inline-block;
 
   @media (max-width: 800px) {
-    float: right;
-    margin-top: 44px;
+    float: left;
+    margin-top: 0;
   }
 }
 .work-layout--nav .nav--list-item {
   margin: 0 0 0 30px;
 
   @media (max-width: 800px) {
-    margin: 0 0 0 10px;
+    margin: 0 10px 0 0;
   }
 }
 .work-layout--nav .nav--link {
-  color: #22c9f3;
+  color: $link-color;
+
+  &:hover {
+    color: $hover-color;
+  }
 
   @media (max-width: 800px) {
     font-size: 13px;
@@ -238,20 +245,26 @@ ul.list--basic {
   }
 }
 .post-title {
-  font-size: 36px;
+  font-family: "calluna", "Georgia", serif;
+  font-size: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
   padding-top: 40px;
   position: relative;
+  text-transform: none;
   z-index: 1000;
 
   @media (max-width: 800px) {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .caption {
-  font-size: 13px;
+  display: block;
+  font-size: 14px;
   font-style: italic;
+  margin-bottom: 20px;
 }
 .no-padding {
   padding: 0 !important;
