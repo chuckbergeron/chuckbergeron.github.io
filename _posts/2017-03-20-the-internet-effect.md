@@ -14,7 +14,7 @@ shared_square_image: posts/if-you-ever-code-something-that-feels-like-a-hack-but
 shared_description: A super interesting thing happened to me the other day ...
 ---
 
-A super interesting thing happened the other day. I took a very simple action which was seen by hundreds of thousands of people, possibly millions.
+A super interesting thing happened the other day. I took a very simple action which was seen by hundreds of thousands of people, possibly <strong>millions</strong>.
 
 I was browsing the ol' tweetstack and one jumped out that I thought was hilarious albeit super geeky. And their followup tweet just added to it. I had just woken up, was barely alive yet and thought "I wonder if <a href="http://reddit.com/r/programmerHumor/">/r/programmerhumor</a> would like this?".
 
