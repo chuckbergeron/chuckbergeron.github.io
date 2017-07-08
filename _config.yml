@@ -1,9 +1,11 @@
 # Site settings
 title: Portfolio of Chuck Bergeron
 email: chuck@chuckbergeron.io
-description: "Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC"
 
 name: chuckbergeron
+description: "Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC"
+url: http://chuckbergeron.io
+
 markdown: kramdown
 
 paginate: 5

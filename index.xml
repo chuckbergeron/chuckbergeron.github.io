@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>The Writings of Chuck Bergeron</title>
@@ -18,15 +21,15 @@
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io{{ post.url }}"/>
+            <link href="{{ site.url }}{{ post.url }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>
-            <id>http://chuckbergeron.io{{ post.id }}</id>
+            <id>{{ site.url }}{{ post.id }}</id>
             <content type="html">{{ post.content | xml_escape }}</content>
 
             {% if post.shared_square_image %}
               <content type="image" src="{{ post.shared_square_image }}" />
             {% else %}
-              <content type="image" src="http://chuckbergeron.io/{% asset_path 'chuck-bergeron--profile.jpg' %}" />
+              <content type="image" src="{{site.url}}/{% asset_path 'chuck-bergeron--profile.jpg' %}" />
             {% endif %}
         </entry>
       {% endunless %}
