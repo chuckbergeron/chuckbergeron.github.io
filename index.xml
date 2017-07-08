@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>The Writings of Chuck Bergeron</title>
+    <link href="http://chuckbergeron.io/index.xml" rel="self"/>
+    <link href="http://chuckbergeron.io"/>
+    <updated>2017-07-08T13:34:36-07:00</updated>
+    <id>http://chuckbergeron.io</id>
+    <author>
+        <name>Chuck Bergeron</name>
+        <email>chuck@chuckbergeron.io</email>
+    </author>
+
+    
+      
+        <entry>
+            <title>Why I've Started the Vancouver VR Community</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community.html"/>
+            <updated>2017-04-25T10:04:00-07:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community</id>
+            <content type="html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;twelve columns&quot;&gt;
+        &lt;!-- &lt;img src=&quot;/assets/posts/vancouver_vr_community_logo__small-c0441e966c7c5378ca2eef02df60746906b0238e6795ac55cb178920131a57b8.png&quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community&quot; style=&quot;margin: 0 auto;&quot;&gt; --&gt;
+        &lt;img src=&quot;/assets/posts/vancouver_vr_community_logo__animated-4344c78e705af9b3606c5547dcbeaff16d62d87520f78dc2dca7613a416db05f.gif&quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community Launch Animation&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h5&gt;
+  Previously
+&lt;/h5&gt;
+
+&lt;p&gt;For the past year or so I’ve been a part of an amazing local community of game developers called &lt;a href=&quot;http://www.indiepod.org/&quot;&gt;Indiepod&lt;/a&gt;. Each week we meet up to discuss our progress. The numerous things I’ve shared with the group and learned from them has been instrumental in helping me release my first game, find work in the burgeoning Virtual Reality (VR) space, and stay on track during my transition from app to game developer.&lt;/p&gt;
+
+&lt;p&gt;Earlier this year I realized that there was nothing similar to this in Vancouver specifically focused on VR games, content &amp;amp; experiences. A few events seemed focused on the standard lecture format, and cost anywhere from $15 - $40 to attend. A free, tight-knit community built around VR was something I was missing from my life.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;five columns&quot;&gt;
+        &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The fact that all the VR meetups in Vancouver cost $15 / $20 sometimes $30 to attend is super lame. I get it for the biz VR people ... 1/2&lt;/p&gt;&amp;mdash; Chuck B! (@ChuckBergeron) &lt;a href=&quot;https://twitter.com/ChuckBergeron/status/840087484813914112&quot;&gt;March 10, 2017&lt;/a&gt;&lt;/blockquote&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;five columns&quot;&gt;
+        &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;but it doesn&amp;#39;t seem like there&amp;#39;s a warm, welcoming VR dev community here yet. Considering starting something ... 2/2 &lt;a href=&quot;https://twitter.com/hashtag/vr?src=hash&quot;&gt;#vr&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/ar?src=hash&quot;&gt;#ar&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chuck B! (@ChuckBergeron) &lt;a href=&quot;https://twitter.com/ChuckBergeron/status/840087639889928193&quot;&gt;March 10, 2017&lt;/a&gt;&lt;/blockquote&gt;
+        &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;one columns&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In light of this I decided to team up with a few fine folks here, and we’ve been chatting with (and taking cues from) some neighbouring VR communities (VR Austin, Seattle VR) on how to run a healthy community. We’ve also been in talks with many local VR companies on how we can promote the benefits of Virtual Reality as a whole.&lt;/p&gt;
+
+&lt;h5&gt;
+  Today
+&lt;/h5&gt;
+
+&lt;p&gt;I’m happy to announce that I’ve banded together with a few fine folk here in Vancouver to create a new community for VR developers, enthusiasts, artists, etc. Radical inclusivity and transparency are the key tenets of the new Vancouver VR Community’s &lt;a href=&quot;http://vancouvervrcommunity.com/about/&quot;&gt;modus operandi&lt;/a&gt;. For instance, if you’d like to be involved in the direction, our &lt;strong&gt;#mods&lt;/strong&gt; channel on our Discord chat server is public and open for anyone to participate.&lt;/p&gt;
+
+&lt;p&gt;We’ve been hard at work putting together a &lt;a href=&quot;http://vancouvervrcommunity.com/resources/&quot;&gt;list of resources&lt;/a&gt;, &lt;a href=&quot;http://vancouvervrcommunity.com/featured/&quot;&gt;featured VR projects&lt;/a&gt; being developed in Vancouver, and keeping track of &lt;a href=&quot;http://vancouvervrcommunity.com/calendar/&quot;&gt;current &amp;amp; upcoming events&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We will be at the upcoming Consumer VR Convention (CVR) in a couple of weeks, so make sure to come chat with us or just stop by to say hi.&lt;/p&gt;
+
+&lt;p&gt;Lastly, to celebrate the launch &lt;a href=&quot;http://vancouvervrcommunity.com/&quot;&gt;we have two giveaways on right now&lt;/a&gt;. You could win tickets to either this weekend’s &lt;a href=&quot;http://yvrff.com/&quot;&gt;YVRFF film fest&lt;/a&gt;, or Sunday tickets to &lt;a href=&quot;http://www.consumer-vr.com/&quot;&gt;CVR&lt;/a&gt;. Find more details here: &lt;a href=&quot;http://vancouvervrcommunity.com/&quot;&gt;http://vancouvervrcommunity.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5&gt;
+  To The Future
+&lt;/h5&gt;
+
+&lt;p&gt;One last thing, we are currently seeking out space for our inaugural meetup (penciled in for Tuesday, May 16th). If you know of a space that could host 20 - 30 people, and ideally already has a Vive or Rift setup (or other VR goodies) then &lt;a href=&quot;mailto:hello@VancouverVRCommunity.com&quot;&gt;drop us a line&lt;/a&gt;! Cheers. 😄&lt;/p&gt;
+
+&lt;p&gt;And a big thanks to everyone who has provided the news of this community with a warm reception so far. I love when I see everyone banding together to create a terrific ecosystem such as this for all who want/need it. I’ve got a feeling 2017 is going to be a fantastic year.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/groups/vancouverVRcommunity&quot;&gt;Vancouver VR Community on Facebook&lt;/a&gt; — &lt;a href=&quot;https://twitter.com/vrvancouver&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/vancouver_vr_community_logo.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>The Internet Effect or: My First Taste of Reddit Glory</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/03/20/the-internet-effect.html"/>
+            <updated>2017-03-20T23:51:00-07:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/03/20/the-internet-effect</id>
+            <content type="html">&lt;p&gt;A super interesting thing happened the other day. I took a very simple action which was seen by hundreds of thousands of people, possibly &lt;strong&gt;millions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was browsing the ol’ tweetstack and one jumped out that I thought was hilarious albeit super geeky. And their followup tweet just added to it. I had just woken up, was barely alive yet and thought “I wonder if &lt;a href=&quot;http://reddit.com/r/programmerHumor/&quot;&gt;/r/programmerhumor&lt;/a&gt; would like this?”.&lt;/p&gt;
+
+&lt;p&gt;I snapped a screenshot, unchecked “msg my inbox with comments/replies”, posted it on reddit and went on with my day.&lt;/p&gt;
+
+&lt;p&gt;About 8 hours later I was looking at reddit and came across the post. Turns out the answer was a resounding “yes”. The post had legs. There was roughly 2,900 upvotes on it, and it was at the top of /r/programmerhumor. I stumbled upon this bit of data that I forgot I had cross-posted from one public forum to another in the early hours of my mornin’.&lt;/p&gt;
+
+&lt;p&gt;The strangest bit to me was that it wasn’t my original content. In fact, it only took me roughly a minute to snap the screenshot and post on reddit.&lt;/p&gt;
+
+&lt;p&gt;I messaged a friend and let her know about it, then went on with my day. A few hours later it shot up again, and this time it was over 10,000 upvotes.&lt;/p&gt;
+
+&lt;p&gt;I’m guessing it ended up on reddit’s frontpage, because the uptick was crazy. At the time of writing this, it now sits in &lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/top/&quot;&gt;/r/programmerhumor’s top 10 of all time&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wanted to share this experience with you as I found it so bizarrely fascinating, that something someone can do these days can affect millions everywhere instantly. Knowing that is one thing, and experiencing it is another. I’m absolutely hooked on the feeling, and looking to recreate it. But next time, it’ll be different. Next time, it will be with something I created.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack&quot;&gt;Reddit Post&lt;/a&gt; - &lt;a href=&quot;https://twitter.com/daisyowl/status/841802094361235456&quot;&gt;Original Tweet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack&quot;&gt;&lt;img src=&quot;/assets/posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl-2933b2ca0f62b9367639b114e91bfcfa9763f5864e0ab0386df2f2256e9862a9.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+
+            
+              <content type="image" src="posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>How I've been spending my time</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time.html"/>
+            <updated>2017-03-06T19:00:00-08:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time</id>
+            <content type="html">&lt;p&gt;
+  &lt;strong&gt;&lt;em&gt;WARNING: this post is a bit of a brain dump of everything I've been working on and dabbling with. Consider yourself warned!&lt;/em&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  I've been working on a culmination of various projects since Justin and I released Astervoid 2000 a few months ago, and I wanted to put it all in one place to share what I've been up to as well as create some sort of organized record of just what the heck has been eating my time.
+&lt;/p&gt;
+
+&lt;iframe class=&quot;video-responsive&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/kHNDFtOijo4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;span class=&quot;caption&quot;&gt;Strap the Virtual Reality controls to your legs! ShatterStomp, one of my favourite recent projects&lt;/span&gt;&lt;/p&gt;
+
+&lt;h5&gt;
+  Previously
+&lt;/h5&gt;
+
+&lt;p&gt;
+  2016 was huge. I decided to focus the entire 2nd half of it on making Astervoid the best damn game I could make. Needless to say, I learned a ton. Business and marketing, Unity (C#) / graphics programming, sound design ... On top of that, I composed around 15 tunes for the Astervoid 2000 soundtrack, and we worked with memorecks to add his terrific styling to the OST. You can &lt;a href=&quot;https://madcapacity.bandcamp.com/releases&quot;&gt;listen to it on bandcamp&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  After tasting what working on games was like, I realized I craved something new. Making web apps in Rails &amp;amp; JavaScript just wasn't interesting anymore.
+&lt;/p&gt;
+
+&lt;h5&gt;
+  Time for a change
+&lt;/h5&gt;
+
+&lt;p&gt;
+  Switching to the vast world of videogames has been challenging. Respecializing has proven more difficult than anything I've done over the past five years. It's pushed me to to learn a boatload of new skills. I realized quickly that having only one successfully launched 2D title under my belt makes it tricky to land work in this more competitive landscape.
+&lt;/p&gt;
+
+&lt;p&gt;
+  I started 2016 with the idea of making a psychological thriller VR title. After meditating on it some, I realized the amount of story I'd have to write, 3D artwork and animations and scripted content I'd have to create would be a tremendous amount of work for something players may only get a couple of hours of gameplay out of. After hearing Ryan Clark &lt;a href=&quot;http://www.gamasutra.com/blogs/RyanClark/20150917/253842/What_Makes_an_Indie_Hit_How_to_Choose_the_Right_Design.php&quot;&gt;preaching about doing market research&lt;/a&gt; prior to starting projects, I've shelfed that idea with plans to come back to it later. I have a new concept for an awesome VR title that will be more easily shippable in a reasonable timeframe, and will provide players with more replayabilty. I'm aiming to complete this project in the next year or two.
+&lt;/p&gt;
+
+&lt;p&gt;
+  On 3D modeling and animation, I realized I was quite in the dark about this necessary component of creating VR games. I had dabbled in Blender and MagicaVoxel in 2016, but went hard on learning those skills earlier this year. I felt compelled to take a really rather gaudy 1970's scene and re-create with a modern realism feel in Blender. Here's the end result:
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/render-46--daytime-alt--diff-cam-angle--composited-446382f570a4c0c3bb86412b469ada03581e207a59e9d92ce26875e00bd4e061.jpg&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;span class=&quot;caption&quot;&gt;70’s den scene, modernized. Modeled, rendered &amp;amp; composited in Blender&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  Around the same time, I felt compelled to learn low poly character creation. I set out to create a fox I could add a skeletal rig to and easily create animations for. This creature has found itself playing an interesting role in a VR music video I am nearing the end of crafting for the HTC Vive (and time permitting, Oculus Rift).
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/LoFiFox-running-animated-still-lightboxed_114-2e963c54166cce34ac58a8ae81573af244037960d2dbb3cc3cf86b43d6ea4a2a.jpg&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;span class=&quot;caption&quot;&gt;LoFiFox – Glass. Modeled, rigged and rendered in Blender&lt;/span&gt;&lt;/p&gt;
+
+&lt;h5&gt;
+  Complementary stuff
+&lt;/h5&gt;
+
+&lt;p&gt;
+  In graphic design, I pushed myself to &lt;a href=&quot;https://dribbble.com/ChuckBergeron&quot;&gt;design multiple logos to better my design skills&lt;/a&gt;. However, this project got cut short when I accepted a full-time contract. I realized how beautiful the symbiosis of logo design with 3D rendering is, and am lackadaisically creating some animated 3D logos to level-up and have fun.
+&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;four columns&quot;&gt;
+    &lt;img src=&quot;/assets/posts/dona-cider-sm-d126195409da264fa870f7f8bb1b60be59d890d058282ba63b905273909a01f8.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;four columns&quot;&gt;
+    &lt;img src=&quot;/assets/posts/indiepod-sm-8934d0185e10bc35c6049bc88ed9710322e3e5d120eae38335a7c3fadbe7029c.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;four columns&quot;&gt;
+    &lt;img src=&quot;/assets/posts/chuck-bergeron--3d-type-sm-900071dac04a8d6700e6d6b5fda74c5cf47b77b982fe9f5ee3ec06464943185c.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span class=&quot;caption&quot;&gt;A collection of logos I’ve worked on lately&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  I created identity and a site for our local Vancouver indie game dev scene, &lt;a href=&quot;http://www.indiepod.org/&quot;&gt;&lt;/a&gt;Indiepod.
+&lt;/p&gt;
+
+&lt;p&gt;
+  10 of us from IndiePod created Shatter Stomp in 48 hours for the 2017 Global Game Jam. One player straps the HTC Vive VR controllers to their feet while the other player attacks them with a laser-equipped satellite from the comfort of their remote satellite laptop computer.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Also, I wrote and recorded a metal tune for a client in Calgary creating a space-themed real-time strategy game. I'll share that track when it's possible.
+&lt;/p&gt;
+
+&lt;h5&gt;
+  Up and coming works
+&lt;/h5&gt;
+
+&lt;p&gt;
+  I've started working with Mythical City Games on a new VR title which is coming along superb. It's looking as though it will provide both a unique and relaxing experience to those seeking something in VR other than another zombie shooter. I'll make sure to share details on it when it's further along and we've announced it properly.
+&lt;/p&gt;
+
+&lt;p&gt;
+  My friend Candice shared that she creates some of her own jewelry through a 3D printing SaaS called Shapeways. I'm exploring various options of creating figurines, jewelry and memorabilia using their services.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Lastly, Justin and I recently received our Xbox One dev kits and are starting a new quest of releasing Astervoid 2000 on the Xbox platform. Accompanying that, we aim to release the game in different regions by supporting a few new languages.
+&lt;/p&gt;
+
+&lt;h5&gt;
+  A bit more personal
+&lt;/h5&gt;
+
+&lt;p&gt;
+  I'm getting married in September to an illustrious woman. On top of that, she landed the placement she was hoping for which means we're not being shipped off to some third world city such as Toronto or Ottawa. (jokes, jokes! I love Toronto) 😉
+&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/LoFiFox-running-animated-still-lightboxed_114.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>Blending songs together on an album using Ableton Live’s ‘Resampling’</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html"/>
+            <updated>2016-12-23T13:00:00-08:00</updated>
+            <id>http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling</id>
+            <content type="html">&lt;p&gt;Recently, I found myself wanting a simple way to blend 2 tracks in Ableton Live together. There’s tons of different ways to pull this off. I came up with one quick way that had pretty good results.&lt;/p&gt;
+&lt;p&gt;I opened up the 2nd song, created a new track (naming it “# Resampled”), then armed it for recording:&lt;/p&gt;
+&lt;figure data-orig-width=&quot;480&quot; data-orig-height=&quot;137&quot; class=&quot;tmblr-full&quot;&gt;&lt;img src=&quot;http://68.media.tumblr.com/c809e2a7e64408a6da8f67ac2d67c3a8/tumblr_inline_oind5cKnPH1r4begx_500.gif&quot; alt=&quot;image&quot; data-orig-width=&quot;480&quot; data-orig-height=&quot;137&quot; /&gt;&lt;/figure&gt;
+&lt;p&gt;Find a section in the 2nd song you want to tie into the previous song (I usually took the first 4 bars), press ‘Record’ and &lt;b&gt;&lt;i&gt;blammo!&lt;/i&gt; &lt;/b&gt;– you have a new audio file (made up of any tracks that were playing) that you can copy from this tune and paste in at the end of the 1st song.&lt;/p&gt;
+&lt;p&gt; Listen to the last part of the track &amp;ldquo;Ballast&amp;rdquo; fade out while the pre-intro and finally intro of &amp;ldquo;Euphoria&amp;rdquo; blends in: &lt;/p&gt;
+&lt;div class=&quot;audio_player&quot;&gt;&lt;iframe class=&quot;tumblr_audio_player tumblr_audio_player_154855239860&quot; src=&quot;http://chuckbergeron.tumblr.com/post/154855239860/audio_player_iframe/chuckbergeron/tumblr_oine1uSCQ01r8j3z4?audio_file=https%3A%2F%2Fa.tumblr.com%2Ftumblr_oine1uSCQ01r8j3z4o1.mp3&amp;amp;color=grey&amp;amp;simple=1&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;207&quot; height=&quot;27&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+</content>
+
+            
+              <content type="image" src="posts/LoFiFox-running-animated-still-lightboxed_114.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>Modifying Unity’s Camera ImageEffects values at runtime</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html"/>
+            <updated>2016-07-05T15:00:00-07:00</updated>
+            <id>http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime</id>
+            <content type="html">&lt;p&gt; A couple of months ago I was mussing around integrating noise, vigenette, chromatic aberration, and other image effects into Astervoid 2000. &lt;/p&gt;
+&lt;p&gt; I found it wasn’t enough to just throw the image effects on the camera, I also wanted to change them at runtime depending on various events happening in the game. &lt;/p&gt;
+&lt;div&gt; &lt;video id=&quot;gif-mp4&quot; poster=&quot;https://media.giphy.com/media/l0K46X5vYigLTUkZq/200_s.gif&quot; style=&quot;margin:0;padding:0&quot; width=&quot;480&quot; height=&quot;292&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;&lt;source src=&quot;https://media.giphy.com/media/l0K46X5vYigLTUkZq/giphy.mp4&quot; type=&quot;video/mp4&quot; /&gt; Your browser does not support the mp4 video codec. &amp;lt;/source&amp;gt;&lt;/video&gt;&lt;div id=&quot;noplay&quot; style=&quot;display:none&quot;&gt; Your browser does not support the mp4 video codec. &lt;/div&gt; &lt;span class=&quot;caption&quot;&gt;Example of chromatic aberration offset &amp;amp; bloom intensity changing over time.&lt;/span&gt; &lt;/div&gt;
+&lt;p&gt; While coming up with a solution, I didn’t find this as straightforward as I had hoped it would be in Unity, and wanted to document and share the technique I devised for fellow game devs to use. &lt;/p&gt;
+&lt;p&gt; I started with the interface I wanted our team to use. Essentially, it’d be nice to call a method from anywhere in our codebase (an event handler, when a certain GameObject shows up, etc). I came up with a 1-liner solution like so: &lt;/p&gt;
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;&lt;code&gt;// Kick up noise intensity to 1.5 over 0.8 seconds DynamicCameraEffects.BringTheNoise(newIntensity: 1.5f, duration: 0.8f);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt; `DynamicCameraEffects` is a C# class inheriting from MonoBehaviour that is added to camera. This camera also needs Unity’s ‘Noise And Grain’ ImageEffect from StandardAssets. &lt;/p&gt;
+&lt;p&gt; Once the noise has hit it’s desired effect, the callback `RemoveNoise()` pulls out the effect after a random amount of time has passed. &lt;/p&gt;
+&lt;p&gt; One gotcha, I needed to reference the Unity ImageEffects namespace via `using UnityStandardAssets.ImageEffects;` &lt;/p&gt;
+&lt;p&gt; Also, we rely heavily on &lt;a href=&quot;http://dotween.demigiant.com/&quot;&gt;DOTween&lt;/a&gt; to simplify changing values over time (Similar to MCTween for Flash, &amp;lsquo;member that?). It has a ton of helpers to clean up your code and provides a bunch of &lt;a href=&quot;http://easings.net/&quot;&gt;easing equations&lt;/a&gt;, but you could also re-write this with a &lt;a href=&quot;https://www.google.com/search?q=lerp&quot;&gt;typical LERPing implementation&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt; The whole class for affecting Noise looks something like this: &lt;/p&gt;
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;&lt;code&gt;using DG.Tweening; // remove this if you're not using DOTween using System.Collections; using UnityEngine; using UnityStandardAssets.ImageEffects; /// &lt;summary&gt; /// An extension class for dynamically adding noise to the camera easily at runtime /// &lt;/summary&gt; public class DynamicCameraEffects : MonoBehaviour { private static NoiseAndGrain _noiseScript; private void Start() { _noiseScript = GetComponent&lt;noiseandgrain&gt;(); } public static void BringTheNoise(float newIntensity, float duration) { DOTween.To(() =&amp;gt; _noiseScript.intensityMultiplier, x =&amp;gt; _noiseScript.intensityMultiplier = x, newIntensity, duration) .SetEase(Ease.OutCirc) .SetUpdate(true) .OnComplete(RemoveNoise); } private static void RemoveNoise() { var duration = Random.Range(0.2f, 1f); DOTween.To(() =&amp;gt; _noiseScript.intensityMultiplier, x =&amp;gt; _noiseScript.intensityMultiplier = x, 0.45f, duration) .SetEase(Ease.InQuad) .SetUpdate(true); } } &lt;/noiseandgrain&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;span class=&quot;caption&quot;&gt;
+    &lt;a href=&quot;https://gist.github.com/chuckbergeron/0f6b1184f750dd8607c574247330428e&quot;&gt;Download/Gist&lt;/a&gt; - &lt;a href=&quot;https://gist.githubusercontent.com/chuckbergeron/0f6b1184f750dd8607c574247330428e/raw/bb35cd6617f24d9833e21dcb4a84091456870fcc/DynamicCameraEffects.cs&quot;&gt;Raw&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt; You could control the effect manually by deleting the `RemoveNoise()` function, and the `OnComplete(RemoveNoise)`. &lt;/p&gt;
+&lt;p&gt; This also makes it easier to create effects loops where every X number of seconds effects are added and pulled off the camera, breathing life into your game and making every playthrough unique. &lt;/p&gt;
+&lt;p&gt; Happy game dev'ing! &lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/LoFiFox-running-animated-still-lightboxed_114.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>A breakdown of tools I used to compose the song Solar Zenith</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html"/>
+            <updated>2016-06-16T10:00:00-07:00</updated>
+            <id>http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith</id>
+            <content type="html">&lt;p&gt;&lt;i&gt;I originally posted this &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;on Reddit&lt;/a&gt;, writing about VSTs and instrument sources used to compose the tune &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;Solar Zenith&lt;/a&gt;. I believe it belongs here as well:&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;——————————————————&lt;/p&gt;
+&lt;p&gt;For percussion I’ve got &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiF8Zu_g63NAhVKwYMKHVyBAcEQFggbMAA&amp;amp;url=https%3A%2F%2Fwww.xlnaudio.com%2Faddictivedrums&amp;amp;usg=AFQjCNHzqaSkDZpX7iLUg5kWB3TCIp6N5A&amp;amp;sig2=chRb9nNZedGVWH-3Eya3vg&amp;amp;bvm=bv.124272578,d.amc&quot;&gt;XLN Audio’s Addictive Drums&lt;/a&gt; driving the snare and hats. Some kick and ride samples I found around the nets. &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwjOzJrug63NAhXIyoMKHUVeBn4QFggdMAA&amp;amp;url=https%3A%2F%2Fwww.plogue.com%2Fproducts%2Fchipsounds%2F&amp;amp;usg=AFQjCNHi_LHY6KfUsTPSjRb-GfpQ8Qy1CQ&amp;amp;sig2=bIxfE3gzr2umOPtP-S98sw&quot;&gt;Plogue’s Chipsounds&lt;/a&gt; for a variation on the hats.&lt;/p&gt;
+&lt;p&gt;The main melodic percussive sound is “Airy Bell” (I believe it’s from Ableton). &lt;/p&gt;
+&lt;p&gt;Some of the pads are Chipsounds, some are &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwie6Mr4g63NAhXo6IMKHfkaCdEQFggdMAA&amp;amp;url=http%3A%2F%2Fwww.native-instruments.com%2Fen%2Fproducts%2Fkomplete%2Forchestral-cinematic%2Fsession-strings%2F&amp;amp;usg=AFQjCNF28Odrn6yTPkEnIYw80FiRw5R1PQ&amp;amp;sig2=hIG9KCL4-GT5nY3m-nC-qw&quot;&gt;NI’s Session Strings&lt;/a&gt; (which I wouldn’t really recommend these days). I’ve got another pad as an &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwjpiu2AhK3NAhXn64MKHai6A4IQFggdMAA&amp;amp;url=http%3A%2F%2Fwww.native-instruments.com%2Fen%2Fproducts%2Fkomplete%2Fsynths%2Frazor%2F&amp;amp;usg=AFQjCNEEyqxw317TX1o8KlSFYqIGITE16Q&amp;amp;sig2=X73ijv5fpWDaglC-pbO8-w&quot;&gt;NI Razor&lt;/a&gt; patch (Razor is tons of fun but obviously so is Massive). &lt;/p&gt;
+&lt;p&gt;There are two bass sounds (I believe also from Ableton), both called “Dual Osc4 Plastic Bass” but I’ve tweaked them super differently (octave transposition, oscillators, noise, etc). For leads, an Ableton pack called “Rubber Harp” is in there. And a custom &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwjpmfuIhK3NAhUDw4MKHaApASIQFggdMAA&amp;amp;url=http%3A%2F%2Fwww.native-instruments.com%2Fen%2Fproducts%2Fkomplete%2Fsynths%2Fmassive%2F&amp;amp;usg=AFQjCNEo_4qNKojpudSMNvrVLA7q38bENw&amp;amp;sig2=rP7bYI2jPH-PukfW5Oy8FA&quot;&gt;NI Massive&lt;/a&gt; sound I came up with. &lt;/p&gt;
+&lt;p&gt;The reverse builds are some cymbal samples I have in my collection, obviously reversed then warped in Live. &lt;/p&gt;
+&lt;p&gt;And to top it all off there is a background “room” noise sample I recorded on my phone from some small performance space in Montréal about five or six years ago.&lt;/p&gt;
+&lt;p&gt;Live’s redux tool sounds awesome but is super limited as far as what it can do for 8bit / 16bit reduction so instead I use &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwjHzI2WhK3NAhXI6IMKHRYpC-UQFggbMAA&amp;amp;url=https%3A%2F%2Fwww.plogue.com%2Fproducts%2Fchipcrusher%2F&amp;amp;usg=AFQjCNGY1qcnBC7BGHNyRcCnAUSJ43Gq6g&amp;amp;sig2=FM6w15Rb1KAG1Zc9qBc7Cw&quot;&gt;Plogue’s Chipcrusher&lt;/a&gt; a bunch for the signal degradation stuff.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.xferrecords.com/freeware/&quot;&gt;Dimension Expander&lt;/a&gt; is in there and it’s rad. Gives your tracks some more “space”. Some awesome dev pulled the concept from Massive and made it it’s own VST which you can grab for free.&lt;/p&gt;
+&lt;p&gt;I also use &lt;a href=&quot;http://www.alexhilton.net/A1AUDIO/index.php/a1stereocontrol&quot;&gt;A1StereoControl&lt;/a&gt; almost religiously. It’s free as well, and let’s you do “Safe Bass” stereo effects, where it takes anything below a certain freq and cuts the pan, outing it through the middle.&lt;/p&gt;
+&lt;p&gt;And here’s a &lt;a href=&quot;https://dl.dropboxusercontent.com/u/79436/Audio%20Effect%20Rack%20--%20LREVG%20Stereomaker.adg&quot;&gt;Live Audio Effect Rack&lt;/a&gt; I made that essentially splits a single track into multiple and sends some of it through the left, some through the right, and some through the middle. Tweak the panning, volume of each pan and spread as much as you like.&lt;/p&gt;
+&lt;p&gt;How bout yourself, what’s some of your favourite audio tools?&lt;br /&gt;&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/LoFiFox-running-animated-still-lightboxed_114.jpg" />
+            
+        </entry>
+      
+    
+</feed>
