@@ -1,4 +1,5 @@
 ---
+excerpt_separator: <!--more-->
 layout:    post
 title:     "The Internet Effect or: My First Taste of Reddit Glory"
 author:    "chuckbergeron"
@@ -19,6 +20,8 @@ A super interesting thing happened the other day. I took a very simple action wh
 I was browsing the ol' tweetstack and one jumped out that I thought was hilarious albeit super geeky. And their followup tweet just added to it. I had just woken up, was barely alive yet and thought "I wonder if <a href="http://reddit.com/r/programmerHumor/">/r/programmerhumor</a> would like this?".
 
 I snapped a screenshot, unchecked "msg my inbox with comments/replies", posted it on reddit and went on with my day.
+
+<!--more-->
 
 About 8 hours later I was looking at reddit and came across the post. Turns out the answer was a resounding "yes". The post had legs. There was roughly 2,900 upvotes on it, and it was at the top of /r/programmerhumor. I stumbled upon this bit of data that I forgot I had cross-posted from one public forum to another in the early hours of my mornin'.
 

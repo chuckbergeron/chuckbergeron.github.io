@@ -1,4 +1,5 @@
 ---
+excerpt_separator: <!--more-->
 layout:    post
 title:     "How I've been spending my time"
 author:    "chuckbergeron"
@@ -23,6 +24,8 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 
 <iframe class="video-responsive" width="640" height="360" src="https://www.youtube.com/embed/kHNDFtOijo4" frameborder="0" allowfullscreen></iframe>
 <span class="caption">Strap the Virtual Reality controls to your legs! ShatterStomp, one of my favourite recent projects</span>
+
+<!--more-->
 
 <h5>
   Previously

@@ -15,13 +15,24 @@ layout: blog
             {{ post.date | date: "%-d %B %Y"}}
           </p>
 
-          {{ post.content | split:'<!-- break -->' | first }}
+          {{ post.excerpt }}
+
+          <div class="continue-reading">
+            <p>
+              ...
+            </p>
+            <a href="{{ post.url }}" class="btn btn-link">Continue reading &rarr;</a>
+          </div>
+
+          <!-- { post.content | split:'break' | first }
 
           {% if post.content contains '<!-- break -->' %}
-            <div class="continue-reading">
+            <!--<div class="continue-reading">
               <a href="{{ post.url }}" class="btn btn-link">Continue reading &rarr;</a>
-            </div>
+            </div>-->
+            <!--
           {% endif %}
+          -->
         </div><!-- /post -->
       {% endunless %}
     {% endfor %}
@@ -30,9 +41,9 @@ layout: blog
     <nav class="pagination" role="pagination">
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-          <a class="newer-posts" href="/blog/" class="btn btn-link">&larr; Newer Posts</a>
+          <a class="newer-posts" href="/blog/" class="btn btn-link">&larr; Newer Posts</a> &mdash;
         {% else %}
-          <a class="newer-posts" href="/blog/page/{{ paginator.previous_page }}" class="btn btn-link">&larr; Newer Posts</a>
+          <a class="newer-posts" href="/blog/page/{{ paginator.previous_page }}" class="btn btn-link">&larr; Newer Posts</a> &mdash;
         {% endif %}
 
       {% endif %}
@@ -40,7 +51,7 @@ layout: blog
       <span class="page-number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
       {% if paginator.next_page %}
-        <a class="older-posts" href="/blog/page/{{ paginator.next_page }}" class="btn btn-link">Older Posts &rarr;</a>
+        &mdash; <a class="older-posts" href="/blog/page/{{ paginator.next_page }}" class="btn btn-link">Older Posts &rarr;</a>
       {% endif %}
     </nav>
 

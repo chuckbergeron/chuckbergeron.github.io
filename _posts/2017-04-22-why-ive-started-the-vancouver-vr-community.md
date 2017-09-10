@@ -1,4 +1,5 @@
 ---
+excerpt_separator: <!--more-->
 layout:    post
 title:     "Why I've Started the Vancouver VR Community"
 author:    "chuckbergeron"
@@ -24,6 +25,8 @@ shared_description:  ...
 </h5>
 
 For the past year or so I've been a part of an amazing local community of game developers called <a href="http://www.indiepod.org/">Indiepod</a>. Each week we meet up to discuss our progress. The numerous things I've shared with the group and learned from them has been instrumental in helping me release my first game, find work in the burgeoning Virtual Reality (VR) space, and stay on track during my transition from app to game developer.
+
+<!--more-->
 
 Earlier this year I realized that there was nothing similar to this in Vancouver specifically focused on VR games, content &amp; experiences. A few events seemed focused on the standard lecture format, and cost anywhere from $15 - $40 to attend. A free, tight-knit community built around VR was something I was missing from my life.
 
