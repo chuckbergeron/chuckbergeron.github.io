@@ -52,7 +52,7 @@ The solution was to simplify. I had read somewhere that Unity prefers very simpl
 <img src="{% asset_path 'posts/worldspace-vr-ui-performance-ui-background.jpg' %}" class="img-responsive" alt="One background image instead of multiple Image components"><!--  style="margin: 0 auto;" -->
 <span class="caption">The solution pt 2: One background image instead of multiple Image components.</span>
 
-On top of removing the container groups, we decided about half of the Unity `Image` components could be baked into 1 PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city's demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!
+On top of removing the container groups, we decided about half of the Unity `Image` components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city's demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!
 
 Coincidentally, this also improved a performance issue we were experiencing when using these same `VRUICard` prefabs on the Desktop version of the game (yes, we have yet to refactor the naming convention on these so they apply to both version of the game 😊).
 
@@ -62,9 +62,11 @@ Coincidentally, this also improved a performance issue we were experiencing when
 
 After using Unity 3 and 4 for a while, I found the default `Text` component lacking. The result of text was almost always blurry, and the hack to make it crisper (size the font waaay up and scale the transform waaay down) felt silly. After learning about TextMeshPro, and all the amazing improvements it offered I thought it would be ideal to use in VR for Skytropolis. Thankfully, Unity <a href="https://blogs.unity3d.com/2017/03/20/textmesh-pro-joins-unity/"> agreed and purchased TextMeshPro</a> to provide it for free to all of us Unity game developers.
 
-Integrating TextMeshPro properly came with it's own learning curve. Thankfully there is fantastic documentation and forum discussion on how to use it best. Here's a quick guide on what I found most beneficial.
+Integrating TextMeshPro properly came with it's own learning curve. Thankfully there is fantastic documentation and forum discussion on how to use it best. Here's my notes on what I found most beneficial:
 
-If you're not using any of TextMeshPro's advanced features (glow, bevel, lighting, etc), the recommendation is to use the TextMeshPro mobile shader. Also, it's recommended to use Material Presets. We use one font and therefore, one TextMeshPro font asset, with 2 material presets. One material preset is for any UI canvas elements (TextMeshPro UGUI components), and another is for regular TextMeshPro components (meshes drawn in the world that aren't children of a UI canvas). This is important so that each piece of text shows up correctly based on it's layer (z-depth), and the mobile shader is to keep the text as simple as possible for the engine to render.
+If you're not using any of TextMeshPro's advanced features (glow, bevel, lighting, etc), the recommendation is to use the simpler TextMeshPro Mobile Shader.
+
+Also, it's recommended to use Material Presets. We use one font and therefore, one TextMeshPro font asset, with 2 material presets. One material preset is for any UI canvas elements (TextMeshPro UGUI components), and another is for regular TextMeshPro components (meshes drawn in the world that aren't children of a UI canvas). This is important so that each piece of text shows up correctly based on it's layer (Z-depth), and the mobile shader is to keep the text as simple as possible for the engine to render.
 
 More on the TextMeshPro Mobile Shader: <a href="https://www.youtube.com/watch?v=X5eHU0VUMbs">Mobile Shader on YouTube</a>
 
@@ -74,7 +76,7 @@ More on material presets: <a href="https://www.youtube.com/watch?v=d2MARbDNeaA">
   Conclusion
 </h5>
 
-Wrapping up, it's important to keep Unity's hierarchy simple. To use 1 baked image when possible (instead of multiple image components), and to use TextMeshPro's Mobile Shader &amp; Material Presets.
+Wrapping up, it's important to keep Unity's hierarchy simple. To use one baked image when possible (instead of multiple image components), and to use TextMeshPro's Mobile Shader &amp; Material Presets.
 
 SUBSCRIBE FOR MORE
 
