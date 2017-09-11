@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.1"
+gem "jekyll", "~> 3"
 gem "jekyll-assets", github: "jekyll/jekyll-assets", ref: "master"
 gem "jekyll-slim", github: "kesha-antonov/jekyll-slim"
 
