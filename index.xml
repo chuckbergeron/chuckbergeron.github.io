@@ -3,7 +3,7 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="http://chuckbergeron.io/index.xml" rel="self"/>
     <link href="http://chuckbergeron.io"/>
-    <updated>2017-12-20T13:20:48-08:00</updated>
+    <updated>2017-12-20T13:23:53-08:00</updated>
     <id>http://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
@@ -121,7 +121,7 @@
 
 &lt;p&gt;One of the things we noticed was that performance was dropping after we rolled out a new update to this card UI. Each time a card category with more than 10+ cards was chosen, the frame rate would drop to around 50 - 60 FPS.&lt;/p&gt;
 
-&lt;p&gt;Digging in to Unity’s profiler showed that re-draws of the UI each time the player moved their hand was the issue. XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE&lt;/p&gt;
+&lt;p&gt;Digging in to Unity’s profiler showed that re-draws of the UI each time the player moved their hand was the issue. &lt;!-- XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE --&gt;&lt;/p&gt;
 
 &lt;p&gt;The hierarchy of the cards, their Images &amp;amp; TextMeshPro objects looked like so:&lt;/p&gt;
 
@@ -168,17 +168,17 @@
 
 &lt;p&gt;Wrapping up, it’s important to keep Unity’s hierarchy simple. To use one baked image when possible (instead of multiple image components), and to use TextMeshPro’s Mobile Shader &amp;amp; Material Presets.&lt;/p&gt;
 
-&lt;p&gt;XXX MY TWITTER
-XXX MY EMAIL NEWSLETTER
-XXX COMMENTS&lt;/p&gt;
+&lt;!-- XXX MY TWITTER --&gt;
+&lt;!-- XXX MY EMAIL NEWSLETTER --&gt;
+&lt;!-- XXX COMMENTS --&gt;
 
-&lt;p&gt;Happy performant game devving!&lt;/p&gt;
+&lt;p&gt;Happy performant game developing!&lt;/p&gt;
 
 &lt;p&gt;😄&lt;/p&gt;
 </content>
 
             
-              <content type="image" src="posts/vancouver_vr_community_logo.jpg" />
+              <content type="image" src="http://chuckbergeron.io//assets/chuck-bergeron--profile-4668e7b57136e27ba414c0d4aa1c4df9babba3c5e1040e7ab873a4ae9fb171dc.jpg" />
             
         </entry>
       
