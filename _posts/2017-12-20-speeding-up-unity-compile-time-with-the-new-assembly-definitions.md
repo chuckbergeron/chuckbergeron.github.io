@@ -4,20 +4,20 @@ layout:    post
 title:     "Unity 2017.3: Speeding up Compile Time with the New Assembly Definitions"
 author:    "chuckbergeron"
 category:  blog
-date:      2017-12-20 13:02
+date:      2017-12-20 12:02
 published: true
 tags:
 - unity
 - performance
-shared_square_image: posts/unity_speed_up_compile_time.jpg
+<!-- shared_square_image: posts/unity-compile-times-before-and-after.jpg -->
 shared_description:  FILLIN
 ---
 <!-- shared_square_image: posts/FILLIN.jpg -->
 
 <div class="row">
     <div class="twelve columns">
-        <!-- <img src=" asset_path 'posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
-        <!--  style="margin: 0 auto;" -->
+        <img src="{% asset_path 'posts/unity_compile_time_before_after.jpg' %}" class="img-responsive" alt="Unity compile times, before and after">
+        <span class="caption">Compile Time (AKA: thumb-twiddling time) Comparison</span>
     </div>
 </div>
 
@@ -29,44 +29,45 @@ Read on for a quickstart guide on how to get this working for you.
 
 <!--more-->
 
-<h5>
-  Assembly Defintions: Quickstart
-</h5>
+<h4>
+  Assembly Definitions: Quickstart
+</h4>
 
 I followed the same layout which was provided by Unity in a sample project one of their devs they linked to. I'm unable to find that same sample project at the moment, but the general layout looked something like this:
 
-**Assets/AssetsRoot-ASM.asmdef**
-  (References: Plugins-ASM.asmdef)
+<ul>
+  <li>
+    <strong>Assets/AssetsRoot-ASM.asmdef</strong> <small>(References: Plugins-ASM.asmdef)</small>
+  </li>
+  <li>
+    <strong>Assets/Plugins/Plugins-ASM.asmdef</strong> <small>(No References)</small>
+  </li>
+  <li>
+    <strong>Assets/Plugins/PostProcessing/Editor/PostProcessingEditor-ASM.asmdef</strong> <small>(References: Plugins-ASM.asmdef) <em>and</em> (Includes: "Editor"-only!)</small>
+  </li>
+  <li>
+    <strong>Assets/Scripts/ScriptsASM.asmdef</strong> <small>(No References)</small>
+  </li>
+</ul>
 
-  **Assets/Plugins/Plugins-ASM.asmdef**
-  (No References)
+In Unity 2017.3, you can create a new type of file called "Assembly Defintion" the same way you would create a sphere, cube, script, shader, etc. (using the "Create" menu). Place each of these Assembly Definition files in the directories you want to control using Assemblies.
 
-**Assets/Plugins/PostProcessing/Editor/PostProcessingEditor-ASM.asmdef**
-  (References: Plugins-ASM.asmdef)
-  (Includes: "Editor"-only!)
+<hr>
 
-**Assets/Scripts/ScriptsASM.asmdef**
-  (No References)
-
-
-For the tiny project I'm currently working on, I was able to shave a couple of seconds off (from 8 seconds to 5.5 seconds) by avoiding recompilation of the 4 plugins I'm using when I change my scripts. I haven't tested this on one of the larger projects I've worked on yet, but I'm excited to see how much of a difference it makes.
-
-
-<img src="{% asset_path 'posts/unity-compile-times-before-and-after.jpg' %}" class="img-responsive" alt="Unity compile times, before and after">
-<span class="caption">Compile Times (AKA: thumb-twiddling time) Before and After</span>
+For the tiny project I'm currently working on, I was able to shave a couple of seconds off (**from 8 seconds to 5.5 seconds**) by avoiding recompilation of the 4 plugins I'm using when I change my scripts. I haven't tested this on one of the larger projects I've worked on yet, but I'm excited to see how much of a difference it makes.
 
 <ul>
     <li>
-        Download Unity 2017.3 Here: https://unity3d.com/get-unity/download
+        Download Unity 2017.3 Here: <a href="https://unity3d.com/get-unity/download">https://unity3d.com/get-unity/download</a>
     </li>
     <li>
-        Documentation: https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html
+        Documentation: <a href="https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html">https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html</a>
     </li>
     <li>
-        Unity's Blog Post: https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/
+        Unity's Blog Post: <a href="https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/">https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/</a>
     </li>
     <li>
-        Compile Time Script on Gist: https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04
+        Compile Time Script on Gist: <a href="https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04">https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04</a>
     </li>
 </ul>
 
@@ -76,5 +77,3 @@ For the tiny project I'm currently working on, I was able to shave a couple of s
 Happy performant game developing!
 
 😄
-
-Twitter: https://twitter.com/chuckbergeron
