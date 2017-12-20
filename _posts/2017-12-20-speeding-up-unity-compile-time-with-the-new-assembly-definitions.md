@@ -9,8 +9,8 @@ published: true
 tags:
 - unity
 - performance
-<!-- shared_square_image: posts/unity-compile-times-before-and-after.jpg -->
-shared_description:  FILLIN
+shared_square_image: posts/unity_compile_time_before_after.jpg
+shared_description:  A new feature in Unity 2017.3 can speed up the amount of time you spend developing and in turn improve your life.
 ---
 <!-- shared_square_image: posts/FILLIN.jpg -->
 
