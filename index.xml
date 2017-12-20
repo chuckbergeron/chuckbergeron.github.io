@@ -3,13 +3,185 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="http://chuckbergeron.io/index.xml" rel="self"/>
     <link href="http://chuckbergeron.io"/>
-    <updated>2017-07-08T13:36:38-07:00</updated>
+    <updated>2017-12-20T13:20:48-08:00</updated>
     <id>http://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
         <email>chuck@chuckbergeron.io</email>
     </author>
 
+    
+      
+        <entry>
+            <title>Unity 2017.3: Speeding up Compile Time with the New Assembly Definitions</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html"/>
+            <updated>2017-12-20T12:02:00-08:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions</id>
+            <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;twelve columns&quot;&gt;
+        &lt;img src=&quot;/assets/posts/unity_compile_time_before_after-b0456a55f699faece747570e4f95d9a3d6990afb25003f53e3f150cb4517c92d.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Unity compile times, before and after&quot; /&gt;
+        &lt;span class=&quot;caption&quot;&gt;Compile Time (AKA: thumb-twiddling time) Comparison&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In Unity, each time you make any change to your C# code the entire project is recompiled. This can take anywhere from a couple of seconds to minutes, depending on your computer’s hardware, the size of your project and number of plugins.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, a new feature was released yesterday in Unity 2017.3 which allows you to selectively recompile certain files, instead of the entire project. This can greatly speed up your development time, as you typically do not change code in your 3rd-party plugins.&lt;/p&gt;
+
+&lt;p&gt;Read on for a quickstart guide on how to get this working for you.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h4&gt;
+  Assembly Definitions: Quickstart
+&lt;/h4&gt;
+
+&lt;p&gt;I followed the same layout which was provided by Unity in a sample project one of their devs they linked to. I’m unable to find that same sample project at the moment, but the general layout looked something like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Assets/AssetsRoot-ASM.asmdef&lt;/strong&gt; &lt;small&gt;(References: Plugins-ASM.asmdef)&lt;/small&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Assets/Plugins/Plugins-ASM.asmdef&lt;/strong&gt; &lt;small&gt;(No References)&lt;/small&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Assets/Plugins/PostProcessing/Editor/PostProcessingEditor-ASM.asmdef&lt;/strong&gt; &lt;small&gt;(References: Plugins-ASM.asmdef) &lt;em&gt;and&lt;/em&gt; (Includes: &quot;Editor&quot;-only!)&lt;/small&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;strong&gt;Assets/Scripts/ScriptsASM.asmdef&lt;/strong&gt; &lt;small&gt;(No References)&lt;/small&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In Unity 2017.3, you can create a new type of file called “Assembly Defintion” the same way you would create a sphere, cube, script, shader, etc. (using the “Create” menu). Place each of these Assembly Definition files in the directories you want to control using Assemblies.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;For the tiny project I’m currently working on, I was able to shave a couple of seconds off (&lt;strong&gt;from 8 seconds to 5.5 seconds&lt;/strong&gt;) by avoiding recompilation of the 4 plugins I’m using when I change my scripts. I haven’t tested this on one of the larger projects I’ve worked on yet, but I’m excited to see how much of a difference it makes.&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        Download Unity 2017.3 Here: &lt;a href=&quot;https://unity3d.com/get-unity/download&quot;&gt;https://unity3d.com/get-unity/download&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        Documentation: &lt;a href=&quot;https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html&quot;&gt;https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        Unity's Blog Post: &lt;a href=&quot;https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/&quot;&gt;https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        Compile Time Script on Gist: &lt;a href=&quot;https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04&quot;&gt;https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- XXX MY EMAIL NEWSLETTER --&gt;
+&lt;!-- XXX COMMENTS --&gt;
+
+&lt;p&gt;Happy performant game developing!&lt;/p&gt;
+
+&lt;p&gt;😄&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/unity_compile_time_before_after.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
+            <title>Unity VR: WorldSpace UI Performance Optimizations</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html"/>
+            <updated>2017-09-09T09:00:00-07:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity</id>
+            <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;twelve columns&quot;&gt;
+        &lt;!-- &lt;img src=&quot; asset_path 'posts/FILLIN.gif' &quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community Launch Animation&quot;&gt;--&gt;
+        &lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For the past six months I’ve been working on a city-building sim named Skytropolis for VR &amp;amp; Desktop in Unity. Early on we realized a need for a UI (user interface) where the player could choose which buildings they would want to add to their city. Instead of creating a typical, uninspired flat UI and pointing a laser pointer at scrollbars and menus (similar to using a web browser) we decided to create a card deck concept where you choose buildings from your card hand (similar to any card game you’ve played).&lt;/p&gt;
+
+&lt;p&gt;One of the largest challenges so far while developing Skytropolis has been solving the best ways to keep performance smooth. We need to hit and keep the game at over 90FPS for the Vive &amp;amp; Rift, while maintaining a visually interesting aesthetic.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;One of the things we noticed was that performance was dropping after we rolled out a new update to this card UI. Each time a card category with more than 10+ cards was chosen, the frame rate would drop to around 50 - 60 FPS.&lt;/p&gt;
+
+&lt;p&gt;Digging in to Unity’s profiler showed that re-draws of the UI each time the player moved their hand was the issue. XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE&lt;/p&gt;
+
+&lt;p&gt;The hierarchy of the cards, their Images &amp;amp; TextMeshPro objects looked like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-starting-hierarchy-31a6a68781d1a7a4e9feffa621916b66bdc936552c1efbce66dc8af662973942.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Bad Unity worldspace VR UI hierarchy&quot; /&gt;
+&lt;span class=&quot;caption&quot;&gt;The problem: a complex transform hierarchy (one card didn’t even fit all on one screen).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Each element in the tree above is a GameObject. And in typical Unity fashion, each GameObject has a Transform, which controls it’s position, rotation and scale in the world. When the card hand is open, and the player moves their hand the &lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;VRCardUISystem&lt;/code&gt;&lt;/em&gt; loosely follows the hand around so the UI is always available and ready to use.&lt;/p&gt;
+
+&lt;p&gt;This turned out to be the biggest issue with the cards. As the &lt;code class=&quot;highlighter-rouge&quot;&gt;VRCardUISystem&lt;/code&gt; Transform follows the player’s hand, and their hand moves every single frame (even miniscule amounts are picked up by the VR sensors) under the hood Unity has to tell every child Transform what it’s new position is, move it there, then send that to the graphics pipeline for rendering to the player’s headset screens.&lt;/p&gt;
+
+&lt;p&gt;After a few various attempts at improving performance via other means, such as changing the &lt;code class=&quot;highlighter-rouge&quot;&gt;VRCardUISystem&lt;/code&gt;’s update rate to not happen every frame, and using object pooling instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;Instantiate()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Destroy()&lt;/code&gt; we found the performance issue still existed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-solved-hierarchy-ba7960366e4d14853a4d51d31efc1be2b4b65ea390e05a4b87a0584d00559f42.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Improved Unity worldspace vr ui hierarchy&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+&lt;span class=&quot;caption&quot;&gt;The solution pt 1: a much simpler hierarchy.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The solution was to simplify. I had read somewhere that Unity prefers very simple hierarchy, and instead of grouping objects together logically (which is easier for the developers and level editors to consume), it ideally wants every GameObject (and Transform) to be at the root level. This is a mess for us developers to read, but helps it’s internal systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-ui-background-5852620f3468fb1e805f7764e79b7547a788e9473198074809d5844a10a16f1a.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;One background image instead of multiple Image components&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+&lt;span class=&quot;caption&quot;&gt;The solution pt 2: One background image instead of multiple Image components.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;On top of removing the container groups, we decided about half of the Unity &lt;code class=&quot;highlighter-rouge&quot;&gt;Image&lt;/code&gt; components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city’s demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!&lt;/p&gt;
+
+&lt;p&gt;Coincidentally, this also improved a performance issue we were experiencing when using these same &lt;code class=&quot;highlighter-rouge&quot;&gt;VRUICard&lt;/code&gt; prefabs on the Desktop version of the game (yes, we have yet to refactor the naming convention on these so they apply to both version of the game 😊).&lt;/p&gt;
+
+&lt;h5&gt;
+  Further Improvements: TextMeshPro Mobile Shader &amp;amp; Material Presets
+&lt;/h5&gt;
+
+&lt;p&gt;After using Unity 3 and 4 for a while, I found the default &lt;code class=&quot;highlighter-rouge&quot;&gt;Text&lt;/code&gt; component lacking. The result of text was almost always blurry, and the hack to make it crisper (size the font waaay up and scale the transform waaay down) felt silly. After learning about TextMeshPro, and all the amazing improvements it offered I thought it would be ideal to use in VR for Skytropolis. Thankfully, Unity &lt;a href=&quot;https://blogs.unity3d.com/2017/03/20/textmesh-pro-joins-unity/&quot;&gt; agreed and purchased TextMeshPro&lt;/a&gt; to provide it for free to all of us Unity game developers.&lt;/p&gt;
+
+&lt;p&gt;Integrating TextMeshPro properly came with it’s own learning curve. Thankfully there is fantastic documentation and forum discussion on how to use it best. Here’s my notes on what I found most beneficial:&lt;/p&gt;
+
+&lt;p&gt;If you’re not using any of TextMeshPro’s advanced features (glow, bevel, lighting, etc), the recommendation is to use the simpler TextMeshPro Mobile Shader.&lt;/p&gt;
+
+&lt;p&gt;Also, it’s recommended to use Material Presets. We use one font and therefore, one TextMeshPro font asset, with 2 material presets. One material preset is for any UI canvas elements (TextMeshPro UGUI components), and another is for regular TextMeshPro components (meshes drawn in the world that aren’t children of a UI canvas). This is important so that each piece of text shows up correctly based on it’s layer (Z-depth), and the mobile shader is to keep the text as simple as possible for the engine to render.&lt;/p&gt;
+
+&lt;p&gt;More on the TextMeshPro Mobile Shader: &lt;a href=&quot;https://www.youtube.com/watch?v=X5eHU0VUMbs&quot;&gt;Mobile Shader on YouTube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;More on material presets: &lt;a href=&quot;https://www.youtube.com/watch?v=d2MARbDNeaA&quot;&gt;Material Presets on YouTube&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5&gt;
+  Conclusion
+&lt;/h5&gt;
+
+&lt;p&gt;Wrapping up, it’s important to keep Unity’s hierarchy simple. To use one baked image when possible (instead of multiple image components), and to use TextMeshPro’s Mobile Shader &amp;amp; Material Presets.&lt;/p&gt;
+
+&lt;p&gt;XXX MY TWITTER
+XXX MY EMAIL NEWSLETTER
+XXX COMMENTS&lt;/p&gt;
+
+&lt;p&gt;Happy performant game devving!&lt;/p&gt;
+
+&lt;p&gt;😄&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/vancouver_vr_community_logo.jpg" />
+            
+        </entry>
+      
     
       
         <entry>
@@ -33,6 +205,8 @@
 &lt;/h5&gt;
 
 &lt;p&gt;For the past year or so I’ve been a part of an amazing local community of game developers called &lt;a href=&quot;http://www.indiepod.org/&quot;&gt;Indiepod&lt;/a&gt;. Each week we meet up to discuss our progress. The numerous things I’ve shared with the group and learned from them has been instrumental in helping me release my first game, find work in the burgeoning Virtual Reality (VR) space, and stay on track during my transition from app to game developer.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Earlier this year I realized that there was nothing similar to this in Vancouver specifically focused on VR games, content &amp;amp; experiences. A few events seemed focused on the standard lecture format, and cost anywhere from $15 - $40 to attend. A free, tight-knit community built around VR was something I was missing from my life.&lt;/p&gt;
 
@@ -97,6 +271,8 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
 
 &lt;p&gt;I snapped a screenshot, unchecked “msg my inbox with comments/replies”, posted it on reddit and went on with my day.&lt;/p&gt;
 
+&lt;!--more--&gt;
+
 &lt;p&gt;About 8 hours later I was looking at reddit and came across the post. Turns out the answer was a resounding “yes”. The post had legs. There was roughly 2,900 upvotes on it, and it was at the top of /r/programmerhumor. I stumbled upon this bit of data that I forgot I had cross-posted from one public forum to another in the early hours of my mornin’.&lt;/p&gt;
 
 &lt;p&gt;The strangest bit to me was that it wasn’t my original content. In fact, it only took me roughly a minute to snap the screenshot and post on reddit.&lt;/p&gt;
@@ -139,6 +315,8 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
 
 &lt;iframe class=&quot;video-responsive&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/kHNDFtOijo4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;span class=&quot;caption&quot;&gt;Strap the Virtual Reality controls to your legs! ShatterStomp, one of my favourite recent projects&lt;/span&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h5&gt;
   Previously
@@ -339,3 +517,4 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
       
     
 </feed>
+

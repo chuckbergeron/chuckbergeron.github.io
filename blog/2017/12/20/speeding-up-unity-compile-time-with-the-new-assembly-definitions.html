@@ -26,19 +26,19 @@
     <meta name="keywords" content="videogames games indie indiedev gamedev apps websites design">
 
     
-      <meta property="og:title" content="Modifying Unity’s Camera ImageEffects values at runtime">
+      <meta property="og:title" content="Unity 2017.3: Speeding up Compile Time with the New Assembly Definitions">
     
 
     <meta name="author" content="chuckbergeron.io">
     <meta name="copyright" content="Chuck Bergeron">
 
     <meta property="og:site_name" content="chuckbergeron">
-    <meta property="og:url" content="http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html">
+    <meta property="og:url" content="http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html">
     <meta property="og:type" content="business.business">
 
 
     
-      <meta property="og:image" content="http://chuckbergeron.io/assets/posts/LoFiFox-running-animated-still-lightboxed_114-2e963c54166cce34ac58a8ae81573af244037960d2dbb3cc3cf86b43d6ea4a2a.jpg">
+      <meta property="og:image" content="http://chuckbergeron.io/assets/posts/unity_compile_time_before_after-b0456a55f699faece747570e4f95d9a3d6990afb25003f53e3f150cb4517c92d.jpg">
     
 
     <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
@@ -99,9 +99,9 @@
 
     <div class="row">
       <div class="nine columns">
-        <h1 class="post-title">Modifying Unity’s Camera ImageEffects values at runtime</h1>
+        <h1 class="post-title">Unity 2017.3: Speeding up Compile Time with the New Assembly Definitions</h1>
         <p>
-          5 July 2016
+          20 December 2017
         </p>
       </div>
     </div>
@@ -109,26 +109,71 @@
     <div id="article-start" class="content">
       <div class="nine columns">
         <div class="post clearfix">
-          <p> A couple of months ago I was mussing around integrating noise, vigenette, chromatic aberration, and other image effects into Astervoid 2000. </p>
-<p> I found it wasn’t enough to just throw the image effects on the camera, I also wanted to change them at runtime depending on various events happening in the game. </p>
-<div> <video id="gif-mp4" poster="https://media.giphy.com/media/l0K46X5vYigLTUkZq/200_s.gif" style="margin:0;padding:0" width="480" height="292" autoplay="" loop=""><source src="https://media.giphy.com/media/l0K46X5vYigLTUkZq/giphy.mp4" type="video/mp4" /> Your browser does not support the mp4 video codec. &lt;/source&gt;</video><div id="noplay" style="display:none"> Your browser does not support the mp4 video codec. </div> <span class="caption">Example of chromatic aberration offset &amp; bloom intensity changing over time.</span> </div>
-<p> While coming up with a solution, I didn’t find this as straightforward as I had hoped it would be in Unity, and wanted to document and share the technique I devised for fellow game devs to use. </p>
-<p> I started with the interface I wanted our team to use. Essentially, it’d be nice to call a method from anywhere in our codebase (an event handler, when a certain GameObject shows up, etc). I came up with a 1-liner solution like so: </p>
-<pre class="prettyprint linenums"><code>// Kick up noise intensity to 1.5 over 0.8 seconds DynamicCameraEffects.BringTheNoise(newIntensity: 1.5f, duration: 0.8f);</code></pre>
-<p> `DynamicCameraEffects` is a C# class inheriting from MonoBehaviour that is added to camera. This camera also needs Unity’s ‘Noise And Grain’ ImageEffect from StandardAssets. </p>
-<p> Once the noise has hit it’s desired effect, the callback `RemoveNoise()` pulls out the effect after a random amount of time has passed. </p>
-<p> One gotcha, I needed to reference the Unity ImageEffects namespace via `using UnityStandardAssets.ImageEffects;` </p>
-<p> Also, we rely heavily on <a href="http://dotween.demigiant.com/">DOTween</a> to simplify changing values over time (Similar to MCTween for Flash, &lsquo;member that?). It has a ton of helpers to clean up your code and provides a bunch of <a href="http://easings.net/">easing equations</a>, but you could also re-write this with a <a href="https://www.google.com/search?q=lerp">typical LERPing implementation</a>. </p>
-<p> The whole class for affecting Noise looks something like this: </p>
-<pre class="prettyprint linenums"><code>using DG.Tweening; // remove this if you're not using DOTween using System.Collections; using UnityEngine; using UnityStandardAssets.ImageEffects; /// <summary> /// An extension class for dynamically adding noise to the camera easily at runtime /// </summary> public class DynamicCameraEffects : MonoBehaviour { private static NoiseAndGrain _noiseScript; private void Start() { _noiseScript = GetComponent<noiseandgrain>(); } public static void BringTheNoise(float newIntensity, float duration) { DOTween.To(() =&gt; _noiseScript.intensityMultiplier, x =&gt; _noiseScript.intensityMultiplier = x, newIntensity, duration) .SetEase(Ease.OutCirc) .SetUpdate(true) .OnComplete(RemoveNoise); } private static void RemoveNoise() { var duration = Random.Range(0.2f, 1f); DOTween.To(() =&gt; _noiseScript.intensityMultiplier, x =&gt; _noiseScript.intensityMultiplier = x, 0.45f, duration) .SetEase(Ease.InQuad) .SetUpdate(true); } } </noiseandgrain></code></pre>
+          <!-- shared_square_image: posts/FILLIN.jpg -->
 
-<p><span class="caption">
-    <a href="https://gist.github.com/chuckbergeron/0f6b1184f750dd8607c574247330428e">Download/Gist</a> - <a href="https://gist.githubusercontent.com/chuckbergeron/0f6b1184f750dd8607c574247330428e/raw/bb35cd6617f24d9833e21dcb4a84091456870fcc/DynamicCameraEffects.cs">Raw</a>
-</span></p>
+<div class="row">
+    <div class="twelve columns">
+        <img src="/assets/posts/unity_compile_time_before_after-b0456a55f699faece747570e4f95d9a3d6990afb25003f53e3f150cb4517c92d.jpg" class="img-responsive" alt="Unity compile times, before and after" />
+        <span class="caption">Compile Time (AKA: thumb-twiddling time) Comparison</span>
+    </div>
+</div>
 
-<p> You could control the effect manually by deleting the `RemoveNoise()` function, and the `OnComplete(RemoveNoise)`. </p>
-<p> This also makes it easier to create effects loops where every X number of seconds effects are added and pulled off the camera, breathing life into your game and making every playthrough unique. </p>
-<p> Happy game dev'ing! </p>
+<p>In Unity, each time you make any change to your C# code the entire project is recompiled. This can take anywhere from a couple of seconds to minutes, depending on your computer’s hardware, the size of your project and number of plugins.</p>
+
+<p>Thankfully, a new feature was released yesterday in Unity 2017.3 which allows you to selectively recompile certain files, instead of the entire project. This can greatly speed up your development time, as you typically do not change code in your 3rd-party plugins.</p>
+
+<p>Read on for a quickstart guide on how to get this working for you.</p>
+
+<!--more-->
+
+<h4>
+  Assembly Definitions: Quickstart
+</h4>
+
+<p>I followed the same layout which was provided by Unity in a sample project one of their devs they linked to. I’m unable to find that same sample project at the moment, but the general layout looked something like this:</p>
+
+<ul>
+  <li>
+    <strong>Assets/AssetsRoot-ASM.asmdef</strong> <small>(References: Plugins-ASM.asmdef)</small>
+  </li>
+  <li>
+    <strong>Assets/Plugins/Plugins-ASM.asmdef</strong> <small>(No References)</small>
+  </li>
+  <li>
+    <strong>Assets/Plugins/PostProcessing/Editor/PostProcessingEditor-ASM.asmdef</strong> <small>(References: Plugins-ASM.asmdef) <em>and</em> (Includes: "Editor"-only!)</small>
+  </li>
+  <li>
+    <strong>Assets/Scripts/ScriptsASM.asmdef</strong> <small>(No References)</small>
+  </li>
+</ul>
+
+<p>In Unity 2017.3, you can create a new type of file called “Assembly Defintion” the same way you would create a sphere, cube, script, shader, etc. (using the “Create” menu). Place each of these Assembly Definition files in the directories you want to control using Assemblies.</p>
+
+<hr />
+
+<p>For the tiny project I’m currently working on, I was able to shave a couple of seconds off (<strong>from 8 seconds to 5.5 seconds</strong>) by avoiding recompilation of the 4 plugins I’m using when I change my scripts. I haven’t tested this on one of the larger projects I’ve worked on yet, but I’m excited to see how much of a difference it makes.</p>
+
+<ul>
+    <li>
+        Download Unity 2017.3 Here: <a href="https://unity3d.com/get-unity/download">https://unity3d.com/get-unity/download</a>
+    </li>
+    <li>
+        Documentation: <a href="https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html">https://docs.unity3d.com/2017.3/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html</a>
+    </li>
+    <li>
+        Unity's Blog Post: <a href="https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/">https://blogs.unity3d.com/2017/11/22/unity-2017-3b-feature-preview-assembly-definition-files-and-transform-tool/</a>
+    </li>
+    <li>
+        Compile Time Script on Gist: <a href="https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04">https://gist.github.com/chuckbergeron/245e0f5906c89f7d01c02eeb052e1b04</a>
+    </li>
+</ul>
+
+<!-- XXX MY EMAIL NEWSLETTER -->
+<!-- XXX COMMENTS -->
+
+<p>Happy performant game developing!</p>
+
+<p>😄</p>
 
         </div><!-- /post -->
       </div>
@@ -153,7 +198,7 @@
     <!-- <div class="row">
       <div class="ten columns">
         <div class="social-actions text-left">
-          <a href="https://twitter.com/share?via=chuckbergeron" class="twitter-share-button" data-lang="en" data-url="http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html" data-related="chuckbergeron" data-counturl="">Tweet</a>
+          <a href="https://twitter.com/share?via=chuckbergeron" class="twitter-share-button" data-lang="en" data-url="http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html" data-related="chuckbergeron" data-counturl="">Tweet</a>
         </div>
       </div>
     </div> -->

@@ -18,7 +18,7 @@
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<link type="text/css" rel="stylesheet" href="/assets/application-5f0ab962ecda1e7cbbfdac2c918463b8d9d8e3692418a6fdd9b039c65fdde377.css">
+<link type="text/css" rel="stylesheet" href="/assets/application-5b5ca489d49fc74535e70813b21fb2fb20bfe9fde7cdd943ed368c9cf4d6159b.css">
 
 
     <meta name="description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
@@ -101,6 +101,77 @@
         <div class="post">
 
           <h1 class="post-title">
+            <a href="/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html">Blending songs together on an album using Ableton Live’s ‘Resampling’</a>
+          </h1>
+          <p>
+            23 December 2016
+          </p>
+
+          <p>Recently, I found myself wanting a simple way to blend 2 tracks in Ableton Live together. There’s tons of different ways to pull this off. I came up with one quick way that had pretty good results.</p>
+<p>I opened up the 2nd song, created a new track (naming it “# Resampled”), then armed it for recording:</p>
+<figure data-orig-width="480" data-orig-height="137" class="tmblr-full"><img src="http://68.media.tumblr.com/c809e2a7e64408a6da8f67ac2d67c3a8/tumblr_inline_oind5cKnPH1r4begx_500.gif" alt="image" data-orig-width="480" data-orig-height="137" /></figure>
+<p>Find a section in the 2nd song you want to tie into the previous song (I usually took the first 4 bars), press ‘Record’ and <b><i>blammo!</i> </b>– you have a new audio file (made up of any tracks that were playing) that you can copy from this tune and paste in at the end of the 1st song.</p>
+<p> Listen to the last part of the track &ldquo;Ballast&rdquo; fade out while the pre-intro and finally intro of &ldquo;Euphoria&rdquo; blends in: </p>
+<div class="audio_player"><iframe class="tumblr_audio_player tumblr_audio_player_154855239860" src="http://chuckbergeron.tumblr.com/post/154855239860/audio_player_iframe/chuckbergeron/tumblr_oine1uSCQ01r8j3z4?audio_file=https%3A%2F%2Fa.tumblr.com%2Ftumblr_oine1uSCQ01r8j3z4o1.mp3&amp;color=grey&amp;simple=1" frameborder="0" scrolling="no" width="207" height="27"></iframe></div>
+
+
+          <div class="continue-reading">
+            <p>
+              ...
+            </p>
+            <a href="/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html" class="btn btn-link">Continue reading &rarr;</a>
+          </div>
+
+          <!-- { post.content | split:'break' | first }
+
+          
+          -->
+        </div><!-- /post -->
+      
+    
+      
+        <div class="post">
+
+          <h1 class="post-title">
+            <a href="/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html">Modifying Unity’s Camera ImageEffects values at runtime</a>
+          </h1>
+          <p>
+            5 July 2016
+          </p>
+
+          <p> A couple of months ago I was mussing around integrating noise, vigenette, chromatic aberration, and other image effects into Astervoid 2000. </p>
+<p> I found it wasn’t enough to just throw the image effects on the camera, I also wanted to change them at runtime depending on various events happening in the game. </p>
+<div> <video id="gif-mp4" poster="https://media.giphy.com/media/l0K46X5vYigLTUkZq/200_s.gif" style="margin:0;padding:0" width="480" height="292" autoplay="" loop=""><source src="https://media.giphy.com/media/l0K46X5vYigLTUkZq/giphy.mp4" type="video/mp4" /> Your browser does not support the mp4 video codec. &lt;/source&gt;</video><div id="noplay" style="display:none"> Your browser does not support the mp4 video codec. </div> <span class="caption">Example of chromatic aberration offset &amp; bloom intensity changing over time.</span> </div>
+<p> While coming up with a solution, I didn’t find this as straightforward as I had hoped it would be in Unity, and wanted to document and share the technique I devised for fellow game devs to use. </p>
+<p> I started with the interface I wanted our team to use. Essentially, it’d be nice to call a method from anywhere in our codebase (an event handler, when a certain GameObject shows up, etc). I came up with a 1-liner solution like so: </p>
+<pre class="prettyprint linenums"><code>// Kick up noise intensity to 1.5 over 0.8 seconds DynamicCameraEffects.BringTheNoise(newIntensity: 1.5f, duration: 0.8f);</code></pre>
+<p> `DynamicCameraEffects` is a C# class inheriting from MonoBehaviour that is added to camera. This camera also needs Unity’s ‘Noise And Grain’ ImageEffect from StandardAssets. </p>
+<p> Once the noise has hit it’s desired effect, the callback `RemoveNoise()` pulls out the effect after a random amount of time has passed. </p>
+<p> One gotcha, I needed to reference the Unity ImageEffects namespace via `using UnityStandardAssets.ImageEffects;` </p>
+<p> Also, we rely heavily on <a href="http://dotween.demigiant.com/">DOTween</a> to simplify changing values over time (Similar to MCTween for Flash, &lsquo;member that?). It has a ton of helpers to clean up your code and provides a bunch of <a href="http://easings.net/">easing equations</a>, but you could also re-write this with a <a href="https://www.google.com/search?q=lerp">typical LERPing implementation</a>. </p>
+<p> The whole class for affecting Noise looks something like this: </p>
+<pre class="prettyprint linenums"><code>using DG.Tweening; // remove this if you're not using DOTween using System.Collections; using UnityEngine; using UnityStandardAssets.ImageEffects; /// <summary> /// An extension class for dynamically adding noise to the camera easily at runtime /// </summary> public class DynamicCameraEffects : MonoBehaviour { private static NoiseAndGrain _noiseScript; private void Start() { _noiseScript = GetComponent<noiseandgrain>(); } public static void BringTheNoise(float newIntensity, float duration) { DOTween.To(() =&gt; _noiseScript.intensityMultiplier, x =&gt; _noiseScript.intensityMultiplier = x, newIntensity, duration) .SetEase(Ease.OutCirc) .SetUpdate(true) .OnComplete(RemoveNoise); } private static void RemoveNoise() { var duration = Random.Range(0.2f, 1f); DOTween.To(() =&gt; _noiseScript.intensityMultiplier, x =&gt; _noiseScript.intensityMultiplier = x, 0.45f, duration) .SetEase(Ease.InQuad) .SetUpdate(true); } } </noiseandgrain></code></pre>
+
+
+
+          <div class="continue-reading">
+            <p>
+              ...
+            </p>
+            <a href="/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html" class="btn btn-link">Continue reading &rarr;</a>
+          </div>
+
+          <!-- { post.content | split:'break' | first }
+
+          
+          -->
+        </div><!-- /post -->
+      
+    
+      
+        <div class="post">
+
+          <h1 class="post-title">
             <a href="/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html">A breakdown of tools I used to compose the song Solar Zenith</a>
           </h1>
           <p>
@@ -122,7 +193,17 @@
 <p>How bout yourself, what’s some of your favourite audio tools?<br /></p>
 
 
+          <div class="continue-reading">
+            <p>
+              ...
+            </p>
+            <a href="/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html" class="btn btn-link">Continue reading &rarr;</a>
+          </div>
+
+          <!-- { post.content | split:'break' | first }
+
           
+          -->
         </div><!-- /post -->
       
     
@@ -131,7 +212,7 @@
     <nav class="pagination" role="pagination">
       
         
-          <a class="newer-posts" href="/blog/" class="btn btn-link">&larr; Newer Posts</a>
+          <a class="newer-posts" href="/blog/" class="btn btn-link">&larr; Newer Posts</a> &mdash;
         
 
       

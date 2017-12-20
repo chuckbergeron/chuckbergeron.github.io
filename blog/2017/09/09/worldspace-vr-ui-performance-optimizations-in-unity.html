@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<html lang="en-us">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    <title>The Writings of Chuck Bergeron</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="robots" content="INDEX, FOLLOW">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<link type="text/css" rel="stylesheet" href="/assets/application-5b5ca489d49fc74535e70813b21fb2fb20bfe9fde7cdd943ed368c9cf4d6159b.css">
+
+
+    <meta name="description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
+    <meta property="og:description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
+    <meta name="keywords" content="videogames games indie indiedev gamedev apps websites design">
+
+    
+      <meta property="og:title" content="Unity VR: WorldSpace UI Performance Optimizations">
+    
+
+    <meta name="author" content="chuckbergeron.io">
+    <meta name="copyright" content="Chuck Bergeron">
+
+    <meta property="og:site_name" content="chuckbergeron">
+    <meta property="og:url" content="http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html">
+    <meta property="og:type" content="business.business">
+
+
+    
+      <meta property="og:image" content="http://chuckbergeron.io/assets/posts/vancouver_vr_community_logo-1f5ffc3c61ae8dbfda0f473c759d1b6aeb84ad79ea7676f351c6325cefff7313.jpg">
+    
+
+    <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
+    <meta property="business:contact_data:locality" content="Vancouver, BC">
+    <meta property="business:contact_data:postal_code" content="V6B 2E2">
+    <meta property="business:contact_data:country_name" content="Canada">
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@chuckbergeron" />
+    <meta property="twitter:image" content="http://chuckbergeron.io/assets/chuck-bergeron--profile-4668e7b57136e27ba414c0d4aa1c4df9babba3c5e1040e7ab873a4ae9fb171dc.jpg">
+    <meta property="twitter:url" content="http://chuckbergeron.io">
+
+    <link rel="alternate" type="application/atom+xml" href="http://chuckbergeron.io/index.xml" title="The Writings of Chuck Bergeron atom feed">
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'fme3two',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div>
+  <div class="container">
+    <div class="row">
+
+      <div class="twelve columns">
+        <a class="brand" href="/" title="Chuck Bergeron Wordmark">CHUCK BERGERON</a>
+
+          <ul class="nav work-layout--nav">
+            <li class="nav--list-item">
+              <a class="nav--link" href="/" title="Learn more about me">About</a>
+            </li>
+            <li class="nav--list-item">
+              <a class="nav--link" href="/work/index.html" title="See my work">Work</a>
+            </li>
+            <li class="nav--list-item">
+              <a class="nav--link" href="/#contact" title="Contact me">Contact</a>
+            </li>
+            <li class="nav--list-item">
+              <a class="nav--link" href="/blog" title="Read my words">Blog</a>
+            </li>
+          </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <article>
+  <div class="container">
+
+    <div class="row">
+      <div class="nine columns">
+        <h1 class="post-title">Unity VR: WorldSpace UI Performance Optimizations</h1>
+        <p>
+          9 September 2017
+        </p>
+      </div>
+    </div>
+
+    <div id="article-start" class="content">
+      <div class="nine columns">
+        <div class="post clearfix">
+          <!-- shared_square_image: posts/FILLIN.jpg -->
+
+<div class="row">
+    <div class="twelve columns">
+        <!-- <img src=" asset_path 'posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
+        <!--  style="margin: 0 auto;" -->
+    </div>
+</div>
+
+<p>For the past six months I’ve been working on a city-building sim named Skytropolis for VR &amp; Desktop in Unity. Early on we realized a need for a UI (user interface) where the player could choose which buildings they would want to add to their city. Instead of creating a typical, uninspired flat UI and pointing a laser pointer at scrollbars and menus (similar to using a web browser) we decided to create a card deck concept where you choose buildings from your card hand (similar to any card game you’ve played).</p>
+
+<p>One of the largest challenges so far while developing Skytropolis has been solving the best ways to keep performance smooth. We need to hit and keep the game at over 90FPS for the Vive &amp; Rift, while maintaining a visually interesting aesthetic.</p>
+
+<!--more-->
+
+<p>One of the things we noticed was that performance was dropping after we rolled out a new update to this card UI. Each time a card category with more than 10+ cards was chosen, the frame rate would drop to around 50 - 60 FPS.</p>
+
+<p>Digging in to Unity’s profiler showed that re-draws of the UI each time the player moved their hand was the issue. XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE</p>
+
+<p>The hierarchy of the cards, their Images &amp; TextMeshPro objects looked like so:</p>
+
+<p><img src="/assets/posts/worldspace-vr-ui-performance-starting-hierarchy-31a6a68781d1a7a4e9feffa621916b66bdc936552c1efbce66dc8af662973942.jpg" class="img-responsive" alt="Bad Unity worldspace VR UI hierarchy" />
+<span class="caption">The problem: a complex transform hierarchy (one card didn’t even fit all on one screen).</span></p>
+
+<p>Each element in the tree above is a GameObject. And in typical Unity fashion, each GameObject has a Transform, which controls it’s position, rotation and scale in the world. When the card hand is open, and the player moves their hand the <em><code class="highlighter-rouge">VRCardUISystem</code></em> loosely follows the hand around so the UI is always available and ready to use.</p>
+
+<p>This turned out to be the biggest issue with the cards. As the <code class="highlighter-rouge">VRCardUISystem</code> Transform follows the player’s hand, and their hand moves every single frame (even miniscule amounts are picked up by the VR sensors) under the hood Unity has to tell every child Transform what it’s new position is, move it there, then send that to the graphics pipeline for rendering to the player’s headset screens.</p>
+
+<p>After a few various attempts at improving performance via other means, such as changing the <code class="highlighter-rouge">VRCardUISystem</code>’s update rate to not happen every frame, and using object pooling instead of <code class="highlighter-rouge">Instantiate()</code> and <code class="highlighter-rouge">Destroy()</code> we found the performance issue still existed.</p>
+
+<p><img src="/assets/posts/worldspace-vr-ui-performance-solved-hierarchy-ba7960366e4d14853a4d51d31efc1be2b4b65ea390e05a4b87a0584d00559f42.jpg" class="img-responsive" alt="Improved Unity worldspace vr ui hierarchy" /><!--  style="margin: 0 auto;" -->
+<span class="caption">The solution pt 1: a much simpler hierarchy.</span></p>
+
+<p>The solution was to simplify. I had read somewhere that Unity prefers very simple hierarchy, and instead of grouping objects together logically (which is easier for the developers and level editors to consume), it ideally wants every GameObject (and Transform) to be at the root level. This is a mess for us developers to read, but helps it’s internal systems.</p>
+
+<p><img src="/assets/posts/worldspace-vr-ui-performance-ui-background-5852620f3468fb1e805f7764e79b7547a788e9473198074809d5844a10a16f1a.jpg" class="img-responsive" alt="One background image instead of multiple Image components" /><!--  style="margin: 0 auto;" -->
+<span class="caption">The solution pt 2: One background image instead of multiple Image components.</span></p>
+
+<p>On top of removing the container groups, we decided about half of the Unity <code class="highlighter-rouge">Image</code> components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city’s demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!</p>
+
+<p>Coincidentally, this also improved a performance issue we were experiencing when using these same <code class="highlighter-rouge">VRUICard</code> prefabs on the Desktop version of the game (yes, we have yet to refactor the naming convention on these so they apply to both version of the game 😊).</p>
+
+<h5>
+  Further Improvements: TextMeshPro Mobile Shader &amp; Material Presets
+</h5>
+
+<p>After using Unity 3 and 4 for a while, I found the default <code class="highlighter-rouge">Text</code> component lacking. The result of text was almost always blurry, and the hack to make it crisper (size the font waaay up and scale the transform waaay down) felt silly. After learning about TextMeshPro, and all the amazing improvements it offered I thought it would be ideal to use in VR for Skytropolis. Thankfully, Unity <a href="https://blogs.unity3d.com/2017/03/20/textmesh-pro-joins-unity/"> agreed and purchased TextMeshPro</a> to provide it for free to all of us Unity game developers.</p>
+
+<p>Integrating TextMeshPro properly came with it’s own learning curve. Thankfully there is fantastic documentation and forum discussion on how to use it best. Here’s my notes on what I found most beneficial:</p>
+
+<p>If you’re not using any of TextMeshPro’s advanced features (glow, bevel, lighting, etc), the recommendation is to use the simpler TextMeshPro Mobile Shader.</p>
+
+<p>Also, it’s recommended to use Material Presets. We use one font and therefore, one TextMeshPro font asset, with 2 material presets. One material preset is for any UI canvas elements (TextMeshPro UGUI components), and another is for regular TextMeshPro components (meshes drawn in the world that aren’t children of a UI canvas). This is important so that each piece of text shows up correctly based on it’s layer (Z-depth), and the mobile shader is to keep the text as simple as possible for the engine to render.</p>
+
+<p>More on the TextMeshPro Mobile Shader: <a href="https://www.youtube.com/watch?v=X5eHU0VUMbs">Mobile Shader on YouTube</a></p>
+
+<p>More on material presets: <a href="https://www.youtube.com/watch?v=d2MARbDNeaA">Material Presets on YouTube</a></p>
+
+<h5>
+  Conclusion
+</h5>
+
+<p>Wrapping up, it’s important to keep Unity’s hierarchy simple. To use one baked image when possible (instead of multiple image components), and to use TextMeshPro’s Mobile Shader &amp; Material Presets.</p>
+
+<p>XXX MY TWITTER
+XXX MY EMAIL NEWSLETTER
+XXX COMMENTS</p>
+
+<p>Happy performant game devving!</p>
+
+<p>😄</p>
+
+        </div><!-- /post -->
+      </div>
+    </div><!-- /content-->
+
+
+    <div class="row">
+      <div class="nine columns">
+        <div class="author no-padding clear-both">
+          <img alt="Chuck Bergeron's photo" src="/assets/chuck-bergeron--profile-sm-88220da8a3a1d749b520125c0e0393bcb06bdcce55720a4314f66e823035105d.jpg" class="pull-left author--avatar">
+
+          <div class="pull-left author--name">
+            <span class="name"><a href="http://chuckbergeron.io">Chuck Bergeron</a></span>
+            <span class="post">Digital Aficionado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- <div class="row">
+      <div class="ten columns">
+        <div class="social-actions text-left">
+          <a href="https://twitter.com/share?via=chuckbergeron" class="twitter-share-button" data-lang="en" data-url="http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html" data-related="chuckbergeron" data-counturl="">Tweet</a>
+        </div>
+      </div>
+    </div> -->
+
+  </div><!-- .container -->
+</article>
+<!--
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+ -->
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="columns twelve">
+      <!-- <a href="http://blog.chuckbergeron.io">Blog</a> -->
+      <ul class="soc">
+        <li><a class="soc-twitter" href="https://twitter.com/chuckbergeron"></a></li>
+        <li><a class="soc-facebook" href="https://www.facebook.com/CharlesElleryAB"></a></li>
+        <li><a class="soc-linkedin" href="https://www.linkedin.com/in/chuckbergeron"></a></li>
+        <li><a class="soc-dribbble soc-icon-last" href="https://dribbble.com/ChuckBergeron"></a></li>
+      </ul>
+
+      <p class="copyright">
+        &copy; 1984 - <span class="copyright-year"></span> <a href="http://chuckbergeron.io">Chuck Bergeron</a> <span class="tk-soleil">♖</span> <a href="mailto:chuck@chuckbergeron.io">chuck@chuckbergeron.io</a>
+      </p>
+      <p class="footnote">
+        This site's <a href="https://github.com/chuckbergeron/chuckbergeron.github.io">source is on Github</a>
+        <br>
+        It relies heavily on Jekyll, Skeleton.css, and Zepto.js (alternatives to Bootstrap and jQuery)
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="/assets/application-a150772b9537b5ef9b32feb336982cbb03dba142b925a3db72c5a61e9a010f47.js"></script>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5QPJ2Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QPJ2Z');</script>
+<!-- End Google Tag Manager -->
+
+  </body>
+</html>
