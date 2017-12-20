@@ -10,8 +10,8 @@ tags:
 - vr
 - unity
 - performance
-shared_square_image: posts/vancouver_vr_community_logo.jpg
-shared_description:  FILLIN
+<!-- shared_square_image: posts/vancouver_vr_community_logo.jpg -->
+<!-- shared_description:  FILLIN -->
 ---
 <!-- shared_square_image: posts/FILLIN.jpg -->
 
@@ -31,7 +31,7 @@ One of the largest challenges so far while developing Skytropolis has been solvi
 
 One of the things we noticed was that performance was dropping after we rolled out a new update to this card UI. Each time a card category with more than 10+ cards was chosen, the frame rate would drop to around 50 - 60 FPS.
 
-Digging in to Unity's profiler showed that re-draws of the UI each time the player moved their hand was the issue. XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE
+Digging in to Unity's profiler showed that re-draws of the UI each time the player moved their hand was the issue. <!-- XXX ACTUAL CPU/GPU NUMBERS / FPS IMAGE HERE -->
 
 The hierarchy of the cards, their Images &amp; TextMeshPro objects looked like so:
 
@@ -78,10 +78,10 @@ More on material presets: <a href="https://www.youtube.com/watch?v=d2MARbDNeaA">
 
 Wrapping up, it's important to keep Unity's hierarchy simple. To use one baked image when possible (instead of multiple image components), and to use TextMeshPro's Mobile Shader &amp; Material Presets.
 
-XXX MY TWITTER
-XXX MY EMAIL NEWSLETTER
-XXX COMMENTS
+<!-- XXX MY TWITTER -->
+<!-- XXX MY EMAIL NEWSLETTER -->
+<!-- XXX COMMENTS -->
 
-Happy performant game devving!
+Happy performant game developing!
 
 😄
