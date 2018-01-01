@@ -3,7 +3,7 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="http://chuckbergeron.io/index.xml" rel="self"/>
     <link href="http://chuckbergeron.io"/>
-    <updated>2017-12-22T19:15:24-07:00</updated>
+    <updated>2017-12-31T18:18:57-08:00</updated>
     <id>http://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
@@ -13,13 +13,41 @@
     
       
         <entry>
+            <title>Review: 2017</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="http://chuckbergeron.io/blog/2017/12/31/review-2017.html"/>
+            <updated>2017-12-31T18:12:00-08:00</updated>
+            <id>http://chuckbergeron.io/blog/2017/12/31/review-2017</id>
+            <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;twelve columns&quot;&gt;
+      &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;💎 married my love&lt;br /&gt;💎 made a VR game (Skytropolis)&lt;br /&gt;💎 moved into a great flat&lt;br /&gt;💎 meddled in 3D art&lt;br /&gt;💎 managed to injure myself making art &amp;amp; games (RSI)&lt;br /&gt;💎 made health a priority (mental &amp;amp; physical)&lt;br /&gt;💎 made it through 2017 &lt;a href=&quot;https://t.co/cbFJI4EQzY&quot;&gt;pic.twitter.com/cbFJI4EQzY&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chuck B! (@ChuckBergeron) &lt;a href=&quot;https://twitter.com/ChuckBergeron/status/947649313643012096?ref_src=twsrc%5Etfw&quot;&gt;January 1, 2018&lt;/a&gt;&lt;/blockquote&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</content>
+
+            
+              <content type="image" src="posts/ChuckBergeron--AbstractColours-Final-16x20.jpg" />
+            
+        </entry>
+      
+    
+      
+        <entry>
             <title>Unity 2017.3: Speeding up Compile Time with the New Assembly Definitions</title>
             <author>
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html"/>
-            <updated>2017-12-20T12:02:00-07:00</updated>
+            <updated>2017-12-20T12:02:00-08:00</updated>
             <id>http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions</id>
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
@@ -102,7 +130,7 @@
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html"/>
-            <updated>2017-09-09T09:00:00-06:00</updated>
+            <updated>2017-09-09T09:00:00-07:00</updated>
             <id>http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity</id>
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
@@ -191,7 +219,7 @@
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community.html"/>
-            <updated>2017-04-25T10:04:00-06:00</updated>
+            <updated>2017-04-25T10:04:00-07:00</updated>
             <id>http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community</id>
             <content type="html">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;twelve columns&quot;&gt;
@@ -263,7 +291,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2017/03/20/the-internet-effect.html"/>
-            <updated>2017-03-20T23:51:00-06:00</updated>
+            <updated>2017-03-20T23:51:00-07:00</updated>
             <id>http://chuckbergeron.io/blog/2017/03/20/the-internet-effect</id>
             <content type="html">&lt;p&gt;A super interesting thing happened the other day. I took a very simple action which was seen by hundreds of thousands of people, possibly &lt;strong&gt;millions&lt;/strong&gt;.&lt;/p&gt;
 
@@ -303,7 +331,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time.html"/>
-            <updated>2017-03-06T19:00:00-07:00</updated>
+            <updated>2017-03-06T19:00:00-08:00</updated>
             <id>http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time</id>
             <content type="html">&lt;p&gt;
   &lt;strong&gt;&lt;em&gt;WARNING: this post is a bit of a brain dump of everything I've been working on and dabbling with. Consider yourself warned!&lt;/em&gt;&lt;/strong&gt;
@@ -431,7 +459,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html"/>
-            <updated>2016-12-23T13:00:00-07:00</updated>
+            <updated>2016-12-23T13:00:00-08:00</updated>
             <id>http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling</id>
             <content type="html">&lt;p&gt;Recently, I found myself wanting a simple way to blend 2 tracks in Ableton Live together. There’s tons of different ways to pull this off. I came up with one quick way that had pretty good results.&lt;/p&gt;
 &lt;p&gt;I opened up the 2nd song, created a new track (naming it “# Resampled”), then armed it for recording:&lt;/p&gt;
@@ -455,7 +483,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html"/>
-            <updated>2016-07-05T15:00:00-06:00</updated>
+            <updated>2016-07-05T15:00:00-07:00</updated>
             <id>http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime</id>
             <content type="html">&lt;p&gt; A couple of months ago I was mussing around integrating noise, vigenette, chromatic aberration, and other image effects into Astervoid 2000. &lt;/p&gt;
 &lt;p&gt; I found it wasn’t enough to just throw the image effects on the camera, I also wanted to change them at runtime depending on various events happening in the game. &lt;/p&gt;
@@ -493,7 +521,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <email>chuck@chuckbergeron.io</email>
             </author>
             <link href="http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html"/>
-            <updated>2016-06-16T10:00:00-06:00</updated>
+            <updated>2016-06-16T10:00:00-07:00</updated>
             <id>http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith</id>
             <content type="html">&lt;p&gt;&lt;i&gt;I originally posted this &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;on Reddit&lt;/a&gt;, writing about VSTs and instrument sources used to compose the tune &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;Solar Zenith&lt;/a&gt;. I believe it belongs here as well:&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;——————————————————&lt;/p&gt;
