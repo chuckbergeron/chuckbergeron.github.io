@@ -29,7 +29,7 @@ layout: none
             {% if post.shared_square_image %}
               <content type="image" src="{{ post.shared_square_image }}" />
             {% else %}
-              <content type="image" src="{{site.url}}/{% asset_path 'chuck-bergeron--profile.jpg' %}" />
+              <content type="image" src="{{site.url}}/{% asset_path chuck-bergeron--profile.jpg %}" />
             {% endif %}
         </entry>
       {% endunless %}

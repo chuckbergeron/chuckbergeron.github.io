@@ -16,7 +16,7 @@ shared_description:  A new feature in Unity 2017.3 can speed up the amount of ti
 
 <div class="row">
     <div class="twelve columns">
-        <img src="{% asset_path 'posts/unity_compile_time_before_after.jpg' %}" class="img-responsive" alt="Unity compile times, before and after">
+        <img src="{% asset_path posts/unity_compile_time_before_after.jpg %}" class="img-responsive" alt="Unity compile times, before and after">
         <span class="caption">Compile Time (AKA: thumb-twiddling time) Comparison</span>
     </div>
 </div>

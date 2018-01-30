@@ -26,7 +26,7 @@
     {% if page.shared_square_image %}
       <meta property="og:image" content="http://chuckbergeron.io{{ page.shared_square_image | asset_path }}">
     {% else %}
-      <meta property="og:image" content="http://chuckbergeron.io{% asset_path 'chuck-bergeron--profile.jpg' %}">
+      <meta property="og:image" content="http://chuckbergeron.io{% asset_path chuck-bergeron--profile.jpg %}">
     {% endif %}
 
     <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
@@ -36,7 +36,7 @@
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@chuckbergeron" />
-    <meta property="twitter:image" content="http://chuckbergeron.io{% asset_path 'chuck-bergeron--profile.jpg' %}">
+    <meta property="twitter:image" content="http://chuckbergeron.io{% asset_path chuck-bergeron--profile.jpg %}">
     <meta property="twitter:url" content="http://chuckbergeron.io">
 
     <link rel="alternate" type="application/atom+xml" href="{{site.url}}/index.xml" title="The Writings of Chuck Bergeron atom feed">
@@ -59,7 +59,8 @@
 
     {% include _site_footer.html %}
 
-    {% javascript application %}
+
+    {% asset application.js %}
     {% include _google_tag_manager.html %}
   </body>
 </html>

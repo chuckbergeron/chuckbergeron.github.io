@@ -18,7 +18,7 @@ tags:
 
 <div class="row">
     <div class="twelve columns">
-        <!-- <img src=" asset_path 'posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
+        <!-- <img src=" asset_path posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
         <!--  style="margin: 0 auto;" -->
     </div>
 </div>
@@ -35,7 +35,7 @@ Digging in to Unity's profiler showed that re-draws of the UI each time the play
 
 The hierarchy of the cards, their Images &amp; TextMeshPro objects looked like so:
 
-<img src="{% asset_path 'posts/worldspace-vr-ui-performance-starting-hierarchy.jpg' %}" class="img-responsive" alt="Bad Unity worldspace VR UI hierarchy">
+<img src="{% asset_path posts/worldspace-vr-ui-performance-starting-hierarchy.jpg %}" class="img-responsive" alt="Bad Unity worldspace VR UI hierarchy">
 <span class="caption">The problem: a complex transform hierarchy (one card didn't even fit all on one screen).</span>
 
 Each element in the tree above is a GameObject. And in typical Unity fashion, each GameObject has a Transform, which controls it's position, rotation and scale in the world. When the card hand is open, and the player moves their hand the <em>`VRCardUISystem`</em> loosely follows the hand around so the UI is always available and ready to use.
@@ -44,12 +44,12 @@ This turned out to be the biggest issue with the cards. As the `VRCardUISystem` 
 
 After a few various attempts at improving performance via other means, such as changing the `VRCardUISystem`'s update rate to not happen every frame, and using object pooling instead of `Instantiate()` and `Destroy()` we found the performance issue still existed.
 
-<img src="{% asset_path 'posts/worldspace-vr-ui-performance-solved-hierarchy.jpg' %}" class="img-responsive" alt="Improved Unity worldspace vr ui hierarchy"><!--  style="margin: 0 auto;" -->
+<img src="{% asset_path posts/worldspace-vr-ui-performance-solved-hierarchy.jpg %}" class="img-responsive" alt="Improved Unity worldspace vr ui hierarchy"><!--  style="margin: 0 auto;" -->
 <span class="caption">The solution pt 1: a much simpler hierarchy.</span>
 
 The solution was to simplify. I had read somewhere that Unity prefers very simple hierarchy, and instead of grouping objects together logically (which is easier for the developers and level editors to consume), it ideally wants every GameObject (and Transform) to be at the root level. This is a mess for us developers to read, but helps it's internal systems.
 
-<img src="{% asset_path 'posts/worldspace-vr-ui-performance-ui-background.jpg' %}" class="img-responsive" alt="One background image instead of multiple Image components"><!--  style="margin: 0 auto;" -->
+<img src="{% asset_path posts/worldspace-vr-ui-performance-ui-background.jpg %}" class="img-responsive" alt="One background image instead of multiple Image components"><!--  style="margin: 0 auto;" -->
 <span class="caption">The solution pt 2: One background image instead of multiple Image components.</span>
 
 On top of removing the container groups, we decided about half of the Unity `Image` components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city's demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!

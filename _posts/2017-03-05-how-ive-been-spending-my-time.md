@@ -55,14 +55,14 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
   On 3D modeling and animation, I realized I was quite in the dark about this necessary component of creating VR games. I had dabbled in Blender and MagicaVoxel in 2016, but went hard on learning those skills earlier this year. I felt compelled to take a really rather gaudy 1970's scene and re-create with a modern realism feel in Blender. Here's the end result:
 </p>
 
-<img src="{% asset_path 'posts/render-46--daytime-alt--diff-cam-angle--composited.jpg' %}" class="img-responsive">
+<img src="{% asset_path posts/render-46--daytime-alt--diff-cam-angle--composited.jpg %}" class="img-responsive">
 <span class="caption">70's den scene, modernized. Modeled, rendered &amp; composited in Blender</span>
 
 <p>
   Around the same time, I felt compelled to learn low poly character creation. I set out to create a fox I could add a skeletal rig to and easily create animations for. This creature has found itself playing an interesting role in a VR music video I am nearing the end of crafting for the HTC Vive (and time permitting, Oculus Rift).
 </p>
 
-<img src="{% asset_path 'posts/LoFiFox-running-animated-still-lightboxed_114.jpg' %}" class="img-responsive">
+<img src="{% asset_path posts/LoFiFox-running-animated-still-lightboxed_114.jpg %}" class="img-responsive">
 <span class="caption">LoFiFox -- Glass. Modeled, rigged and rendered in Blender</span>
 
 <h5>
@@ -75,13 +75,13 @@ shared_description: Respecializing from web apps to game developer in 2016/2017
 
 <div class="row">
   <div class="four columns">
-    <img src="{% asset_path 'posts/dona-cider-sm.jpg' %}" class="img-responsive pull-left">
+    <img src="{% asset_path posts/dona-cider-sm.jpg %}" class="img-responsive pull-left">
   </div>
   <div class="four columns">
-    <img src="{% asset_path 'posts/indiepod-sm.jpg' %}" class="img-responsive pull-left">
+    <img src="{% asset_path posts/indiepod-sm.jpg %}" class="img-responsive pull-left">
   </div>
   <div class="four columns">
-    <img src="{% asset_path 'posts/chuck-bergeron--3d-type-sm.jpg' %}" class="img-responsive pull-left">
+    <img src="{% asset_path posts/chuck-bergeron--3d-type-sm.jpg %}" class="img-responsive pull-left">
   </div>
 </div>
 <span class="caption">A collection of logos I've worked on lately</span>

@@ -3,7 +3,7 @@ layout: application
 ---
 
 {% if page.hero %}
-  <section class="work-layout--bg-photo" style="background-image: url('{{ page.hero | asset_path }}')">
+  <section class="work-layout--bg-photo" style="background-image: url({% asset_path {{ page.hero }} %})">
     <div class="noise hide-on-mobile"></div>
     <div class="container">
       <div class="row">
@@ -23,7 +23,7 @@ layout: application
   </section>
 
 <section class="hide-on-desktop">
-  <img src="{{ page.hero | asset_path }}" class="img-responsive" alt="Project hero image">
+  {% asset {{\ page.hero\ }} alt='Project hero image' class='img-responsive' %}
 </section>
 {% endif %}
 

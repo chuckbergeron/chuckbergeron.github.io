@@ -27,7 +27,7 @@ We realized coordinators would be necessary to act as the middlemen between pati
 
 Coordinators needed to be updated in realtime, so we created an encrypted [pubsub system](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) (using a ruby lib called Faye) and a modern JavaScript app to handle the communication.
 
-<img src="{% asset_path 'medeo-app1.jpg' %}" class="img-responsive" alt="Medeo app">
+<img src="{% asset_path medeo-app1.jpg %}" class="img-responsive" alt="Medeo app">
 
 #### Online Prescriptions
 

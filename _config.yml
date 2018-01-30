@@ -12,7 +12,7 @@ paginate: 5
 paginate_path: "/blog/page/:num"
 
 exclude: ['deploy.sh', 'Gemfile', 'Gemfile.lock']
-gems: [jekyll-assets, uglifier, jekyll-paginate]
+plugins: [jekyll-assets, uglifier, jekyll-paginate]
 
 assets:
   assets:
@@ -26,7 +26,37 @@ assets:
     - "*.mp4"
     - "*.png"
     - "*.jpg"
+    - "*.jpeg"
     - "*.gif"
+  sources:
+    - assets/stylesheets
+    - assets/fonts
+    - assets/images
+    - assets/videos
+    - assets/javascripts
+    - assets/video
+    - assets/image
+    - assets/img
+    - assets/js
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/images
+    - _assets/videos
+    - _assets/javascripts
+    - _assets/video
+    - _assets/image
+    - _assets/img
+    - _assets/js
+    - stylesheets
+    - fonts
+    - images
+    - videos
+    - javascripts
+    - video
+    - image
+    - img
+    - js
+
 
 collections:
   work:

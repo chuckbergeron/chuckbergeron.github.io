@@ -73,6 +73,17 @@ h5 {
   @media (max-width: 800px) {
     display: inline-block;
     font-size: 13px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  @media (max-width: 550px) {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  @media (max-width: 422px) {
+    margin: 47px 0 24px;
+    margin-right: 0;
   }
 }
 .six.columns.six-columns--tablet-override {
@@ -147,6 +158,9 @@ h5 {
 .portfolio-piece--img {
   border: 10px solid #fff;
 }
+.border-color--dark {
+  border-color: #f3f3f3;
+}
 
 .work-layout--categories {
   height: 400px;
@@ -157,7 +171,7 @@ h5 {
 
   @media (max-width: 800px) {
     float: left;
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 .work-layout--nav .nav--list-item {
@@ -277,7 +291,7 @@ ul.list--basic {
   background: #fff;
   color: #c2c7cE;
   font-size: 20px;
-  padding: 60px 0;
+  padding: 120px 0 30px;
 
   a {
     color: #92979E;
@@ -485,7 +499,7 @@ p.footnote {
   z-index: 1000;
 }
 .testimonial blockquote {
-  border-top: 10px solid #82d6d1;
+  border-top: 10px solid #f5cd8f;
   color: #666;
   display: block;
   margin: 40px 0 10px;
@@ -526,7 +540,7 @@ p.footnote {
 }
 .name,
 .testimonial span.testimonial-name {
-  color: #82d6d1;
+  color: #f5cd8f;
   font-weight: 300;
 }
 .post,
