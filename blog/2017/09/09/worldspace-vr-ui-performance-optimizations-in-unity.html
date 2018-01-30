@@ -18,7 +18,7 @@
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<link type="text/css" rel="stylesheet" href="/assets/application-5b5ca489d49fc74535e70813b21fb2fb20bfe9fde7cdd943ed368c9cf4d6159b.css">
+<link rel="stylesheet" type="text/css" integrity="sha256-4jiLbkcfEYujzMcvuoy184sTjaePSS8D48xiAep2LEU=" crossorigin="anonymous" href="/assets/application-e2388b6e471f118ba3ccc72fba8cb5f38b138da78f492f03e3cc6201ea762c45.css">
 
 
     <meta name="description" content="Chuck Bergeron creates VR experiences, videogames and apps in Vancouver, BC.">
@@ -38,7 +38,7 @@
 
 
     
-      <meta property="og:image" content="http://chuckbergeron.io/assets/chuck-bergeron--profile-4668e7b57136e27ba414c0d4aa1c4df9babba3c5e1040e7ab873a4ae9fb171dc.jpg">
+      <meta property="og:image" content="http://chuckbergeron.io/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/chuck-bergeron--profile.jpg ">
     
 
     <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
@@ -48,7 +48,7 @@
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@chuckbergeron" />
-    <meta property="twitter:image" content="http://chuckbergeron.io/assets/chuck-bergeron--profile-4668e7b57136e27ba414c0d4aa1c4df9babba3c5e1040e7ab873a4ae9fb171dc.jpg">
+    <meta property="twitter:image" content="http://chuckbergeron.io/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/chuck-bergeron--profile.jpg ">
     <meta property="twitter:url" content="http://chuckbergeron.io">
 
     <link rel="alternate" type="application/atom+xml" href="http://chuckbergeron.io/index.xml" title="The Writings of Chuck Bergeron atom feed">
@@ -113,7 +113,7 @@
 
 <div class="row">
     <div class="twelve columns">
-        <!-- <img src=" asset_path 'posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
+        <!-- <img src=" asset_path posts/FILLIN.gif' " class="img-responsive" alt="Vancouver VR Community Launch Animation">-->
         <!--  style="margin: 0 auto;" -->
     </div>
 </div>
@@ -130,7 +130,7 @@
 
 <p>The hierarchy of the cards, their Images &amp; TextMeshPro objects looked like so:</p>
 
-<p><img src="/assets/posts/worldspace-vr-ui-performance-starting-hierarchy-31a6a68781d1a7a4e9feffa621916b66bdc936552c1efbce66dc8af662973942.jpg" class="img-responsive" alt="Bad Unity worldspace VR UI hierarchy" />
+<p><img src="/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-starting-hierarchy.jpg " class="img-responsive" alt="Bad Unity worldspace VR UI hierarchy" />
 <span class="caption">The problem: a complex transform hierarchy (one card didn’t even fit all on one screen).</span></p>
 
 <p>Each element in the tree above is a GameObject. And in typical Unity fashion, each GameObject has a Transform, which controls it’s position, rotation and scale in the world. When the card hand is open, and the player moves their hand the <em><code class="highlighter-rouge">VRCardUISystem</code></em> loosely follows the hand around so the UI is always available and ready to use.</p>
@@ -139,12 +139,12 @@
 
 <p>After a few various attempts at improving performance via other means, such as changing the <code class="highlighter-rouge">VRCardUISystem</code>’s update rate to not happen every frame, and using object pooling instead of <code class="highlighter-rouge">Instantiate()</code> and <code class="highlighter-rouge">Destroy()</code> we found the performance issue still existed.</p>
 
-<p><img src="/assets/posts/worldspace-vr-ui-performance-solved-hierarchy-ba7960366e4d14853a4d51d31efc1be2b4b65ea390e05a4b87a0584d00559f42.jpg" class="img-responsive" alt="Improved Unity worldspace vr ui hierarchy" /><!--  style="margin: 0 auto;" -->
+<p><img src="/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-solved-hierarchy.jpg " class="img-responsive" alt="Improved Unity worldspace vr ui hierarchy" /><!--  style="margin: 0 auto;" -->
 <span class="caption">The solution pt 1: a much simpler hierarchy.</span></p>
 
 <p>The solution was to simplify. I had read somewhere that Unity prefers very simple hierarchy, and instead of grouping objects together logically (which is easier for the developers and level editors to consume), it ideally wants every GameObject (and Transform) to be at the root level. This is a mess for us developers to read, but helps it’s internal systems.</p>
 
-<p><img src="/assets/posts/worldspace-vr-ui-performance-ui-background-5852620f3468fb1e805f7764e79b7547a788e9473198074809d5844a10a16f1a.jpg" class="img-responsive" alt="One background image instead of multiple Image components" /><!--  style="margin: 0 auto;" -->
+<p><img src="/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-ui-background.jpg " class="img-responsive" alt="One background image instead of multiple Image components" /><!--  style="margin: 0 auto;" -->
 <span class="caption">The solution pt 2: One background image instead of multiple Image components.</span></p>
 
 <p>On top of removing the container groups, we decided about half of the Unity <code class="highlighter-rouge">Image</code> components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city’s demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!</p>
@@ -189,7 +189,7 @@
     <div class="row">
       <div class="nine columns">
         <div class="author no-padding clear-both">
-          <img alt="Chuck Bergeron's photo" src="/assets/chuck-bergeron--profile-sm-88220da8a3a1d749b520125c0e0393bcb06bdcce55720a4314f66e823035105d.jpg" class="pull-left author--avatar">
+          <img alt="Chuck Bergeron's photo" src="/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/chuck-bergeron--profile-sm.jpg " class="pull-left author--avatar">
 
           <div class="pull-left author--name">
             <span class="name"><a href="http://chuckbergeron.io">Chuck Bergeron</a></span>
@@ -242,7 +242,8 @@
 </footer>
 
 
-    <script type="text/javascript" src="/assets/application-a150772b9537b5ef9b32feb336982cbb03dba142b925a3db72c5a61e9a010f47.js"></script>
+
+    <script type="text/javascript" src="/assets/application-f23a3852787e92fc8d5e8f10e18980b75ab7ac37fe080e317ca38302f47c1713.js" integrity="sha256-8jo4Unh+kvyNXo8Q4YmAt1q3rDf+CA4xfKODAvR8FxM=" crossorigin="anonymous"></script>
     <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5QPJ2Z"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
