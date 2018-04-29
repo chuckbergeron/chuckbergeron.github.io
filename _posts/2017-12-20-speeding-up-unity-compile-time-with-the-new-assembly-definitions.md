@@ -15,10 +15,11 @@ shared_description:  A new feature in Unity 2017.3 can speed up the amount of ti
 <!-- shared_square_image: posts/FILLIN.jpg -->
 
 <div class="row">
-    <div class="twelve columns">
-        <img src="{% asset_path posts/unity_compile_time_before_after.jpg %}" class="img-responsive" alt="Unity compile times, before and after">
-        <span class="caption">Compile Time (AKA: thumb-twiddling time) Comparison</span>
-    </div>
+  <div class="twelve columns">
+    <img src="/assets/posts/{{ 'unity_compile_time_before_after.jpg' }}" class="img-responsive" alt="Unity compile times, before and after">
+
+    <span class="caption">Compile Time (AKA: thumb-twiddling time) Comparison</span>
+  </div>
 </div>
 
 In Unity, each time you make any change to your C# code the entire project is recompiled. This can take anywhere from a couple of seconds to minutes, depending on your computer's hardware, the size of your project and number of plugins.

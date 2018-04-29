@@ -35,7 +35,7 @@ I wanted to share this experience with you as I found it so bizarrely fascinatin
 
 <a href="https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack">Reddit Post</a> - <a href="https://twitter.com/daisyowl/status/841802094361235456">Original Tweet</a>
 
-<a href="https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack"><img src="{% asset_path posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl.jpg %}" /></a>
+<a href="https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack"><img src="/assets/posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl.jpg" /></a>
 
 
 

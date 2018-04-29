@@ -15,8 +15,8 @@ shared_description:  ...
 
 <div class="row">
     <div class="twelve columns">
-        <!-- <img src="{% asset_path posts/vancouver_vr_community_logo__small.png %}" class="img-responsive" alt="Vancouver VR Community" style="margin: 0 auto;"> -->
-        <img src="{% asset_path posts/vancouver_vr_community_logo__animated.gif %}" class="img-responsive" alt="Vancouver VR Community Launch Animation"><!--  style="margin: 0 auto;" -->
+        <!-- <img src="/assets/posts/vancouver_vr_community_logo__small.png" class="img-responsive" alt="Vancouver VR Community" style="margin: 0 auto;"> -->
+        <img src="/assets/posts/vancouver_vr_community_logo__animated.gif" class="img-responsive" alt="Vancouver VR Community Launch Animation"><!--  style="margin: 0 auto;" -->
     </div>
 </div>
 
