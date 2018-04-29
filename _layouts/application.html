@@ -14,10 +14,10 @@
     <meta name="copyright" content="Chuck Bergeron">
 
     <meta property="og:site_name" content="chuckbergeron">
-    <meta property="og:url" content="http://chuckbergeron.io{{ page.url | replace: 'index.html', ''}}">
+    <meta property="og:url" content="{{site.url}}{{ page.url | replace: 'index.html', ''}}">
     <meta property="og:type" content="business.business">
 
-    <meta property="og:image" content="http://chuckbergeron.io{% asset_path chuck-bergeron--profile.jpg %}">
+    <meta property="og:image" content="{{site.url}}/assets/{{ 'chuck-bergeron--profile.jpg' | asset_path }}">
 
     <meta property="business:contact_data:street_address" content="280 Nelson St - Suite #523">
     <meta property="business:contact_data:locality" content="Vancouver, BC">
@@ -26,8 +26,8 @@
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@chuckbergeron" />
-    <meta property="twitter:image" content="http://chuckbergeron.io{% asset_path chuck-bergeron--profile.jpg %}">
-    <meta property="twitter:url" content="http://chuckbergeron.io">
+    <meta property="twitter:image" content="{{site.url}}{% asset_path chuck-bergeron--profile.jpg %}">
+    <meta property="twitter:url" content="{{site.url}}{{ page.url | replace: 'index.html', ''}}">
 
     <link rel="alternate" type="application/atom+xml" href="{{site.url}}/index.xml" title="The Writings of Chuck Bergeron atom feed">
 

@@ -4,10 +4,10 @@ layout: none
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>The Writings of Chuck Bergeron</title>
-    <link href="http://chuckbergeron.io/index.xml" rel="self"/>
-    <link href="http://chuckbergeron.io"/>
+    <link href="{{site.url}}/index.xml" rel="self"/>
+    <link href="{{site.url}}"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://chuckbergeron.io</id>
+    <id>{{site.url}}</id>
     <author>
         <name>Chuck Bergeron</name>
         <email>chuck@chuckbergeron.io</email>
