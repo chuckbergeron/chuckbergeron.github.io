@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>The Writings of Chuck Bergeron</title>
-    <link href="http://chuckbergeron.io/index.xml" rel="self"/>
-    <link href="http://chuckbergeron.io"/>
-    <updated>2018-01-30T12:41:10-08:00</updated>
-    <id>http://chuckbergeron.io</id>
+    <link href="https://chuckbergeron.io/index.xml" rel="self"/>
+    <link href="https://chuckbergeron.io"/>
+    <updated>2018-04-28T23:32:34-07:00</updated>
+    <id>https://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
         <email>chuck@chuckbergeron.io</email>
@@ -18,9 +18,9 @@
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/12/31/review-2017.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/12/31/review-2017.html"/>
             <updated>2017-12-31T18:12:00-08:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/12/31/review-2017</id>
+            <id>https://chuckbergeron.io/blog/2017/12/31/review-2017</id>
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
 &lt;div class=&quot;row&quot;&gt;
@@ -46,9 +46,9 @@
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions.html"/>
             <updated>2017-12-20T12:02:00-08:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions</id>
+            <id>https://chuckbergeron.io/blog/2017/12/20/speeding-up-unity-compile-time-with-the-new-assembly-definitions</id>
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
 &lt;div class=&quot;row&quot;&gt;
@@ -129,9 +129,9 @@
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity.html"/>
             <updated>2017-09-09T09:00:00-07:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity</id>
+            <id>https://chuckbergeron.io/blog/2017/09/09/worldspace-vr-ui-performance-optimizations-in-unity</id>
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
 &lt;div class=&quot;row&quot;&gt;
@@ -206,7 +206,7 @@
 </content>
 
             
-              <content type="image" src="http://chuckbergeron.io//assets/chuck-bergeron--profile.jpg " />
+              <content type="image" src="https://chuckbergeron.io//assets/chuck-bergeron--profile.jpg " />
             
         </entry>
       
@@ -218,9 +218,9 @@
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community.html"/>
             <updated>2017-04-25T10:04:00-07:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community</id>
+            <id>https://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community</id>
             <content type="html">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;twelve columns&quot;&gt;
         &lt;!-- &lt;img src=&quot;/assets/posts/why-ive-started-the-vancouver-vr-community/posts/vancouver_vr_community_logo__small.png &quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community&quot; style=&quot;margin: 0 auto;&quot;&gt; --&gt;
@@ -290,9 +290,9 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/03/20/the-internet-effect.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/03/20/the-internet-effect.html"/>
             <updated>2017-03-20T23:51:00-07:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/03/20/the-internet-effect</id>
+            <id>https://chuckbergeron.io/blog/2017/03/20/the-internet-effect</id>
             <content type="html">&lt;p&gt;A super interesting thing happened the other day. I took a very simple action which was seen by hundreds of thousands of people, possibly &lt;strong&gt;millions&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;I was browsing the ol’ tweetstack and one jumped out that I thought was hilarious albeit super geeky. And their followup tweet just added to it. I had just woken up, was barely alive yet and thought “I wonder if &lt;a href=&quot;http://reddit.com/r/programmerHumor/&quot;&gt;/r/programmerhumor&lt;/a&gt; would like this?”.&lt;/p&gt;
@@ -330,9 +330,9 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time.html"/>
+            <link href="https://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time.html"/>
             <updated>2017-03-06T19:00:00-08:00</updated>
-            <id>http://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time</id>
+            <id>https://chuckbergeron.io/blog/2017/03/06/how-ive-been-spending-my-time</id>
             <content type="html">&lt;p&gt;
   &lt;strong&gt;&lt;em&gt;WARNING: this post is a bit of a brain dump of everything I've been working on and dabbling with. Consider yourself warned!&lt;/em&gt;&lt;/strong&gt;
 &lt;/p&gt;
@@ -458,9 +458,9 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html"/>
+            <link href="https://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling.html"/>
             <updated>2016-12-23T13:00:00-08:00</updated>
-            <id>http://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling</id>
+            <id>https://chuckbergeron.io/blog/2016/12/23/blending-songs-together-on-an-album-using-ableton-lives-resampling</id>
             <content type="html">&lt;p&gt;Recently, I found myself wanting a simple way to blend 2 tracks in Ableton Live together. There’s tons of different ways to pull this off. I came up with one quick way that had pretty good results.&lt;/p&gt;
 &lt;p&gt;I opened up the 2nd song, created a new track (naming it “# Resampled”), then armed it for recording:&lt;/p&gt;
 &lt;figure data-orig-width=&quot;480&quot; data-orig-height=&quot;137&quot; class=&quot;tmblr-full&quot;&gt;&lt;img src=&quot;http://68.media.tumblr.com/c809e2a7e64408a6da8f67ac2d67c3a8/tumblr_inline_oind5cKnPH1r4begx_500.gif&quot; alt=&quot;image&quot; data-orig-width=&quot;480&quot; data-orig-height=&quot;137&quot; /&gt;&lt;/figure&gt;
@@ -482,9 +482,9 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html"/>
+            <link href="https://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime.html"/>
             <updated>2016-07-05T15:00:00-07:00</updated>
-            <id>http://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime</id>
+            <id>https://chuckbergeron.io/blog/2016/07/05/modifying-unitys-camera-imageeffects-values-at-runtime</id>
             <content type="html">&lt;p&gt; A couple of months ago I was mussing around integrating noise, vigenette, chromatic aberration, and other image effects into Astervoid 2000. &lt;/p&gt;
 &lt;p&gt; I found it wasn’t enough to just throw the image effects on the camera, I also wanted to change them at runtime depending on various events happening in the game. &lt;/p&gt;
 &lt;div&gt; &lt;video id=&quot;gif-mp4&quot; poster=&quot;https://media.giphy.com/media/l0K46X5vYigLTUkZq/200_s.gif&quot; style=&quot;margin:0;padding:0&quot; width=&quot;480&quot; height=&quot;292&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;&lt;source src=&quot;https://media.giphy.com/media/l0K46X5vYigLTUkZq/giphy.mp4&quot; type=&quot;video/mp4&quot; /&gt; Your browser does not support the mp4 video codec. &amp;lt;/source&amp;gt;&lt;/video&gt;&lt;div id=&quot;noplay&quot; style=&quot;display:none&quot;&gt; Your browser does not support the mp4 video codec. &lt;/div&gt; &lt;span class=&quot;caption&quot;&gt;Example of chromatic aberration offset &amp;amp; bloom intensity changing over time.&lt;/span&gt; &lt;/div&gt;
@@ -520,9 +520,9 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
               <name>Chuck Bergeron</name>
               <email>chuck@chuckbergeron.io</email>
             </author>
-            <link href="http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html"/>
+            <link href="https://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith.html"/>
             <updated>2016-06-16T10:00:00-07:00</updated>
-            <id>http://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith</id>
+            <id>https://chuckbergeron.io/blog/2016/06/16/a-breakdown-of-tools-i-used-to-compose-solar-zenith</id>
             <content type="html">&lt;p&gt;&lt;i&gt;I originally posted this &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;on Reddit&lt;/a&gt;, writing about VSTs and instrument sources used to compose the tune &lt;a href=&quot;https://www.reddit.com/r/happy/comments/4o8s13/over_100_listens_for_a_song_i_composed_its_the/&quot;&gt;Solar Zenith&lt;/a&gt;. I believe it belongs here as well:&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;——————————————————&lt;/p&gt;
 &lt;p&gt;For percussion I’ve got &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiF8Zu_g63NAhVKwYMKHVyBAcEQFggbMAA&amp;amp;url=https%3A%2F%2Fwww.xlnaudio.com%2Faddictivedrums&amp;amp;usg=AFQjCNHzqaSkDZpX7iLUg5kWB3TCIp6N5A&amp;amp;sig2=chRb9nNZedGVWH-3Eya3vg&amp;amp;bvm=bv.124272578,d.amc&quot;&gt;XLN Audio’s Addictive Drums&lt;/a&gt; driving the snare and hats. Some kick and ride samples I found around the nets. &lt;a href=&quot;https://www.google.ca/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwjOzJrug63NAhXIyoMKHUVeBn4QFggdMAA&amp;amp;url=https%3A%2F%2Fwww.plogue.com%2Fproducts%2Fchipsounds%2F&amp;amp;usg=AFQjCNHi_LHY6KfUsTPSjRb-GfpQ8Qy1CQ&amp;amp;sig2=bIxfE3gzr2umOPtP-S98sw&quot;&gt;Plogue’s Chipsounds&lt;/a&gt; for a variation on the hats.&lt;/p&gt;
