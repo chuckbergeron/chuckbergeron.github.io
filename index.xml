@@ -3,7 +3,7 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="https://chuckbergeron.io/index.xml" rel="self"/>
     <link href="https://chuckbergeron.io"/>
-    <updated>2018-04-28T23:32:34-07:00</updated>
+    <updated>2018-04-29T11:29:26-07:00</updated>
     <id>https://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
@@ -52,10 +52,11 @@
             <content type="html">&lt;!-- shared_square_image: posts/FILLIN.jpg --&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;twelve columns&quot;&gt;
-        &lt;img src=&quot;/assets/posts/speeding-up-unity-compile-time-with-the-new-assembly-definitions/posts/unity_compile_time_before_after.jpg &quot; class=&quot;img-responsive&quot; alt=&quot;Unity compile times, before and after&quot; /&gt;
-        &lt;span class=&quot;caption&quot;&gt;Compile Time (AKA: thumb-twiddling time) Comparison&lt;/span&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;twelve columns&quot;&gt;
+    &lt;img src=&quot;/assets/posts/unity_compile_time_before_after.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Unity compile times, before and after&quot; /&gt;
+
+    &lt;span class=&quot;caption&quot;&gt;Compile Time (AKA: thumb-twiddling time) Comparison&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;In Unity, each time you make any change to your C# code the entire project is recompiled. This can take anywhere from a couple of seconds to minutes, depending on your computer’s hardware, the size of your project and number of plugins.&lt;/p&gt;
@@ -153,7 +154,7 @@
 
 &lt;p&gt;The hierarchy of the cards, their Images &amp;amp; TextMeshPro objects looked like so:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-starting-hierarchy.jpg &quot; class=&quot;img-responsive&quot; alt=&quot;Bad Unity worldspace VR UI hierarchy&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-starting-hierarchy.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Bad Unity worldspace VR UI hierarchy&quot; /&gt;
 &lt;span class=&quot;caption&quot;&gt;The problem: a complex transform hierarchy (one card didn’t even fit all on one screen).&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Each element in the tree above is a GameObject. And in typical Unity fashion, each GameObject has a Transform, which controls it’s position, rotation and scale in the world. When the card hand is open, and the player moves their hand the &lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;VRCardUISystem&lt;/code&gt;&lt;/em&gt; loosely follows the hand around so the UI is always available and ready to use.&lt;/p&gt;
@@ -162,12 +163,12 @@
 
 &lt;p&gt;After a few various attempts at improving performance via other means, such as changing the &lt;code class=&quot;highlighter-rouge&quot;&gt;VRCardUISystem&lt;/code&gt;’s update rate to not happen every frame, and using object pooling instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;Instantiate()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Destroy()&lt;/code&gt; we found the performance issue still existed.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-solved-hierarchy.jpg &quot; class=&quot;img-responsive&quot; alt=&quot;Improved Unity worldspace vr ui hierarchy&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-solved-hierarchy.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Improved Unity worldspace vr ui hierarchy&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
 &lt;span class=&quot;caption&quot;&gt;The solution pt 1: a much simpler hierarchy.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;The solution was to simplify. I had read somewhere that Unity prefers very simple hierarchy, and instead of grouping objects together logically (which is easier for the developers and level editors to consume), it ideally wants every GameObject (and Transform) to be at the root level. This is a mess for us developers to read, but helps it’s internal systems.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-optimizations-in-unity/posts/worldspace-vr-ui-performance-ui-background.jpg &quot; class=&quot;img-responsive&quot; alt=&quot;One background image instead of multiple Image components&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/worldspace-vr-ui-performance-ui-background.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;One background image instead of multiple Image components&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
 &lt;span class=&quot;caption&quot;&gt;The solution pt 2: One background image instead of multiple Image components.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;On top of removing the container groups, we decided about half of the Unity &lt;code class=&quot;highlighter-rouge&quot;&gt;Image&lt;/code&gt; components could be baked into one PNG background sprite in Photoshop, as could the Demands Images and Services Arrows (showing the player how this building will affect their city’s demands, surplus and service import / export costs). This resulted in each card only having 20 child GameObjects (and Transforms) instead of 59. And when you have 20 cards in your hand, that means only 400 GameObjects (and Transforms) instead of 1,180!&lt;/p&gt;
@@ -223,8 +224,8 @@
             <id>https://chuckbergeron.io/blog/2017/04/25/why-ive-started-the-vancouver-vr-community</id>
             <content type="html">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;twelve columns&quot;&gt;
-        &lt;!-- &lt;img src=&quot;/assets/posts/why-ive-started-the-vancouver-vr-community/posts/vancouver_vr_community_logo__small.png &quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community&quot; style=&quot;margin: 0 auto;&quot;&gt; --&gt;
-        &lt;img src=&quot;/assets/posts/why-ive-started-the-vancouver-vr-community/posts/vancouver_vr_community_logo__animated.gif &quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community Launch Animation&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
+        &lt;!-- &lt;img src=&quot;/assets/posts/vancouver_vr_community_logo__small.png&quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community&quot; style=&quot;margin: 0 auto;&quot;&gt; --&gt;
+        &lt;img src=&quot;/assets/posts/vancouver_vr_community_logo__animated.gif&quot; class=&quot;img-responsive&quot; alt=&quot;Vancouver VR Community Launch Animation&quot; /&gt;&lt;!--  style=&quot;margin: 0 auto;&quot; --&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -313,7 +314,7 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
 
 &lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack&quot;&gt;Reddit Post&lt;/a&gt; - &lt;a href=&quot;https://twitter.com/daisyowl/status/841802094361235456&quot;&gt;Original Tweet&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack&quot;&gt;&lt;img src=&quot;/assets/posts/the-internet-effect/posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl.jpg &quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5zksrb/if_you_ever_code_something_that_feels_like_a_hack&quot;&gt;&lt;img src=&quot;/assets/posts/if-you-ever-code-something-that-feels-like-a-hack-but-it-just-works-daisyowl.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
 
@@ -374,14 +375,14 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
   On 3D modeling and animation, I realized I was quite in the dark about this necessary component of creating VR games. I had dabbled in Blender and MagicaVoxel in 2016, but went hard on learning those skills earlier this year. I felt compelled to take a really rather gaudy 1970's scene and re-create with a modern realism feel in Blender. Here's the end result:
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/how-ive-been-spending-my-time/posts/render-46--daytime-alt--diff-cam-angle--composited.jpg &quot; class=&quot;img-responsive&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/render-46--daytime-alt--diff-cam-angle--composited.jpg&quot; class=&quot;img-responsive&quot; /&gt;
 &lt;span class=&quot;caption&quot;&gt;70’s den scene, modernized. Modeled, rendered &amp;amp; composited in Blender&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;
   Around the same time, I felt compelled to learn low poly character creation. I set out to create a fox I could add a skeletal rig to and easily create animations for. This creature has found itself playing an interesting role in a VR music video I am nearing the end of crafting for the HTC Vive (and time permitting, Oculus Rift).
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/how-ive-been-spending-my-time/posts/LoFiFox-running-animated-still-lightboxed_114.jpg &quot; class=&quot;img-responsive&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/LoFiFox-running-animated-still-lightboxed_114.jpg&quot; class=&quot;img-responsive&quot; /&gt;
 &lt;span class=&quot;caption&quot;&gt;LoFiFox – Glass. Modeled, rigged and rendered in Blender&lt;/span&gt;&lt;/p&gt;
 
 &lt;h5&gt;
@@ -394,13 +395,13 @@ In light of this I decided to team up with a few fine folks here, and we’ve be
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;four columns&quot;&gt;
-    &lt;img src=&quot;/assets/posts/how-ive-been-spending-my-time/posts/dona-cider-sm.jpg &quot; class=&quot;img-responsive pull-left&quot; /&gt;
+    &lt;img src=&quot;/assets/posts/dona-cider-sm.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;four columns&quot;&gt;
-    &lt;img src=&quot;/assets/posts/how-ive-been-spending-my-time/posts/indiepod-sm.jpg &quot; class=&quot;img-responsive pull-left&quot; /&gt;
+    &lt;img src=&quot;/assets/posts/indiepod-sm.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;four columns&quot;&gt;
-    &lt;img src=&quot;/assets/posts/how-ive-been-spending-my-time/posts/chuck-bergeron--3d-type-sm.jpg &quot; class=&quot;img-responsive pull-left&quot; /&gt;
+    &lt;img src=&quot;/assets/posts/chuck-bergeron--3d-type-sm.jpg&quot; class=&quot;img-responsive pull-left&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;span class=&quot;caption&quot;&gt;A collection of logos I’ve worked on lately&lt;/span&gt;&lt;/p&gt;
