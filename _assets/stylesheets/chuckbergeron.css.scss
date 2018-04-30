@@ -1,5 +1,5 @@
 $link-color: #22c9f3;
-$hover-color: #9fe5f7;
+$hover-color: #21acd8;
 
 * {
   box-sizing: border-box;
@@ -489,8 +489,26 @@ p.footnote {
   position: relative;
   z-index: 1000;
 }
+.testimonial.is-purple blockquote {
+  border-color: #ba8ace;
+}
+.testimonial.is-purple span.testimonial-name {
+  color: #ba8ace;
+}
+.testimonial.is-green blockquote {
+  border-color: #a2d89e;
+}
+.testimonial.is-green span.testimonial-name {
+  color: #a2d89e;
+}
+.testimonial.is-orange blockquote {
+  border-color: #efb765;
+}
+.testimonial.is-orange span.testimonial-name {
+  color: #efb765;
+}
 .testimonial blockquote {
-  border-top: 10px solid #f5cd8f;
+  border-top: 10px solid #ba8ace;
   color: #666;
   display: block;
   margin: 40px 0 10px;
@@ -531,7 +549,7 @@ p.footnote {
 }
 .name,
 .testimonial span.testimonial-name {
-  color: #f5cd8f;
+  color: #ba8ace;
   font-weight: 300;
 }
 .post,
@@ -565,9 +583,37 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  box-shadow: 2px 2px 0 0 rgba(54, 54, 54, 0.1);
   font-family: "soleil", Verdana, sans-serif;
   font-size: 14px;
+  font-weight: 300;
   margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+  padding-top: 1px;
+  transition: 0.2s;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  box-shadow: 3px 3px 0 0 rgba(54, 54, 54, 0.15);
+  padding-top: 0;
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  background-color: $hover-color;
+  border-color: $hover-color;
 }
 label,
 .label {
