@@ -4,6 +4,38 @@ $hover-color: #21acd8;
 * {
   box-sizing: border-box;
 }
+
+/* TypeKit font loading */
+.wf-loading .nav--link,
+.wf-loading .brand {
+  font-family: "soleil", Verdana, sans-serif;
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-active .nav--link,
+.wf-active .brand {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.7s;
+}
+.wf-loading p,
+.wf-loading .post-title,
+.wf-loading .continue-reading,
+.wf-loading .post {
+  font-family: "calluna", "Georgia", serif;
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-active p,
+.wf-active .post-title,
+.wf-active .continue-reading,
+.wf-active .post {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.7s;
+}
+/* TypeKit font loading */
+
 .img-responsive {
   display: block;
   height: auto;
