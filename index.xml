@@ -3,7 +3,7 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="https://chuckbergeron.io/index.xml" rel="self"/>
     <link href="https://chuckbergeron.io"/>
-    <updated>2018-05-16T09:23:46-07:00</updated>
+    <updated>2018-05-16T09:26:53-07:00</updated>
     <id>https://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
@@ -28,7 +28,7 @@
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Recently I found myself wanting to dive in to blockchain development after finishing the fantastic CryptoZombies tutorials, and what better way to start working on DApps than to create something for the open source community.&lt;/p&gt;
+&lt;p&gt;Recently I found myself wanting to dive in to blockchain development after finishing the fantastic &lt;a href=&quot;https://cryptozombies.io/&quot;&gt;CryptoZombies&lt;/a&gt; tutorials, and what better way to start working on DApps than to create something for the open source community.&lt;/p&gt;
 
 &lt;p&gt;Etherplate is an example project showing how you can hook up your Ethereum Non-Fungible Tokens (NFTs, ERC721, similar to CryptoKitties) contract(s) with web3. It demos minting ERC721 tokens, replaying blockchain history, subscribing to web3 events, and consuming &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt; Solidity methods in the JS frontend.&lt;/p&gt;
 
@@ -53,9 +53,7 @@ Etherplate uses React, React Router, Redux, and Bulma (but it’s always possibl
 
 &lt;p&gt;My hope is that Etherplate gives both newcomers to the DApp world something concrete to start from, as well as giving Ethereum veterans a nice base when starting their next DApp project.&lt;/p&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;strong&gt;Note: I recently learned about Truffle’s new Drizzle library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;😄&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;strong&gt;Note: I recently learned about Truffle’s new &lt;a href=&quot;http://truffleframework.com/blog/drizzle-reactive-ethereum-data-for-front-ends&quot;&gt;Drizzle&lt;/a&gt; library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;
 </content>
 
             
