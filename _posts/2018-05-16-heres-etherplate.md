@@ -20,7 +20,7 @@ shared_description:  A new feature in Unity 2017.3 can speed up the amount of ti
 </div>
 <br />
 
-Recently I found myself wanting to dive in to blockchain development after finishing the fantastic CryptoZombies tutorials, and what better way to start working on DApps than to create something for the open source community.
+Recently I found myself wanting to dive in to blockchain development after finishing the fantastic <a href="https://cryptozombies.io/">CryptoZombies</a> tutorials, and what better way to start working on DApps than to create something for the open source community.
 
 Etherplate is an example project showing how you can hook up your Ethereum Non-Fungible Tokens (NFTs, ERC721, similar to CryptoKitties) contract(s) with web3. It demos minting ERC721 tokens, replaying blockchain history, subscribing to web3 events, and consuming `view` Solidity methods in the JS frontend.
 
@@ -45,6 +45,4 @@ Etherplate is also a truffle box, so you can easily install it using truffle unb
 
 My hope is that Etherplate gives both newcomers to the DApp world something concrete to start from, as well as giving Ethereum veterans a nice base when starting their next DApp project.
 
-<small><strong>Note: I recently learned about Truffle's new Drizzle library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.</strong></small>
-
-😄
+<small><strong>Note: I recently learned about Truffle's new <a href="http://truffleframework.com/blog/drizzle-reactive-ethereum-data-for-front-ends">Drizzle</a> library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.</strong></small>
