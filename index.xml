@@ -3,13 +3,66 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="https://chuckbergeron.io/index.xml" rel="self"/>
     <link href="https://chuckbergeron.io"/>
-    <updated>2018-05-10T13:47:59-07:00</updated>
+    <updated>2018-05-16T09:23:46-07:00</updated>
     <id>https://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
         <email>chuck@chuckbergeron.io</email>
     </author>
 
+    
+      
+        <entry>
+            <title>Here's Etherplate, an Ethereum NFT (ERC721) template project using React + React Router + Redux + Bulma</title>
+            <author>
+              <name>Chuck Bergeron</name>
+              <email>chuck@chuckbergeron.io</email>
+            </author>
+            <link href="https://chuckbergeron.io/blog/2018/05/16/heres-etherplate.html"/>
+            <updated>2018-05-16T08:02:00-07:00</updated>
+            <id>https://chuckbergeron.io/blog/2018/05/16/heres-etherplate</id>
+            <content type="html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;twelve columns&quot;&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/chuckbergeron/etherplate/master/app/images/logos/etherplate-logo--red--lg.png&quot; class=&quot;img-responsive&quot; alt=&quot;Etherplate Logo&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Recently I found myself wanting to dive in to blockchain development after finishing the fantastic CryptoZombies tutorials, and what better way to start working on DApps than to create something for the open source community.&lt;/p&gt;
+
+&lt;p&gt;Etherplate is an example project showing how you can hook up your Ethereum Non-Fungible Tokens (NFTs, ERC721, similar to CryptoKitties) contract(s) with web3. It demos minting ERC721 tokens, replaying blockchain history, subscribing to web3 events, and consuming &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt; Solidity methods in the JS frontend.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/chuckbergeron/etherplate&quot;&gt;View Source on GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://etherplate.netlify.com/&quot;&gt;View Demo on Netlify&lt;/a&gt; (Uses Ropsten testnet, ‘Loading …’ state currently waits for a mined transaction from testnet and therefore could take a few moments)&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;twelve columns&quot;&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/chuckbergeron/etherplate/master/app/images/etherplate-demo.gif&quot; class=&quot;img-responsive&quot; alt=&quot;Etherplate Demo Gif&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Etherplate uses React, React Router, Redux, and Bulma (but it’s always possible to rip of any these and replace them with your favourites).&lt;/p&gt;
+
+&lt;p&gt;OpenZeppelin’s fantastic community-audited contracts has been integrated into Etherplate as a base to start implementing your own ERC721 standard smart contracts.&lt;/p&gt;
+
+&lt;p&gt;Etherplate is also a truffle box, so you can easily install it using truffle unbox chuckbergeron/etherplate once you have the ‘truffle’ npm library installed on your machine.&lt;/p&gt;
+
+&lt;p&gt;My hope is that Etherplate gives both newcomers to the DApp world something concrete to start from, as well as giving Ethereum veterans a nice base when starting their next DApp project.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;strong&gt;Note: I recently learned about Truffle’s new Drizzle library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;😄&lt;/p&gt;
+</content>
+
+            
+              <content type="image" src="posts/etherplatelogo.png" />
+            
+        </entry>
+      
     
       
         <entry>
