@@ -37,7 +37,7 @@ Etherplate is an example project showing how you can hook up your Ethereum Non-F
 <!--more-->
 
 <br />
-Etherplate uses React, React Router, Redux, and Bulma (but it's always possible to rip of any these and replace them with your favourites).
+Etherplate uses React, React Router, Redux, and Bulma (but it's always possible to rip out any of these and replace them with your favourites).
 
 OpenZeppelin's fantastic community-audited contracts has been integrated into Etherplate as a base to start implementing your own ERC721 standard smart contracts.
 
