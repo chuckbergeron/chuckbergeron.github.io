@@ -34,29 +34,16 @@ assets:
     - assets/images
     - assets/videos
     - assets/javascripts
-    - assets/video
-    - assets/image
-    - assets/img
-    - assets/js
     - _assets/stylesheets
     - _assets/fonts
     - _assets/images
     - _assets/videos
     - _assets/javascripts
-    - _assets/video
-    - _assets/image
-    - _assets/img
-    - _assets/js
     - stylesheets
     - fonts
     - images
     - videos
     - javascripts
-    - video
-    - image
-    - img
-    - js
-
 
 collections:
   work:
