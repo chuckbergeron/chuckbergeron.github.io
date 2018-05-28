@@ -417,7 +417,7 @@ p.footnote {
   background-color: rgb(36, 41, 46);
 }
 .soc-github:before {
-  background: transparent url(asset_path('images/github-logo.png')) no-repeat left top;
+  background: transparent url(asset_path('github-logo.png')) no-repeat left top;
   content: " ";
   height: 51px;
   position: absolute;
@@ -448,6 +448,10 @@ p.footnote {
   left: 0;
   top: 0;
   width: 51px;
+}
+.soc-github:hover {
+  background-color: #617181;
+  opacity: 0.8;
 }
 .soc-twitter:hover {
   background-color: #61bbf2;

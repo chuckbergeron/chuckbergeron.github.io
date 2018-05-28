@@ -35,20 +35,14 @@ function scrollTo(element, to, duration) {
 }
 
 $(function($) {
-
-  var $document    = $(document),
-    $rootNode      = $('html, body'),
-    $footer        = $('footer');
-
-  $footer.find('.copyright-year').html(new Date().getFullYear());
+  $('footer').find('.copyright-year').html(new Date().getFullYear());
 
   $('a.internal').on('click', function(){
     var href = this.href.match(/\#.*/)[0];
-    var speed = 500;
+    var speed = 700;
 
-    scrollTo(document.documentElement, $(href).offset().top, 700);
+    scrollTo(document.documentElement, $(href).offset().top, speed);
 
     return false;
   });
-
 });
