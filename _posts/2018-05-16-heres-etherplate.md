@@ -44,5 +44,3 @@ OpenZeppelin's fantastic community-audited contracts has been integrated into Et
 Etherplate is also a truffle box, so you can easily install it using truffle unbox chuckbergeron/etherplate once you have the 'truffle' npm library installed on your machine.
 
 My hope is that Etherplate gives both newcomers to the DApp world something concrete to start from, as well as giving Ethereum veterans a nice base when starting their next DApp project.
-
-<small><strong>Note: I recently learned about Truffle's new <a href="http://truffleframework.com/blog/drizzle-reactive-ethereum-data-for-front-ends">Drizzle</a> library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.</strong></small>
