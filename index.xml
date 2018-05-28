@@ -3,7 +3,7 @@
     <title>The Writings of Chuck Bergeron</title>
     <link href="https://chuckbergeron.io/index.xml" rel="self"/>
     <link href="https://chuckbergeron.io"/>
-    <updated>2018-05-17T10:48:01-07:00</updated>
+    <updated>2018-05-28T12:43:07-07:00</updated>
     <id>https://chuckbergeron.io</id>
     <author>
         <name>Chuck Bergeron</name>
@@ -52,8 +52,6 @@ Etherplate uses React, React Router, Redux, and Bulma (but it’s always possibl
 &lt;p&gt;Etherplate is also a truffle box, so you can easily install it using truffle unbox chuckbergeron/etherplate once you have the ‘truffle’ npm library installed on your machine.&lt;/p&gt;
 
 &lt;p&gt;My hope is that Etherplate gives both newcomers to the DApp world something concrete to start from, as well as giving Ethereum veterans a nice base when starting their next DApp project.&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;strong&gt;Note: I recently learned about Truffle’s new &lt;a href=&quot;http://truffleframework.com/blog/drizzle-reactive-ethereum-data-for-front-ends&quot;&gt;Drizzle&lt;/a&gt; library, which is essentially a Redux library specifically for communicating with the Ethereum blockchain. It was great to learn a bit more Redux and use it in the Web3 context, however knowing about Drizzle now I would have implemented it using that. Hindsight, still 20 / 20. Perhaps the next upgrade to Etherplate would be to switch from pure Redux to using Drizzle.&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;
 </content>
 
             
