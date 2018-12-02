@@ -10,6 +10,9 @@ gem "jekyll-assets"
 gem "sass"
 gem "uglifier"
 gem "stringex"
-gem "therubyracer"
+# gem "therubyracer"
 gem "kramdown"
 gem "rake"
+
+gem 'guard'
+gem 'guard-livereload'

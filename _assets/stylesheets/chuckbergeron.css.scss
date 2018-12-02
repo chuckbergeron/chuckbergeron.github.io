@@ -7,16 +7,21 @@ $hover-color: #21acd8;
 
 /* TypeKit font loading */
 .wf-loading .nav--link,
+.wf-loading .nav--list-item,
 .wf-loading .brand {
   font-family: "soleil", Verdana, sans-serif;
   visibility: hidden;
   opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: all 1.2s ease-in-out;
 }
 .wf-active .nav--link,
+.wf-active .nav--list-item,
 .wf-active .brand {
   opacity: 1;
   visibility: visible;
-  transition: 0.7s;
+  transition: 1.2s;
+  transform: translate3d(0, 0, 0);
 }
 .wf-loading p,
 .wf-loading .post-title,
@@ -25,6 +30,8 @@ $hover-color: #21acd8;
   font-family: "calluna", "Georgia", serif;
   visibility: hidden;
   opacity: 0;
+  transform: translate3d(0, 35px, 0);
+  transition: all 0.7s ease-in-out;
 }
 .wf-active p,
 .wf-active .post-title,
@@ -33,6 +40,7 @@ $hover-color: #21acd8;
   opacity: 1;
   visibility: visible;
   transition: 0.7s;
+  transform: translate3d(0, 0, 0);
 }
 /* TypeKit font loading */
 
@@ -60,7 +68,7 @@ $hover-color: #21acd8;
 body {
   color: #565659;
   font-family: "calluna", "Georgia", serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
 }
 a {
@@ -612,7 +620,7 @@ p.footnote {
 
   @media (min-width: 992px) {
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 }
 .button,
@@ -622,13 +630,14 @@ input[type="reset"],
 input[type="button"] {
   box-shadow: 2px 2px 0 0 rgba(54, 54, 54, 0.1);
   font-family: "soleil", Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
+  height: 46px;
   margin-right: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 2px;
-  padding-top: 1px;
+  padding-top: 3px;
   transition: 0.2s;
 }
 .button:hover,
@@ -637,7 +646,20 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
   box-shadow: 3px 3px 0 0 rgba(54, 54, 54, 0.15);
-  padding-top: 0;
+  padding-top: 2px;
+}
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  box-shadow: 1px 1px 0 0 rgba(54, 54, 54, 0.05);
+  padding-top: 4px;
 }
 .button.button-primary:hover,
 button.button-primary:hover,
