@@ -186,6 +186,8 @@ h5 {
 .portfolio-container {
   background: #f3f3f3;
   padding: 60px 0;
+  position: relative;
+  z-index: 1001;
 }
 .portfolio--method {
   color: #aaa;
@@ -572,9 +574,12 @@ p.footnote {
   color: #efb765;
 }
 .testimonial blockquote {
+  border-left: 0;
   border-top: 10px solid #ba8ace;
   color: #666;
   display: block;
+  line-height: 5rem;
+  font-size: 3.20112rem;
   margin: 40px 0 10px;
   padding: 30px 0 0 0;
 }

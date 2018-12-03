@@ -99,7 +99,7 @@ class Index extends React.Component {
             },
             {
               property: "twitter:image",
-              content: `${data.siteUrl}{% asset_path chuck-bergeron--profile.jpg }`
+              content: this.props.data.profilePic.childImageSharp.fixed // this work?
             },
             {
               property: "twitter:url",
@@ -160,98 +160,98 @@ export const pageQuery = graphql`
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
         fixed(width: 959, height: 737) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
     goodbitsApp: file(relativePath: { eq: "goodbits-app.jpg" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     medeoThumbnail: file(relativePath: { eq: "medeo-thumbnail.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     loft47Screenshot1: file(relativePath: { eq: "loft47-screenshot1.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     joshPinter: file(relativePath: { eq: "josh-pinter.jpg" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     astervoid2000Logo: file(relativePath: { eq: "astervoid-2000-logo.jpg" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     loft47BubbleLogoDiecut: file(relativePath: { eq: "loft47-bubble-logo-diecut.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     goodbitsStickerBlue: file(relativePath: { eq: "goodbits-sticker-blue.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     brewhouseLogo: file(relativePath: { eq: "brewhouse-logo.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     goodbitsHandtypeLogoWhiteOnBlack: file(relativePath: { eq: "goodbits-handtype-logo-white-on-black.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     vanrubySticks: file(relativePath: { eq: "vanruby-sticks.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     sky: file(relativePath: { eq: "sky.png" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     markHazlett: file(relativePath: { eq: "mark-hazlett.jpg" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     sasha: file(relativePath: { eq: "sasha.jpg" }) {
       childImageSharp {
-        fixed(width: 500, height: 281) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

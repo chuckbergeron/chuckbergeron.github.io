@@ -7,6 +7,7 @@ class Hero extends React.Component {
   render() {
     return (
       <div>
+        {console.log(this.props.data)}
         <Img
           fixed={this.props.data.profilePic.childImageSharp.fixed}
           className="hero-bg"

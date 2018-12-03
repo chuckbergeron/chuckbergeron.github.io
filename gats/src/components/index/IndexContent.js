@@ -15,7 +15,7 @@ class IndexContent extends React.Component {
               <div className="four columns">
                 <a href="/work/goodbits" className="portfolio--img-link">
                 <Img
-                  fixed={this.props.data.goodbitsApp.fixed}
+                  fluid={this.props.data.goodbitsApp.childImageSharp.fluid}
                   className="img-responsive portfolio-piece--img"
                   alt='Goodbits landing page'
                 />
@@ -35,7 +35,7 @@ class IndexContent extends React.Component {
               <div className="four columns">
                 <a href="/work/medeo" className="portfolio--img-link">
                   <Img
-                    fixed={this.props.data.medeoThumbnail.childImageSharp.fixed}
+                    fluid={this.props.data.medeoThumbnail.childImageSharp.fluid}
                     className="img-responsive portfolio-piece--img"
                     alt="Medeo app"
                   />
@@ -52,9 +52,9 @@ class IndexContent extends React.Component {
                 </p>
               </div>
               <div className="four columns">
-                <a href="http://loft47.com/" class="portfolio--img-link">
+                <a href="http://loft47.com/" className="portfolio--img-link">
                   <Img
-                    fixed={this.props.data.loft47Screenshot1.childImageSharp.fixed}
+                    fluid={this.props.data.loft47Screenshot1.childImageSharp.fluid}
                     className="img-responsive portfolio-piece--img"
                     alt="Loft47 App Screenshot"
                   />
@@ -91,7 +91,7 @@ class IndexContent extends React.Component {
                   <div className="testimonial-author clear-both">
                     <Img
                       alt="Josh Pinter's photo"
-                      fixed={this.props.data.joshPinter.childImageSharp.fixed}
+                      fluid={this.props.data.joshPinter.childImageSharp.fluid}
                       className="pull-left testimonial-author--avatar"
                     />
 
@@ -124,7 +124,7 @@ class IndexContent extends React.Component {
               <div className="four columns">
                 <a href="http://store.steampowered.com/app/629040" className="portfolio--img-link">
                 <Img
-                  fixed={this.props.data.sky.childImageSharp.fixed}
+                  fluid={this.props.data.sky.childImageSharp.fluid}
                   alt='Skytropolis City Building VR Sim'
                   className='img-responsive portfolio-piece--img border-color--dark'
                 />
@@ -145,7 +145,7 @@ class IndexContent extends React.Component {
               <div className="four columns">
                 <a href="http://store.steampowered.com/app/423870" className="portfolio--img-link">
                   <Img
-                    fixed={this.props.data.astervoid2000Logo.childImageSharp.fixed}
+                    fluid={this.props.data.astervoid2000Logo.childImageSharp.fluid}
                     className="img-responsive portfolio-piece--img border-color--dark"
                     alt="Astervoid 2000 logo/artwork"
                   />
@@ -186,7 +186,7 @@ class IndexContent extends React.Component {
                   <div className="testimonial-author clear-both">
                     <Img
                       alt="Sasha Hryciuk photo"
-                      fixed={this.props.data.sasha.childImageSharp.fixed}
+                      fluid={this.props.data.sasha.childImageSharp.fluid}
                       className="pull-left testimonial-author--avatar"
                     />
 
@@ -213,7 +213,7 @@ class IndexContent extends React.Component {
             <div className="row">
               <div className="four columns">
                 <Img
-                  fixed={this.props.data.loft47BubbleLogoDiecut.childImageSharp.fixed}
+                  fluid={this.props.data.loft47BubbleLogoDiecut.childImageSharp.fluid}
                   className="img-responsive portfolio-piece--img"
                   alt="Loft47 Branding"
                 />
@@ -225,7 +225,7 @@ class IndexContent extends React.Component {
               </div>
               <div className="four columns">
                 <Img
-                  fixed={this.props.data.goodbitsStickerBlue.childImageSharp.fixed}
+                  fluid={this.props.data.goodbitsStickerBlue.childImageSharp.fluid}
                   className="img-responsive portfolio-piece--img"
                   alt="Goodbits bubble stickers"
                 />
@@ -236,7 +236,10 @@ class IndexContent extends React.Component {
                 </p>
               </div>
               <div className="four columns">
-                <Img fixed={this.props.data.brewhouseLogo.childImageSharp.fixed} className='image' />
+                <Img
+                  fluid={this.props.data.brewhouseLogo.childImageSharp.fluid}
+                  className='image'
+                />
 
                 <p className="portfolio-piece--description">
                   <strong className="portfolio-piece--title">Brewhouse Chemex Branding</strong>
@@ -249,7 +252,7 @@ class IndexContent extends React.Component {
             <div className="row">
               <div className="four columns">
                 <Img
-                  fixed={this.props.data.goodbitsHandtypeLogoWhiteOnBlack.childImageSharp.fixed}
+                  fluid={this.props.data.goodbitsHandtypeLogoWhiteOnBlack.childImageSharp.fluid}
                   className="img-responsive portfolio-piece--img"
                   alt="Goodbits handtype"
                 />
@@ -261,7 +264,7 @@ class IndexContent extends React.Component {
               </div>
               <div className="four columns">
                 <Img
-                  fixed={this.props.data.vanrubySticks.childImageSharp.fixed}
+                  fluid={this.props.data.vanrubySticks.childImageSharp.fluid}
                   className="img-responsive portfolio-piece--img"
                   alt="Vanruby Branding"
                 />
@@ -296,7 +299,7 @@ class IndexContent extends React.Component {
                   <div className="testimonial-author clear-both">
                     <Img
                       alt="Mark Hazlett's photo"
-                      fixed={this.props.data.markHazlett.fixed}
+                      fluid={this.props.data.markHazlett.childImageSharp.fluid}
                       className="pull-left testimonial-author--avatar"
                     />
 
@@ -318,24 +321,24 @@ class IndexContent extends React.Component {
             <div className="row">
               <div className="nine columns">
 
-                <form validate id="contact-form" enctype="multipart/form-data" action="https://docs.google.com/a/chuckbergeron.io/forms/d/e/1FAIpQLSe964m5JEYeXkN0LOBcEUK1X8S9Xkdj-ENWYGxipzkun5E9WQ/formResponse" method="POST" accept-charset="UTF-8" target="_self">
+                <form validate='true' id="contact-form" encType="multipart/form-data" action="https://docs.google.com/a/chuckbergeron.io/forms/d/e/1FAIpQLSe964m5JEYeXkN0LOBcEUK1X8S9Xkdj-ENWYGxipzkun5E9WQ/formResponse" method="POST" acceptCharset="UTF-8" target="_self">
                   <h3>
                     Let's Work Together:
                   </h3>
 
-                  <label for="name">YOUR NAME <span className="form-required">*</span></label>
+                  <label htmlFor="name">YOUR NAME <span className="form-required">*</span></label>
                   <div>
                     <input id="name" type="text" name="entry.987659744" required className="u-full-width" />
                   </div>
 
-                  <label for="email">YOUR EMAIL <span className="form-required">*</span></label>
+                  <label htmlFor="email">YOUR EMAIL <span className="form-required">*</span></label>
                   <div>
                     <input id="email" type="email" name="emailAddress" required className="u-full-width" />
                   </div>
 
-                  <label for="comment">COMMENT <span className="form-required">*</span></label>
+                  <label htmlFor="comment">COMMENT <span className="form-required">*</span></label>
                   <div>
-                    <textarea id="comment" name="entry.2122743964" style="height: 150px" required className="u-full-width"></textarea>
+                    <textarea id="comment" name="entry.2122743964" style={{ height: 150 }} required className="u-full-width"></textarea>
                   </div>
 
                   <div>
