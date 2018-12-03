@@ -5,7 +5,7 @@ module.exports = {
     title: 'Portfolio of Chuck Bergeron',
     author: 'Chuck Bergeron',
     description: '.',
-    siteUrl: 'https://chuckbergeron.io/',
+    siteUrl: 'https://chuckbergeron.io',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [

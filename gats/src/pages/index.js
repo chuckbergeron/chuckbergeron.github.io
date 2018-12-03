@@ -22,25 +22,105 @@ class Index extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-          script={
+          meta={[
+            {
+              name: 'description',
+              content: siteDescription,
+            },
+            {
+              name: "description",
+              content: "Chuck Bergeron creates apps, dapps, and VR experiences in Vancouver, BC."
+            },
+            {
+              property: "og:description",
+              content: "Chuck Bergeron creates apps, dapps, and VR experiences in Vancouver, BC."
+            },
+            {
+              name: "keywords",
+              content: "vr apps dapps websites design"
+            },
+            {
+              property: "og:title",
+              content: "ChuckBergeron.io -- Writings & Works"
+            },
+
+            {
+              name: "author",
+              content: "chuckbergeron.io"
+            },
+            {
+              name: "copyright",
+              content: "Chuck Bergeron"
+            },
+
+            {
+              property: "og:site_name",
+              content: "chuckbergeron"
+            },
+            {
+              property: "og:url",
+              content: `${data.siteUrl}${location.pathname}`
+            },
+            {
+              property: "og:type",
+              content: "business.business"
+            },
+
+            {
+              property: "og:image",
+              content: this.props.data.file.childImageSharp.fixed
+            },
+
+            {
+              property: "business:contact_data:street_address",
+              content: "280 Nelson St - Suite #523"
+            },
+            {
+              property: "business:contact_data:locality",
+              content: "Vancouver, BC"
+            },
+            {
+              property: "business:contact_data:postal_code",
+              content: "V6B 2E2"
+            },
+            {
+              property: "business:contact_data:country_name",
+              content: "Canada"
+            },
+
+            {
+              property: "twitter:card",
+              content: "summary"
+            },
+            {
+              property: "twitter:site",
+              content: "@chuckbergeron"
+            },
+            {
+              property: "twitter:image",
+              content: `${data.siteUrl}{% asset_path chuck-bergeron--profile.jpg }`
+            },
+            {
+              property: "twitter:url",
+              content: `${data.siteUrl}${location.pathname}`
+            },
+          ]}
+          link={
             [
               {
-                type: 'text/javascript',
-                innerHTML: `
-                  (function(d) {
-                    var config = {
-                      kitId: 'fme3two',
-                      scriptTimeout: 3000,
-                      async: true
-                    },
-                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-                  })(document);
-                `
+                rel: "stylesheet",
+                href: "https://use.typekit.net/fme3two.css"
+              },
+              {
+                rel: 'alternate',
+                type: 'application/atom+xml',
+                href: `${data.siteUrl}/index.xml`,
+                title: `The Writings of Chuck Bergeron atom feed`
               }
             ]
           }
+          title={siteTitle}
+
         />
 
         <Hero {...this.props} />
