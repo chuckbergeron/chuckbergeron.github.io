@@ -1,8 +1,5 @@
 import React from 'react'
-
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+import Img from "gatsby-image"
 
 import profilePic from 'src/components/profile-pic.jpg'
 import { rhythm } from 'src/utils/typography'
@@ -11,10 +8,21 @@ class Hero extends React.Component {
   render() {
     return (
       <div>
-        <div class="chuck-bergeron--bg-photo">
-          <div class="container">
+        <Img
+          fixed={this.props.data.file.childImageSharp.fixed}
+          className="hero-bg"
+          style={{
+            position: "absolute",
+            left: 550,
+            top: 30,
+            width: "959px",
+            height: "737px"
+          }}
+        />
+        <div className="about">
+          <div className="container">
             <div>
-              <div class="six columns six-columns--tablet-override">
+              <div className="six columns six-columns--tablet-override">
                 <p>
                   Hey 👋 I'm Chuck, a software developer creating superb digital experiences.
                 </p>
@@ -25,7 +33,7 @@ class Hero extends React.Component {
                   Lately I've been writing Ethereum smart contracts and developing DApps (UI frontends for the contracts).
                 </p>
                 <p>
-                  <a class="button button-primary internal" href="#contact" title="Reach out and let's start a discussion">Let's Work Together</a> <a class="button internal" href="#projects" title="View some of my work">View Projects</a>
+                  <a className="button button-primary internal" href="#contact" title="Reach out and let's start a discussion">Let's Work Together</a> <a className="button internal" href="#projects" title="View some of my work">View Projects</a>
                 </p>
               </div>
             </div>

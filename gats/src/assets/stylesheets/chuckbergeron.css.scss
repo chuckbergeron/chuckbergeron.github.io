@@ -1,6 +1,16 @@
 $link-color: #22c9f3;
 $hover-color: #21acd8;
 
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -110,6 +120,8 @@ h5 {
   font-family: "soleil", Verdana, sans-serif;
   font-size: 32px;
   margin: 47px 0 24px;
+  position: relative;
+  z-index: 1001;
 
   @media (max-width: 800px) {
     display: inline-block;
@@ -132,11 +144,16 @@ h5 {
     width: 75%;
   }
 }
-.chuck-bergeron--bg-photo {
+.hero-bg {
+  z-index: 999;
+
   @media (min-width: 1000px) {
-    background: transparent url(asset_path('chuck-bergeron--profile.jpg')) no-repeat 86% -77px;
-    height: 600px;
+    display: none;
   }
+}
+.about {
+  position: relative;
+  z-index: 1001;
 }
 .large--text {
   font-size: 22px;
@@ -209,6 +226,8 @@ h5 {
 .work-layout--nav {
   // display: block;
   display: inline-block;
+  position: relative;
+  z-index: 1001;
 
   @media (max-width: 800px) {
     float: left;

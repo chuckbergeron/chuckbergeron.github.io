@@ -10,13 +10,32 @@ module.exports = {
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
     {
-      resolve: `gatsby-plugin-sass`  
+      resolve: `gatsby-plugin-sass`
+    },
+    {
+      resolve: `gatsby-transformer-sharp`
+    },
+    {
+      resolve: `gatsby-plugin-sharp`
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`, `images`)
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `pages`),
+        name: 'pages'
       },
     },
     {

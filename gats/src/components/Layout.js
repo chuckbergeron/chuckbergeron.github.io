@@ -16,29 +16,24 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="twelve columns">
+            <a className="brand" href="/" title="Chuck Bergeron Wordmark">CHUCK BERGERON</a>
 
-            <div class="twelve columns">
-              <a class="brand" href="/" title="Chuck Bergeron Wordmark">CHUCK BERGERON</a>
-
-                <ul class="nav work-layout--nav">
-                  <li class="nav--list-item">
-                    <a class="nav--link" href="/" title="Learn more about me">About</a>
-                  </li>
-                  <li class="nav--list-item">
-                    <a class="nav--link" href="/work/index.html" title="See my work">Work</a>
-                  </li>
-                  <li class="nav--list-item">
-                    <a class="nav--link" href="/#contact" title="Contact me">Contact</a>
-                  </li>
-                  <li class="nav--list-item">
-                    <a class="nav--link" href="/blog" title="Read my words">Blog</a>
-                  </li>
-                </ul>
-
-            </div>
-
+            <ul className="nav work-layout--nav">
+              <li className="nav--list-item">
+                <a className="nav--link" href="/" title="Learn more about me">About</a>
+              </li>
+              <li className="nav--list-item">
+                <a className="nav--link" href="/work/index.html" title="See my work">Work</a>
+              </li>
+              <li className="nav--list-item">
+                <a className="nav--link" href="/#contact" title="Contact me">Contact</a>
+              </li>
+              <li className="nav--list-item">
+                <a className="nav--link" href="/blog" title="Read my words">Blog</a>
+              </li>
+            </ul>
           </div>
         </div>
       )
