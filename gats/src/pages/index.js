@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Hero from 'src/components/index/Hero'
+import IndexContent from 'src/components/index/IndexContent'
 import Layout from 'src/components/Layout'
 import { rhythm } from 'src/utils/typography'
 
@@ -68,7 +69,7 @@ class Index extends React.Component {
 
             {
               property: "og:image",
-              content: this.props.data.file.childImageSharp.fixed
+              content: this.props.data.profilePic.childImageSharp.fixed
             },
 
             {
@@ -120,10 +121,11 @@ class Index extends React.Component {
             ]
           }
           title={siteTitle}
-
         />
 
         <Hero {...this.props} />
+
+        <IndexContent {...this.props} />
       </Layout>
     )
   }
@@ -153,7 +155,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    file(relativePath: { eq: "chuck-bergeron--profile.jpg" }) {
+    profilePic: file(relativePath: { eq: "chuck-bergeron--profile.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -162,5 +164,97 @@ export const pageQuery = graphql`
         }
       }
     }
+    goodbitsApp: file(relativePath: { eq: "goodbits-app.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    medeoThumbnail: file(relativePath: { eq: "medeo-thumbnail.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    loft47Screenshot1: file(relativePath: { eq: "loft47-screenshot1.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    joshPinter: file(relativePath: { eq: "josh-pinter.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    astervoid2000Logo: file(relativePath: { eq: "astervoid-2000-logo.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    loft47BubbleLogoDiecut: file(relativePath: { eq: "loft47-bubble-logo-diecut.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    goodbitsStickerBlue: file(relativePath: { eq: "goodbits-sticker-blue.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    brewhouseLogo: file(relativePath: { eq: "brewhouse-logo.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    goodbitsHandtypeLogoWhiteOnBlack: file(relativePath: { eq: "goodbits-handtype-logo-white-on-black.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    vanrubySticks: file(relativePath: { eq: "vanruby-sticks.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    sky: file(relativePath: { eq: "sky.png" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    markHazlett: file(relativePath: { eq: "mark-hazlett.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    sasha: file(relativePath: { eq: "sasha.jpg" }) {
+      childImageSharp {
+        fixed(width: 500, height: 281) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+
   }
 `

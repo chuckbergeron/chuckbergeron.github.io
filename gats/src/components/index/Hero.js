@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image"
 
-import profilePic from 'src/components/profile-pic.jpg'
 import { rhythm } from 'src/utils/typography'
 
 class Hero extends React.Component {
@@ -9,7 +8,7 @@ class Hero extends React.Component {
     return (
       <div>
         <Img
-          fixed={this.props.data.file.childImageSharp.fixed}
+          fixed={this.props.data.profilePic.childImageSharp.fixed}
           className="hero-bg"
           style={{
             position: "absolute",
